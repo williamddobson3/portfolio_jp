@@ -1,0 +1,83 @@
+Yummygum is a digital product agency based in Amsterdam, specializing in helping tech scale-ups elevate their platforms through design and development. Founded in 2009 by Vince Schwidder and Leon Ephraïm, the agency has nearly two decades of experience in the industry. With a team of under 50 professionals, Yummygum focuses on transforming digital products from "good" to "wow" .
+
+Core Services:
+
+Strategy: Providing UX/UI audits, accessibility audits, and conversion optimization.
+
+Creative: Offering brand strategy, creative direction, and consulting.
+
+Technical: Delivering technical strategy, consulting, and technical audits.
+
+Enablement: Conducting operational advisory, courses, workshops, and knowledge sharing.
+
+Design: Specializing in UX/UI design, product design, mobile app design, and website design.
+
+Development: Expertise in front-end and back-end development, website development, no-code development, product development, and native apps .
+
+Notable Clients:
+
+Yummygum has collaborated with several ambitious companies, including:
+
+Vio.com
+
+Spider Strategies
+
+On My Way
+
+Watermelon
+
+Tuple
+
+Classroomscreen
+
+Helixers
+
+These partnerships have helped startups secure over $130 million in funding .
+
+Core Values:
+
+Yummygum operates with the following principles:
+
+Growth: Encouraging continuous learning and skill development.
+
+Excellence: Striving to set high standards and overdeliver.
+
+Joy: Fostering passion and fun in their work.
+
+Synergy: Believing in the power of collaboration within their team and with clients
+
+Made by
+
+Frontend:
+
+Next.js
+
+TypeScript
+
+React
+
+Storybook
+
+GSAP
+
+Framer
+
+Zustand
+
+Vercel
+
+Netlify
+
+Backend & CMS:
+
+DatoCMS
+
+Mobile:
+
+React Native (Expo)
+
+CI/CD & Monitoring:
+
+GitHub Actions
+
+Sentry

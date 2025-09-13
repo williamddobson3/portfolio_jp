@@ -1,0 +1,55 @@
+HELLO MOBILITY is a Japanese electric vehicle (EV) sharing platform developed by OpenStreet Co., Ltd. It offers a range of electric mobility options, including ultra-compact EVs, scooters, and slow-mobility vehicles, accessible via a smartphone app.
+
+🔧 Key Features
+
+Mobility Options: Users can choose from various EVs, scooters, and slow-mobility vehicles, depending on their needs and preferences. 
+
+
+Flexible Usage: The service allows users to pick up and return vehicles at different stations, providing convenience and flexibility. 
+
+
+Sustainable Transportation: HELLO MOBILITY promotes eco-friendly transportation solutions, aiming to reduce carbon emissions and contribute to a sustainable society. 
+
+
+Corporate Services: The platform also offers services tailored for businesses, supporting activities like sales, deliveries, and logistics.
+
+Made by
+
+Analytics
+
+Google Analytics
+GA4
+JavaScript frameworks
+
+GSAP
+3.9.1
+Miscellaneous
+
+Open Graph
+Web servers
+
+Apache HTTP Server
+Tag managers
+
+Google Tag Manager
+JavaScript libraries
+
+Lenis
+
+Locomotive Scroll
+
+LazySizes
+
+jQuery
+3.6.0
+
+Swiper
+PaaS
+
+Amazon Web Services
+Load balancers
+
+Amazon ALB
+Performance
+
+LazySizes

@@ -1,0 +1,133 @@
+Doximity is a digital platform designed for U.S. medical professionals, offering a suite of tools to enhance communication, collaboration, and career management. Launched in 2011, it has become one of the largest networks for U.S. healthcare professionals, with over 80% of U.S. physicians and more than 50% of nurse practitioners and physician assistants as verified members. 
+
+
+🔑 Core Features
+
+Secure Messaging: HIPAA-compliant communication for discussing patient care and professional matters.
+
+Professional Profiles: Digital CVs showcasing credentials, specialties, and research.
+
+Curated Medical Newsfeed (DocNews): Personalized updates on medical news, research, and clinical guidelines.
+
+Telehealth Tools:
+
+Dialer: Allows physicians to call patients from their personal cell phones, displaying the doctor's office number on caller ID.
+
+Dialer Video: Enables video consultations directly from smartphones.
+
+Career Management: Tools for job opportunities, residency navigation, and recruitment.
+
+Medical Affairs Solutions: Services for pharmaceutical companies to engage with healthcare professionals.
+
+🏥 Recent Developments
+
+Acquisitions:
+
+Amion (February 2022): A company specializing in on-call doctor scheduling.
+
+Pathway Medical (August 2025): A Canadian startup focusing on medical AI and clinical reference tools. 
+
+
+Partnerships:
+
+UpToDate (2025): Integrated clinical decision support into Doximity Dialer, providing access to over 12,000 clinical topics during live patient encounters.
+
+📈 Financial Overview (2024)
+
+Revenue: $619–$631 million (projected)
+
+Adjusted EBITDA: $306.6–$307.6 million
+
+Net Income: $147.6 million
+
+Assets: $1.08 billion
+
+Equity: $901.4 million
+
+Employees: 827 
+
+
+🏆 Recognition
+
+KLAS Awards: Named #1 in Telehealth Video Conferencing Platforms for four consecutive years.
+
+Deloitte Technology Fast 500: Recognized multiple times for rapid growth.
+
+
+Made by
+
+Frontend:
+
+Nuxt.js
+
+Backbone.js
+
+JavaScript
+
+HTML5
+
+CSS3
+
+Backend:
+
+Ruby on Rails
+
+Go
+
+GraphQL
+
+Elasticsearch
+
+Kafka
+
+Neo4j
+
+Mobile:
+
+Kotlin
+
+Swift
+
+RxSwift
+
+Data & Analytics:
+
+Python
+
+Snowflake
+
+Hex
+
+DevOps & Infrastructure:
+
+AWS
+
+Docker
+
+Kubernetes
+
+Terraform
+
+Media & CDN:
+
+Cloudinary
+
+Version Control:
+
+Git
+
+GitHub
+
+Monitoring & Logging:
+
+Sumo Logic
+
+Other Tools:
+
+Node.js
+
+Git
+
+Python
+
+Node.js

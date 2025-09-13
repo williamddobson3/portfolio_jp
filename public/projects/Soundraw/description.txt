@@ -1,0 +1,47 @@
+Soundraw is an AI-powered music generation platform designed to help creators produce custom, royalty-free music tailored to their specific needs.
+
+🎵 Key Features
+
+AI-Generated Music: Create original tracks by selecting mood, genre, tempo, and instrumentation.
+
+Customization Tools: Adjust song structure, such as shortening intros or rearranging choruses.
+
+Mixer Interface: Toggle instruments, tweak intensity, and set track length without needing a digital audio workstation (DAW).
+
+Royalty-Free Licensing: All generated music is original and safe for commercial use.
+
+Unlimited Downloads: Download high-quality WAV files or separate stems for further editing.
+
+In-House Training: The AI is trained exclusively on Soundraw's original music, ensuring unique compositions.
+
+🎯 Ideal Users
+
+Content Creators: YouTubers, podcasters, and social media influencers seeking custom background music.
+
+Filmmakers & Game Developers: Those needing original scores or soundtracks for projects.
+
+Musicians & Producers: Artists looking for inspiration or base tracks to build upon.
+
+Made by
+
+🔧 Soundraw Tech Stack
+
+Backend: Ruby on Rails
+
+Frontend: JavaScript, Vue.js (potentially transitioning to TypeScript and React)
+
+Machine Learning: Python
+
+Database: PostgreSQL, MongoDB (possibly phasing out MongoDB), Redis
+
+Testing: Jest, RSpec
+
+Infrastructure: Heroku, AWS
+
+Monitoring: Papertrail, BugSnag
+
+CI/CD: CircleCI
+
+Source Code Management: GitHub
+
+Project Management: Pivotal Tracker

@@ -1,0 +1,98 @@
+MyAnimeList (often abbreviated as MAL) is a popular online platform for anime and manga fans. It’s primarily a social and organizational hub for people who love Japanese animation and comics.
+
+Here’s an overview:
+
+📚 Purpose
+
+Track anime and manga: Users can create lists of what they’ve watched or read, are currently watching/reading, and plan to watch/read.
+
+Review and rate: Users can give scores, write reviews, and see others’ opinions.
+
+Discover content: The site helps users find new anime or manga based on ratings, genres, and recommendations.
+
+🔑 Key Features
+
+Personal Lists
+
+Users maintain anime and manga lists with statuses like Watching, Completed, On-Hold, Dropped, or Plan to Watch/Read.
+
+Ratings & Reviews
+
+Users can rate shows/manga (1–10 scale) and write reviews for others to see.
+
+Forums & Community
+
+Discussion forums allow users to talk about specific series, industry news, or general anime/manga topics.
+
+Recommendations & Rankings
+
+Based on ratings and genres, users can get recommendations or see top-ranked series.
+
+News & Features
+
+MAL posts news about upcoming anime, industry announcements, and seasonal previews.
+
+Seasonal Charts
+
+Lists the current anime season’s releases, including airing schedules and episode counts.
+
+🌐 Users
+
+Fans, cosplayers, critics, and casual viewers.
+
+Students, hobbyists, and professionals often use MAL to keep track of their anime/manga consumption.
+
+🎯 Purpose & Philosophy
+
+Organizational: Helps users manage and track their media.
+
+Community-driven: Encourages discussion, sharing opinions, and connecting fans worldwide.
+
+Discovery-focused: Makes it easy to explore new series and follow trends.
+
+
+Made by
+
+🖥️ Frontend
+
+HTML5
+
+CSS3
+
+JavaScript
+
+jQuery
+
+React (for certain components)
+
+AJAX (for asynchronous data loading)
+
+🗄️ Backend
+
+PHP (primary server-side language)
+
+MySQL (database management system)
+
+Apache HTTP Server (web server)
+
+Nginx (reverse proxy server)
+
+☁️ Infrastructure & Hosting
+
+Amazon Web Services (AWS) (cloud hosting)
+
+Amazon CloudFront (content delivery network)
+
+Amazon API Gateway (API management)
+
+Amazon S3 (object storage)
+
+🔐 Security
+
+SSL/TLS (for secure HTTPS connections)
+
+📦 Additional Technologies
+
+Cloudflare (for DNS and security services)
+
+Akamai (for content delivery and performance optimization)

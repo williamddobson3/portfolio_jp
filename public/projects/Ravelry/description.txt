@@ -1,0 +1,90 @@
+🧶 What it is
+
+A hub for fiber arts: Users can track projects, patterns, yarns, and tools.
+
+Community-driven: Ravelry has forums, groups, and social features where users share projects, tips, and inspiration.
+
+Organizational tool: Users can manage their stash, keep notes, and plan projects.
+
+🔑 Key Features
+
+Patterns
+
+Access thousands of knitting and crochet patterns (some free, some paid).
+
+Users can save favorites, leave reviews, and link patterns to projects.
+
+Project Tracking
+
+Log ongoing and completed projects.
+
+Track details like yarn used, needles/hooks, and photos of finished work.
+
+Stash Management
+
+Keep inventory of yarns, tools, and supplies.
+
+Helps crafters see what they already have before buying more.
+
+Forums & Groups
+
+Community discussions around techniques, yarn brands, and general crafts.
+
+Local and online groups for networking and support.
+
+Yarn Database
+
+Information on yarn brands, colors, weights, and user experiences.
+
+🎯 Purpose
+
+Ravelry acts as both a social network and personal organizer for fiber arts enthusiasts.
+
+It helps crafters find inspiration, share knowledge, and manage their projects efficiently.
+
+Ravelry is essentially the go-to platform for anyone serious about knitting, crochet, or other fiber arts, blending community and personal project management in one place.
+
+
+Made by
+
+Ruby on Rails (version 2.3 fork)
+
+MySQL
+
+Redis
+
+Sphinx Search
+
+Nginx
+
+HAProxy
+
+Amazon S3
+
+Gentoo Linux
+
+Memcached
+
+Manticore Search
+
+Node.js
+
+PHP
+
+WordPress
+
+Google Analytics
+
+Twemoji (Twitter Emoji)
+
+Prototype.js
+
+Prism.js
+
+HSTS (HTTP Strict Transport Security)
+
+Gauges
+
+HSTS (HTTP Strict Transport Security)
+
+Gauges

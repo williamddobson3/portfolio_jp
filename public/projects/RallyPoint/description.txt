@@ -1,0 +1,37 @@
+RallyPoint is a digital platform designed to connect members of the U.S. military community, including active service members, veterans, and their families. It serves as a professional and social network where users can engage in discussions, share experiences, and access resources related to military life.
+
+Key Features:
+
+Community Engagement: Members can participate in discussions, ask questions, and share stories about various aspects of military life.
+
+Professional Networking: The platform allows users to build professional connections, explore career opportunities, and transition to civilian employment.
+
+Mentorship Opportunities: RallyPoint facilitates peer-to-peer mentorship, enabling members to seek guidance and support from others with similar experiences.
+
+Educational Resources: Users have access to information about educational programs, training, and certifications relevant to their careers.
+
+Unit and Branch Connections: Members can connect with others who have served in the same units or branches, fostering a sense of camaraderie and shared history.
+
+Founded in 2012 by military veterans Yinon Weiss and Aaron Kletzing at Harvard Business School, RallyPoint has grown to become a significant online network for the military community. The platform has received recognition for its efforts to support veterans and service members in their professional and personal journeys.
+
+Made by
+
+🔧 Likely Technology Stack
+
+Frontend: React, JavaScript, HTML5, CSS3
+
+Backend: Node.js, Express.js
+
+Database: PostgreSQL, Redis
+
+Authentication: OAuth, JWT
+
+Hosting/Infrastructure: Amazon Web Services (AWS), Docker
+
+Analytics: Google Analytics
+
+Monitoring: Sentry
+
+Search: Elasticsearch
+
+Email: SendGrid

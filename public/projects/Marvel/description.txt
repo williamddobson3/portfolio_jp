@@ -1,0 +1,66 @@
+The official Marvel website, marvel.com
+, serves as the central hub for all things Marvel Entertainment. Here's an overview of its key features:
+
+🔹 Core Sections
+
+Movies: Explore the Marvel Cinematic Universe (MCU) films, including upcoming releases like Thunderbolts and Captain America: Brave New World. 
+
+
+Comics: Access a vast library of digital comics, with Marvel Unlimited offering over 30,000 titles for subscribers. 
+
+
+Characters: Discover detailed profiles of Marvel's extensive roster of heroes, villains, and supporting characters. 
+
+
+TV Shows: Stay updated on Marvel's television series, including Marvel Zombies and Ironheart. 
+
+
+Games: Find information on Marvel-themed video and mobile games. 
+
+
+Videos: Watch trailers, interviews, and behind-the-scenes content related to Marvel productions. 
+
+
+Shop: Browse and purchase official Marvel merchandise, including collectibles, apparel, and accessories. 
+
+
+🔹 Additional Features
+
+News & Announcements: Stay informed with the latest updates on Marvel's projects and events. 
+
+
+Marvel Insider: Earn points through activities like watching content and reading comics, which can be redeemed for rewards. 
+
+
+Marvel Studios: Access information on the Marvel Studios productions, including film and TV show details. 
+
+
+Marvel.com is designed to be a comprehensive resource for fans, offering easy navigation and a wealth of content across various media formats.
+
+Made by
+
+WordPress
+
+Next.js
+
+Django
+
+Perl
+
+Git
+
+Gradle
+
+Optimizely
+
+Sizmek
+
+Looker
+
+Kochava
+
+Hammer.js
+
+Schema
+
+Google Docs

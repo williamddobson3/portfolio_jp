@@ -1,0 +1,129 @@
+import React, { useEffect, useState } from 'react';
+import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
+
+export const HomePage: React.FC = () => {
+  const [textIndex, setTextIndex] = useState(0);
+  const titles = ['AI Engineer', 'Web Developer', 'Android Developer', 'Blockchain Expert'];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTextIndex((prev) => (prev + 1) % titles.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const orbitalNodes = [
+    { name: 'AI/ML', color: 'purple', delay: 0 },
+    { name: 'React', color: 'blue', delay: 1 },
+    { name: 'Android', color: 'green', delay: 2 },
+    { name: 'Blockchain', color: 'cyan', delay: 3 },
+    { name: 'Node.js', color: 'emerald', delay: 4 },
+  ];
+
+  return (
+    <div className="min-h-screen flex items-center justify-center relative">
+      {/* Orbital Skills */}
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="relative w-96 h-96">
+          {orbitalNodes.map((node, index) => (
+            <div
+              key={node.name}
+              className="absolute w-16 h-16 -ml-8 -mt-8"
+              style={{
+                left: '50%',
+                top: '50%',
+                animation: `orbit 20s linear infinite`,
+                animationDelay: `${node.delay * 4}s`
+              }}
+            >
+              <div className={`w-full h-full bg-${node.color}-500/20 border-2 border-${node.color}-500/50 rounded-full flex items-center justify-center backdrop-blur-sm hover:scale-110 transition-transform duration-300 cursor-pointer`}>
+                <span className="text-xs font-bold text-white">{node.name}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Central Content */}
+      <div className="text-center z-10 max-w-4xl mx-auto px-6">
+        {/* Name */}
+        <div className="mb-8">
+          <h1 className="text-6xl md:text-8xl font-bold text-white mb-4 tracking-tight">
+            <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent">
+              Kenta Sato
+            </span>
+          </h1>
+          
+          {/* Animated Title */}
+          <div className="h-16 flex items-center justify-center">
+            <h2 className="text-2xl md:text-4xl font-semibold text-blue-300 transition-all duration-500">
+              {titles[textIndex]}
+            </h2>
+          </div>
+        </div>
+
+        {/* Tagline */}
+        <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+          Building future-ready experiences with{' '}
+          <span className="text-purple-400 font-semibold">AI</span>,{' '}
+          <span className="text-blue-400 font-semibold">Blockchain</span>, and{' '}
+          <span className="text-cyan-400 font-semibold">Immersive Web</span>
+        </p>
+
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
+          <button 
+            className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-blue-500/25"
+            onClick={() => window.location.hash = 'projects'}
+          >
+            <span className="flex items-center">
+              Explore My Work
+              <ChevronDown className="ml-2 group-hover:translate-y-1 transition-transform duration-300" size={20} />
+            </span>
+          </button>
+          
+          <button 
+            className="border-2 border-white/30 text-white hover:bg-white/10 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105"
+            onClick={() => window.location.hash = 'about'}
+          >
+            About Me
+          </button>
+        </div>
+
+        {/* Social Links */}
+        <div className="flex justify-center space-x-8">
+          {[
+            { Icon: Github, href: '#', label: 'GitHub' },
+            { Icon: Linkedin, href: '#', label: 'LinkedIn' },
+            { Icon: Mail, href: '#', label: 'Contact' }
+          ].map(({ Icon, href, label }) => (
+            <a
+              key={label}
+              href={href}
+              className="text-gray-400 hover:text-white transition-colors duration-300 transform hover:scale-110"
+              aria-label={label}
+            >
+              <Icon size={24} />
+            </a>
+          ))}
+        </div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <ChevronDown className="text-white/50" size={32} />
+      </div>
+
+      <style jsx>{`
+        @keyframes orbit {
+          from {
+            transform: rotate(0deg) translateX(150px) rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg) translateX(150px) rotate(-360deg);
+          }
+        }
+      `}</style>
+    </div>
+  );
+};

@@ -1,0 +1,62 @@
+Letterboxd is a social platform for film enthusiasts, allowing users to track, rate, review, and discuss movies. Founded in 2011 by Matthew Buchanan and Karl von Randow in New Zealand, it has grown to over 17 million registered users as of January 2025 .
+
+Key Features:
+
+Film Tracking & Logging: Users can log films they've watched, rate them on a five-star scale (with half-star increments), and keep a diary of their viewing history.
+
+Reviews & Lists: Write and share reviews, create and share lists of films on various topics, and compile a watchlist of films to see.
+
+Social Interaction: Follow other users, like and comment on reviews, and engage in discussions about films.
+
+Pro Features: Upgrade to Pro for comprehensive statistics on your film-watching habits.
+
+Recent Developments:
+
+Acquisition: In September 2023, Canadian investment company Tiny acquired a 60% majority stake in Letterboxd, valuing the company at around $50–60 million.
+
+Expansion into TV: Following the acquisition, Letterboxd announced plans to add television shows to the site.
+
+Video Store Launch: In May 2024, Letterboxd launched a curated online film rental service during the Festival de Cannes, offering limited festival-style windows to stream a selection of curated content.
+
+Reputation:
+
+Letterboxd has become a popular platform for cinephiles, offering a space for film discovery, discussion, and community engagement. It has been praised for its user-friendly interface and the ability to connect film lovers worldwide
+
+
+made by
+
+🖥️ Frontend
+
+React
+
+jQuery
+
+RequireJS
+
+HTML5
+
+CSS3
+
+🔙 Backend
+
+Node.js
+
+Ruby on Rails
+
+PostgreSQL
+
+NGINX
+
+📦 Infrastructure & Tools
+
+NGINX
+
+Google Analytics
+
+Gmail
+
+Playwire RAMP SDK (for ad monetization)
+
+Firebase (for authentication in some clones)
+
+MongoDB (in some clones)
