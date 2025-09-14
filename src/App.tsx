@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { LanguageProvider } from './contexts/LanguageContext';
 import { Layout } from './components/Layout';
 import { HomePage } from './components/HomePage';
 import { ProjectsPage } from './components/ProjectsPage';
@@ -42,9 +43,11 @@ function App() {
   };
 
   return (
-    <Layout currentPage={currentPage}>
-      {renderPage()}
-    </Layout>
+    <LanguageProvider>
+      <Layout currentPage={currentPage}>
+        {renderPage()}
+      </Layout>
+    </LanguageProvider>
   );
 }
 

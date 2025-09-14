@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Github, Send, Clock, CheckCircle, MessageCircle, Users } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -10,15 +11,16 @@ export const ContactPage: React.FC = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const { t } = useLanguage();
 
   const projectTypes = [
-    'AI/ML Development',
-    'Web Application',
-    'Android Application',
-    'Full Stack Project',
-    'Team Leadership',
-    'Consulting',
-    'Other'
+    t('project.type.ai'),
+    t('project.type.web'),
+    t('project.type.android'),
+    t('project.type.fullstack'),
+    t('project.type.leadership'),
+    t('project.type.consulting'),
+    t('project.type.other')
   ];
 
   const socialLinks = [
@@ -26,28 +28,28 @@ export const ContactPage: React.FC = () => {
       name: 'Email',
       href: 'mailto:satoshiengineer92@gmail.com',
       icon: Mail,
-      description: 'Direct email contact',
+      description: t('contact.social.email'),
       color: 'blue'
     },
     {
       name: 'GitHub',
       href: 'https://github.com/williamddobson3',
       icon: Github,
-      description: 'Code repositories',
+      description: t('contact.social.github'),
       color: 'gray'
     },
     {
       name: 'Telegram',
       href: 'https://t.me/ErosPhoenix',
       icon: MessageCircle,
-      description: 'Quick messaging',
+      description: t('contact.social.telegram'),
       color: 'cyan'
     },
     {
       name: 'Discord',
       href: 'https://discord.com/users/cupid076831',
       icon: Users,
-      description: 'Gaming & chat',
+      description: t('contact.social.discord'),
       color: 'purple'
     }
   ];
@@ -83,11 +85,11 @@ export const ContactPage: React.FC = () => {
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             <span className="bg-gradient-to-r from-blue-400 to-cyan-500 bg-clip-text text-transparent">
-              Get In Touch
+              {t('contact.title')}
             </span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Ready to bring your next project to life? Let's discuss how we can create something amazing together.
+            {t('contact.subtitle')}
           </p>
         </div>
 
@@ -95,23 +97,23 @@ export const ContactPage: React.FC = () => {
         <div className="bg-green-500/10 border border-green-500/30 rounded-2xl p-6 mb-12 text-center">
           <div className="flex items-center justify-center mb-3">
             <div className="w-3 h-3 bg-green-400 rounded-full mr-3 animate-pulse" />
-            <span className="text-green-400 font-semibold">Currently Available</span>
+            <span className="text-green-400 font-semibold">{t('contact.available')}</span>
           </div>
           <p className="text-gray-300">
-            Accepting new projects • Response within 24 hours • Tokyo timezone (JST)
+            {t('contact.response')}
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8">
-            <h2 className="text-2xl font-bold text-white mb-6">Start a Conversation</h2>
+            <h2 className="text-2xl font-bold text-white mb-6">{t('contact.form.title')}</h2>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-white text-sm font-medium mb-2">
-                    Your Name *
+                    {t('contact.form.name')} *
                   </label>
                   <input
                     type="text"
@@ -125,7 +127,7 @@ export const ContactPage: React.FC = () => {
                 </div>
                 <div>
                   <label className="block text-white text-sm font-medium mb-2">
-                    Email Address *
+                    {t('contact.form.email')} *
                   </label>
                   <input
                     type="email"
@@ -141,7 +143,7 @@ export const ContactPage: React.FC = () => {
 
               <div>
                 <label className="block text-white text-sm font-medium mb-2">
-                  Project Type
+                  {t('contact.form.project')}
                 </label>
                 <select
                   name="projectType"
@@ -158,7 +160,7 @@ export const ContactPage: React.FC = () => {
 
               <div>
                 <label className="block text-white text-sm font-medium mb-2">
-                  Project Details *
+                  {t('contact.form.details')} *
                 </label>
                 <textarea
                   name="message"
@@ -185,17 +187,17 @@ export const ContactPage: React.FC = () => {
                 {isSubmitted ? (
                   <>
                     <CheckCircle size={20} />
-                    <span>Message Sent!</span>
+                    <span>{t('contact.form.sent')}</span>
                   </>
                 ) : isSubmitting ? (
                   <>
                     <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                    <span>Sending...</span>
+                    <span>{t('contact.form.sending')}</span>
                   </>
                 ) : (
                   <>
                     <Send size={20} />
-                    <span>Send Message</span>
+                    <span>{t('contact.form.send')}</span>
                   </>
                 )}
               </button>
@@ -204,10 +206,10 @@ export const ContactPage: React.FC = () => {
             <div className="mt-6 p-4 bg-blue-500/10 border border-blue-500/30 rounded-xl">
               <div className="flex items-center text-blue-300 mb-2">
                 <Clock size={16} className="mr-2" />
-                <span className="text-sm font-medium">Response Time</span>
+                <span className="text-sm font-medium">{t('contact.form.response')}</span>
               </div>
               <p className="text-gray-300 text-sm">
-                I typically respond within 24 hours with project insights and next steps.
+                {t('contact.form.response.desc')}
               </p>
             </div>
           </div>
@@ -216,23 +218,23 @@ export const ContactPage: React.FC = () => {
           <div className="space-y-8">
             {/* Commitment Statement */}
             <div className="bg-gradient-to-br from-purple-500/10 to-blue-500/10 border border-purple-500/20 rounded-3xl p-8">
-              <h2 className="text-2xl font-bold text-white mb-4">My Commitment</h2>
+              <h2 className="text-2xl font-bold text-white mb-4">{t('contact.commitment.title')}</h2>
               <div className="space-y-4 text-gray-300">
                 <p>
-                  "I believe in building lasting relationships through integrity, trust, and exceptional delivery. Every project receives my full attention and commitment to excellence."
+                  "{t('contact.commitment.content')}"
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center">
                     <span className="w-2 h-2 bg-blue-400 rounded-full mr-3" />
-                    <span>Honest communication throughout the project</span>
+                    <span>{t('contact.commitment.communication')}</span>
                   </div>
                   <div className="flex items-center">
                     <span className="w-2 h-2 bg-purple-400 rounded-full mr-3" />
-                    <span>Reliable delivery on time and budget</span>
+                    <span>{t('contact.commitment.delivery')}</span>
                   </div>
                   <div className="flex items-center">
                     <span className="w-2 h-2 bg-cyan-400 rounded-full mr-3" />
-                    <span>Ongoing support and maintenance</span>
+                    <span>{t('contact.commitment.support')}</span>
                   </div>
                 </div>
               </div>
@@ -240,7 +242,7 @@ export const ContactPage: React.FC = () => {
 
             {/* Social Links */}
             <div>
-              <h3 className="text-xl font-bold text-white mb-6">Connect With Me</h3>
+              <h3 className="text-xl font-bold text-white mb-6">{t('contact.connect')}</h3>
               <div className="space-y-4">
                 {socialLinks.map(link => (
                   <a
@@ -268,15 +270,15 @@ export const ContactPage: React.FC = () => {
 
             {/* Availability Calendar */}
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
-              <h3 className="text-lg font-bold text-white mb-4">Current Availability</h3>
+              <h3 className="text-lg font-bold text-white mb-4">{t('contact.availability')}</h3>
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-green-400 mb-1">Available</div>
-                  <div className="text-sm text-gray-400">New Projects</div>
+                  <div className="text-sm text-gray-400">{t('contact.availability.new')}</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-blue-400 mb-1">JST</div>
-                  <div className="text-sm text-gray-400">Timezone</div>
+                  <div className="text-sm text-gray-400">{t('contact.availability.timezone')}</div>
                 </div>
               </div>
             </div>

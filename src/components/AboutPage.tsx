@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { MapPin, Calendar, Users, Award, Download } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 interface TimelineEvent {
   year: string;
@@ -12,6 +13,7 @@ interface TimelineEvent {
 
 export const AboutPage: React.FC = () => {
   const [activeEvent, setActiveEvent] = useState<number | null>(null);
+  const { t } = useLanguage();
 
   const timeline: TimelineEvent[] = [
     {
@@ -57,23 +59,23 @@ export const AboutPage: React.FC = () => {
 
   const values = [
     {
-      title: 'Integrity & Trust',
-      description: 'Building lasting relationships through honest communication and reliable delivery.',
+      title: t('about.values.integrity'),
+      description: t('about.values.integrity_desc'),
       icon: '🤝'
     },
     {
-      title: 'Innovation Focus',
-      description: 'Always pushing boundaries with cutting-edge AI and mobile technologies.',
+      title: t('about.values.innovation'),
+      description: t('about.values.innovation_desc'),
       icon: '🚀'
     },
     {
-      title: 'Team Leadership',
-      description: 'Empowering teams to achieve their best through mentorship and collaboration.',
+      title: t('about.values.leadership'),
+      description: t('about.values.leadership_desc'),
       icon: '👥'
     },
     {
-      title: 'Global Perspective',
-      description: 'Experience across Japan and Malaysia brings unique multicultural insights.',
+      title: t('about.values.global'),
+      description: t('about.values.global_desc'),
       icon: '🌏'
     }
   ];
@@ -85,12 +87,11 @@ export const AboutPage: React.FC = () => {
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             <span className="bg-gradient-to-r from-blue-400 to-cyan-500 bg-clip-text text-transparent">
-              My Journey
+              {t('about.title')}
             </span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            With 9+ years of experience spanning corporate engineering at Rakuten and international freelancing, 
-            now leading distributed teams to deliver AI, web, and mobile solutions worldwide.
+            {t('about.subtitle')}
           </p>
         </div>
 
@@ -98,13 +99,13 @@ export const AboutPage: React.FC = () => {
         <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-3xl p-8 mb-16">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="mb-6 md:mb-0">
-              <h2 className="text-2xl font-bold text-white mb-2">Currently Available</h2>
+              <h2 className="text-2xl font-bold text-white mb-2">{t('about.currently_available')}</h2>
               <p className="text-gray-300">
-                Leading engineering teams while taking on unique and challenging projects
+                {t('about.currently_desc')}
               </p>
               <div className="flex items-center mt-3 text-green-400">
                 <div className="w-3 h-3 bg-green-400 rounded-full mr-2 animate-pulse" />
-                Open for new collaborations
+                {t('about.open_collaborations')}
               </div>
             </div>
             <button 
@@ -119,14 +120,14 @@ export const AboutPage: React.FC = () => {
               }}
             >
               <Download size={20} />
-              <span>Download Resume</span>
+              <span>{t('about.download_resume')}</span>
             </button>
           </div>
         </div>
 
         {/* Timeline */}
         <div className="relative mb-16">
-          <h2 className="text-3xl font-bold text-white mb-12 text-center">Career Timeline</h2>
+          <h2 className="text-3xl font-bold text-white mb-12 text-center">{t('about.career_timeline')}</h2>
           
           {/* Timeline Line */}
           <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-blue-500 via-purple-500 to-cyan-500 rounded-full opacity-30" />
@@ -160,7 +161,7 @@ export const AboutPage: React.FC = () => {
                   
                   {activeEvent === index && (
                     <div className="border-t border-white/20 pt-4 mt-4">
-                      <h4 className="text-white font-semibold mb-2">Key Highlights:</h4>
+                      <h4 className="text-white font-semibold mb-2">{t('about.key_highlights')}</h4>
                       <ul className="space-y-1">
                         {event.highlights.map((highlight, hIndex) => (
                           <li key={hIndex} className="text-gray-300 text-sm flex items-start">
@@ -191,7 +192,7 @@ export const AboutPage: React.FC = () => {
 
         {/* Core Values */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-white mb-12 text-center">Core Values & Approach</h2>
+          <h2 className="text-3xl font-bold text-white mb-12 text-center">{t('about.core_values')}</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, index) => (
               <div
@@ -209,10 +210,10 @@ export const AboutPage: React.FC = () => {
         {/* Stats */}
         <div className="grid md:grid-cols-4 gap-6">
           {[
-            { label: 'Years of Experience', value: '9+', icon: Calendar },
-            { label: 'Projects Completed', value: '50+', icon: Award },
-            { label: 'Team Members Led', value: '50+', icon: Users },
-            { label: 'Countries Worked', value: '15+', icon: MapPin }
+            { label: t('about.stats.experience'), value: '8+', icon: Calendar },
+            { label: t('about.stats.projects'), value: '50+', icon: Award },
+            { label: t('about.stats.team'), value: '50+', icon: Users },
+            { label: t('about.stats.countries'), value: '15+', icon: MapPin }
           ].map((stat, index) => (
             <div key={index} className="text-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
               <stat.icon className="w-8 h-8 text-blue-400 mx-auto mb-3" />
@@ -225,12 +226,9 @@ export const AboutPage: React.FC = () => {
         {/* Future Vision */}
         <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 border border-purple-500/20 rounded-3xl p-12">
-            <h2 className="text-3xl font-bold text-white mb-6">Future Vision</h2>
+            <h2 className="text-3xl font-bold text-white mb-6">{t('about.future_vision')}</h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              "Continue creating unique and special projects that push the boundaries of technology, 
-              while maintaining the trust and integrity that has been the foundation of my career. 
-              My goal is to deliver exceptional value to clients worldwide through innovative AI 
-              and mobile solutions."
+              "{t('about.future_vision_text')}"
             </p>
           </div>
         </div>

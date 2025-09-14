@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Home, Folder, Zap, User, Mail, Menu, X } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
+import { LanguageSwitcher } from './LanguageSwitcher';
 
 interface NavigationProps {
   currentPage: string;
@@ -7,13 +9,14 @@ interface NavigationProps {
 
 export const Navigation: React.FC<NavigationProps> = ({ currentPage }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useLanguage();
 
   const navItems = [
-    { id: 'home', label: 'Home', icon: Home },
-    { id: 'projects', label: 'Projects', icon: Folder },
-    { id: 'skills', label: 'Skills', icon: Zap },
-    { id: 'about', label: 'About', icon: User },
-    { id: 'contact', label: 'Contact', icon: Mail },
+    { id: 'home', label: t('nav.home'), icon: Home },
+    { id: 'projects', label: t('nav.projects'), icon: Folder },
+    { id: 'skills', label: t('nav.skills'), icon: Zap },
+    { id: 'about', label: t('nav.about'), icon: User },
+    { id: 'contact', label: t('nav.contact'), icon: Mail },
   ];
 
   return (
@@ -21,7 +24,7 @@ export const Navigation: React.FC<NavigationProps> = ({ currentPage }) => {
       {/* Desktop Navigation */}
       <nav className="fixed top-8 left-1/2 transform -translate-x-1/2 z-50 hidden md:block">
         <div className="bg-black/20 backdrop-blur-md border border-white/10 rounded-full px-6 py-3">
-          <div className="flex space-x-8">
+          <div className="flex items-center space-x-8">
             {navItems.map(({ id, label, icon: Icon }) => (
               <button
                 key={id}
@@ -36,6 +39,7 @@ export const Navigation: React.FC<NavigationProps> = ({ currentPage }) => {
                 <span className="text-sm font-medium">{label}</span>
               </button>
             ))}
+            <LanguageSwitcher />
           </div>
         </div>
       </nav>
@@ -70,6 +74,9 @@ export const Navigation: React.FC<NavigationProps> = ({ currentPage }) => {
                 <span className="font-medium">{label}</span>
               </button>
             ))}
+            <div className="mt-4 pt-4 border-t border-white/10">
+              <LanguageSwitcher />
+            </div>
           </div>
         </div>
       )}

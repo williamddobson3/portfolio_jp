@@ -2,7 +2,7 @@ export interface Project {
   id: string;
   title: string;
   category: string;
-  description: string;
+  descriptionKey: string; // Changed from description to descriptionKey for translations
   role: string;
   year: string;
   status: string;
@@ -33,7 +33,7 @@ export const projects: Project[] = [
     id: 'are-na',
     title: 'Are.na',
     category: 'social',
-    description: 'Collaborative visual research and organization platform for collecting and organizing ideas, images, and knowledge networks.',
+    descriptionKey: 'project.are-na.description',
     role: 'Frontend Developer',
     year: '2023',
     status: 'Active',
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     id: 'asmallworld',
     title: 'Asmallworld',
     category: 'social',
-    description: 'Exclusive social networking platform for affluent and influential individuals worldwide.',
+    descriptionKey: 'project.asmallworld.description',
     role: 'Full Stack Developer',
     year: '2022',
     status: 'Active',
@@ -59,7 +59,7 @@ export const projects: Project[] = [
     id: 'bereal',
     title: 'BeReal',
     category: 'social',
-    description: 'Authentic social media app encouraging users to share unfiltered moments with friends.',
+    descriptionKey: 'project.bereal.description',
     role: 'Mobile Developer',
     year: '2022',
     status: 'Launched',
@@ -205,7 +205,7 @@ export const projects: Project[] = [
     id: 'openai',
     title: 'OpenAI',
     category: 'ai',
-    description: 'Artificial intelligence research organization developing safe and beneficial AI systems including ChatGPT and DALL-E.',
+    descriptionKey: 'project.openai.description',
     role: 'AI Engineer',
     year: '2023',
     status: 'Active',

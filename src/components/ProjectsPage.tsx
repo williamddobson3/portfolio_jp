@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { ExternalLink, Github, Calendar, Users, ChevronLeft, ChevronRight } from 'lucide-react';
 import { projects, projectCategories, Project } from '../data/projects';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export const ProjectsPage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState<{ [key: string]: number }>({});
   const [modalImageIndex, setModalImageIndex] = useState(0);
+  const { t } = useLanguage();
 
-  const categories = projectCategories;
+  const categories = projectCategories.map(cat => ({
+    ...cat,
+    name: t(`projects.category.${cat.id}`)
+  }));
 
 
   const filteredProjects = selectedCategory === 'all' 
@@ -81,11 +86,11 @@ export const ProjectsPage: React.FC = () => {
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-              Project Galaxy
+              {t('projects.title')}
             </span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Explore my portfolio of 30+ projects across social platforms, AR/VR experiences, AI tools, consumer apps, media platforms, and business solutions
+            {t('projects.subtitle')}
           </p>
         </div>
 
@@ -174,7 +179,7 @@ export const ProjectsPage: React.FC = () => {
                 </h3>
                 
                 <p className="text-gray-300 text-sm mb-4 line-clamp-3">
-                  {project.description}
+                  {t(project.descriptionKey)}
                 </p>
                 
                 <div className="flex items-center text-sm text-gray-400 mb-4">
@@ -294,21 +299,21 @@ export const ProjectsPage: React.FC = () => {
                   </span>
                 </div>
                 
-                <p className="text-gray-300 text-lg mb-6">{selectedProject.description}</p>
+                <p className="text-gray-300 text-lg mb-6">{t(selectedProject.descriptionKey)}</p>
                 
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
                   <div>
-                    <h4 className="text-white font-semibold mb-2">My Role</h4>
+                    <h4 className="text-white font-semibold mb-2">{t('projects.modal.role')}</h4>
                     <p className="text-gray-300">{selectedProject.role}</p>
                   </div>
                   <div>
-                    <h4 className="text-white font-semibold mb-2">Year</h4>
+                    <h4 className="text-white font-semibold mb-2">{t('projects.modal.year')}</h4>
                     <p className="text-gray-300">{selectedProject.year}</p>
                   </div>
                 </div>
                 
                 <div className="mb-6">
-                  <h4 className="text-white font-semibold mb-3">Technologies Used</h4>
+                  <h4 className="text-white font-semibold mb-3">{t('projects.modal.technologies')}</h4>
                   <div className="flex flex-wrap gap-2">
                     {selectedProject.technologies.map(tech => (
                       <span
@@ -323,7 +328,7 @@ export const ProjectsPage: React.FC = () => {
                 
                 {selectedProject.metrics && (
                   <div className="mb-6">
-                    <h4 className="text-white font-semibold mb-3">Impact & Metrics</h4>
+                    <h4 className="text-white font-semibold mb-3">{t('projects.modal.impact')}</h4>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                       {Object.entries(selectedProject.metrics).map(([key, value]) => (
                         <div key={key} className="bg-white/5 rounded-lg p-4 text-center">
@@ -344,7 +349,7 @@ export const ProjectsPage: React.FC = () => {
                       className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors"
                     >
                       <ExternalLink size={18} />
-                      <span>Live Demo</span>
+                      <span>{t('projects.modal.live')}</span>
                     </a>
                   )}
                   {selectedProject.github && (
@@ -355,7 +360,7 @@ export const ProjectsPage: React.FC = () => {
                       className="flex items-center space-x-2 bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg transition-colors"
                     >
                       <Github size={18} />
-                      <span>View Code</span>
+                      <span>{t('projects.modal.code')}</span>
                     </a>
                   )}
                 </div>

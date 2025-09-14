@@ -1,9 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { ChevronDown, Github, Mail, MessageCircle, Users } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export const HomePage: React.FC = () => {
   const [textIndex, setTextIndex] = useState(0);
-  const titles = ['AI Engineer', 'Web Developer', 'Android Developer'];
+  const { t } = useLanguage();
+  
+  const titles = [
+    t('home.subtitle.ai'),
+    t('home.subtitle.web'),
+    t('home.subtitle.android')
+  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -49,7 +56,7 @@ export const HomePage: React.FC = () => {
         <div className="mb-8">
           <h1 className="text-6xl md:text-8xl font-bold text-white mb-4 tracking-tight">
             <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent">
-              Satoshi Kobayashi
+              {t('home.title')}
             </span>
           </h1>
           
@@ -63,9 +70,9 @@ export const HomePage: React.FC = () => {
 
         {/* Tagline */}
         <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-          Building future-ready experiences with{' '}
-          <span className="text-purple-400 font-semibold">AI</span> and{' '}
-          <span className="text-cyan-400 font-semibold">Immersive Web</span>
+          {t('home.tagline').replace('AI', '').replace('Immersive Web', '').trim()}{' '}
+          <span className="text-purple-400 font-semibold">{t('home.tagline.ai')}</span> and{' '}
+          <span className="text-cyan-400 font-semibold">{t('home.tagline.immersive')}</span>
         </p>
 
         {/* CTA Buttons */}
@@ -75,7 +82,7 @@ export const HomePage: React.FC = () => {
             onClick={() => window.location.hash = 'projects'}
           >
             <span className="flex items-center">
-              Explore My Work
+              {t('home.cta.explore')}
               <ChevronDown className="ml-2 group-hover:translate-y-1 transition-transform duration-300" size={20} />
             </span>
           </button>
@@ -84,7 +91,7 @@ export const HomePage: React.FC = () => {
             className="border-2 border-white/30 text-white hover:bg-white/10 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105"
             onClick={() => window.location.hash = 'about'}
           >
-            About Me
+{t('home.cta.about')}
           </button>
         </div>
 

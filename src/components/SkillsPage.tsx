@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 interface Skill {
   name: string;
@@ -10,14 +11,15 @@ interface Skill {
 
 export const SkillsPage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const { t } = useLanguage();
 
   const skillCategories = [
-    { id: 'all', name: 'All Skills', color: 'white' },
-    { id: 'ai', name: 'AI & Machine Learning', color: 'purple' },
-    { id: 'web', name: 'Web Development', color: 'cyan' },
-    { id: 'android', name: 'Android Development', color: 'green' },
-    { id: 'management', name: 'Backend & Cloud', color: 'blue' },
-    { id: 'leadership', name: 'Management', color: 'yellow' },
+    { id: 'all', name: t('skills.category.all'), color: 'white' },
+    { id: 'ai', name: t('skills.category.ai'), color: 'purple' },
+    { id: 'web', name: t('skills.category.web'), color: 'cyan' },
+    { id: 'android', name: t('skills.category.android'), color: 'green' },
+    { id: 'management', name: t('skills.category.management'), color: 'blue' },
+    { id: 'leadership', name: t('skills.category.leadership'), color: 'yellow' },
   ];
 
   const skills: Skill[] = [
@@ -80,11 +82,11 @@ export const SkillsPage: React.FC = () => {
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             <span className="bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">
-              Skills Constellation
+              {t('skills.title')}
             </span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            My expertise across AI, web development, mobile, and team leadership
+            {t('skills.subtitle')}
           </p>
         </div>
 
@@ -119,7 +121,7 @@ export const SkillsPage: React.FC = () => {
                   {skill.name}
                 </h3>
                 <div className="flex items-center justify-between text-sm text-gray-400 mb-3">
-                  <span>{skill.years} years</span>
+                  <span>{skill.years} {t('skills.years')}</span>
                   <span className="capitalize text-purple-400">{skill.category}</span>
                 </div>
               </div>
@@ -127,7 +129,7 @@ export const SkillsPage: React.FC = () => {
               {/* Skill Level */}
               <div className="mb-4">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-sm text-gray-300">Proficiency</span>
+                  <span className="text-sm text-gray-300">{t('skills.proficiency')}</span>
                   <span className="text-sm text-blue-400 font-semibold">
                     {skill.level}/5
                   </span>
@@ -139,7 +141,7 @@ export const SkillsPage: React.FC = () => {
 
               {/* Projects */}
               <div>
-                <div className="text-sm text-gray-400 mb-2">Used in:</div>
+                <div className="text-sm text-gray-400 mb-2">{t('skills.used_in')}</div>
                 <div className="flex flex-wrap gap-1">
                   {skill.projects.slice(0, 2).map(project => (
                     <span
@@ -166,10 +168,10 @@ export const SkillsPage: React.FC = () => {
         {/* Summary Stats */}
         <div className="mt-16 grid md:grid-cols-4 gap-6">
           {[
-            { label: 'Years of Experience', value: '9+', color: 'blue' },
-            { label: 'Technologies Mastered', value: skills.length.toString(), color: 'purple' },
-            { label: 'Expert Level Skills', value: skills.filter(s => s.level === 5).length.toString(), color: 'cyan' },
-            { label: 'Active Categories', value: '5', color: 'green' }
+            { label: t('skills.stats.experience'), value: '8+', color: 'blue' },
+            { label: t('skills.stats.technologies'), value: skills.length.toString(), color: 'purple' },
+            { label: t('skills.stats.expert'), value: skills.filter(s => s.level === 5).length.toString(), color: 'cyan' },
+            { label: t('skills.stats.categories'), value: '5', color: 'green' }
           ].map(stat => (
             <div key={stat.label} className="text-center">
               <div className={`text-4xl font-bold text-${stat.color}-400 mb-2`}>
