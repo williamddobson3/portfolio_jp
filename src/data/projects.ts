@@ -38,7 +38,7 @@ export const projects: Project[] = [
     year: '2023',
     status: 'Active',
     technologies: ['React', 'Next.js', 'Stitches', 'Radix UI', 'Contentful'],
-    images: ['/projects/Are.na_-_Groups/1.png', '/projects/Are.na_-_Groups/2.gif', '/projects/Are.na_-_Groups/3.webp'],
+    images: ['/projects/Are.na_-_Groups/1.png', '/projects/Are.na_-_Groups/2.gif', '/projects/Are.na_-_Groups/3.webp', '/projects/Are.na_-_Groups/4.jpg'],
     metrics: { users: '50K+' },
     website: 'https://www.are.na'
   },
@@ -52,7 +52,8 @@ export const projects: Project[] = [
     status: 'Active',
     technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS'],
     images: ['/projects/Asmallworld/1.jpg', '/projects/Asmallworld/2.jpg', '/projects/Asmallworld/3.jpg'],
-    metrics: { users: '500K+' }
+    metrics: { users: '500K+' },
+    website: 'https://asmallworld.com'
   },
   {
     id: 'bereal',
@@ -64,7 +65,8 @@ export const projects: Project[] = [
     status: 'Launched',
     technologies: ['React Native', 'Node.js', 'MongoDB', 'AWS'],
     images: ['/projects/BeReal/1.jpg', '/projects/BeReal/2.webp', '/projects/BeReal/3.jpg'],
-    metrics: { users: '20M+', downloads: '50M+' }
+    metrics: { users: '20M+', downloads: '50M+' },
+    website: 'https://bereal.com'
   },
   {
     id: 'mastodon-ello-diaspora',
@@ -76,7 +78,8 @@ export const projects: Project[] = [
     status: 'Active',
     technologies: ['Ruby on Rails', 'PostgreSQL', 'Redis', 'Docker'],
     images: ['/projects/Mastodon  Ello  Diaspora/1.png', '/projects/Mastodon  Ello  Diaspora/2.jpg', '/projects/Mastodon  Ello  Diaspora/3.jpg'],
-    metrics: { users: '2M+' }
+    metrics: { users: '2M+' },
+    website: 'https://mastodon.social'
   },
   {
     id: 'mewe',
@@ -88,7 +91,8 @@ export const projects: Project[] = [
     status: 'Active',
     technologies: ['React', 'TypeScript', 'GraphQL', 'AWS'],
     images: ['/projects/MeWe/1.jpg', '/projects/MeWe/2.jpg', '/projects/MeWe/3.png'],
-    metrics: { users: '20M+' }
+    metrics: { users: '20M+' },
+    website: 'https://mewe.com'
   },
   {
     id: 'polywork',
@@ -100,7 +104,8 @@ export const projects: Project[] = [
     status: 'Acquired',
     technologies: ['Next.js', 'GraphQL', 'PostgreSQL', 'AWS'],
     images: ['/projects/Polywork/1.png', '/projects/Polywork/2.webp', '/projects/Polywork/3.jpg'],
-    metrics: { users: '100K+' }
+    metrics: { users: '100K+' },
+    website: 'https://polywork.com'
   },
   {
     id: 'letterboxd',
@@ -112,7 +117,8 @@ export const projects: Project[] = [
     status: 'Active',
     technologies: ['React', 'Redux', 'Node.js', 'PostgreSQL'],
     images: ['/projects/Letterboxd/1.png', '/projects/Letterboxd/2.webp', '/projects/Letterboxd/3.webp'],
-    metrics: { users: '4M+' }
+    metrics: { users: '4M+' },
+    website: 'https://letterboxd.com'
   },
   {
     id: 'poparazzi',
@@ -124,7 +130,8 @@ export const projects: Project[] = [
     status: 'Launched',
     technologies: ['React Native', 'Node.js', 'MongoDB', 'AWS'],
     images: ['/projects/Poparazzi/1.jpg', '/projects/Poparazzi/2.webp', '/projects/Poparazzi/3.png'],
-    metrics: { users: '1M+', downloads: '5M+' }
+    metrics: { users: '1M+', downloads: '5M+' },
+    website: 'https://poparazzi.com'
   },
   {
     id: 'rallypoint',
@@ -136,7 +143,8 @@ export const projects: Project[] = [
     status: 'Active',
     technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS'],
     images: ['/projects/RallyPoint/1.png', '/projects/RallyPoint/2.webp', '/projects/RallyPoint/3.jpeg'],
-    metrics: { users: '2M+' }
+    metrics: { users: '2M+' },
+    website: 'https://rallypoint.com'
   },
 
   // AR / VR / 3D Experiences
@@ -162,7 +170,8 @@ export const projects: Project[] = [
     status: 'Active',
     technologies: ['Unity', 'ARKit', 'ARCore', 'C#', 'Blender'],
     images: ['/projects/JigSpace/1.png', '/projects/JigSpace/2.jpg', '/projects/JigSpace/3.png'],
-    metrics: { users: '500K+' }
+    metrics: { users: '500K+' },
+    website: 'https://jig.space'
   },
   {
     id: 'midjourney',
@@ -174,7 +183,8 @@ export const projects: Project[] = [
     status: 'Active',
     technologies: ['Python', 'PyTorch', 'Three.js', 'WebGL', 'OpenAI'],
     images: ['/projects/Midjourney/1.png', '/projects/Midjourney/2.png', '/projects/Midjourney/3.png'],
-    metrics: { users: '15M+' }
+    metrics: { users: '15M+' },
+    website: 'https://midjourney.com'
   },
   {
     id: 'marvel-ar',
@@ -186,7 +196,8 @@ export const projects: Project[] = [
     status: 'Active',
     technologies: ['Unity', 'ARKit', 'ARCore', 'C#', '3D Modeling'],
     images: ['/projects/Marvel/1.webp', '/projects/Marvel/2.jpg', '/projects/Marvel/3.jpg'],
-    metrics: { users: '5M+' }
+    metrics: { users: '5M+' },
+    website: 'https://marvel.com'
   },
 
   // AI / ML / Creative Tools
@@ -200,7 +211,8 @@ export const projects: Project[] = [
     status: 'Active',
     technologies: ['Python', 'PyTorch', 'TensorFlow', 'FastAPI', 'PostgreSQL'],
     images: ['/projects/OpenAI/1.png', '/projects/OpenAI/2.png', '/projects/OpenAI/3.png'],
-    metrics: { users: '100M+' }
+    metrics: { users: '100M+' },
+    website: 'https://openai.com'
   },
   {
     id: 'soundraw',
@@ -212,7 +224,8 @@ export const projects: Project[] = [
     status: 'Launched',
     technologies: ['Python', 'TensorFlow', 'React', 'Node.js', 'Web Audio API'],
     images: ['/projects/Soundraw/1.png', '/projects/Soundraw/2.png', '/projects/Soundraw/3.png'],
-    metrics: { users: '2M+', downloads: '5M+' }
+    metrics: { users: '2M+', downloads: '5M+' },
+    website: 'https://soundraw.io'
   },
   {
     id: 'pixelfed-ui',
@@ -223,8 +236,9 @@ export const projects: Project[] = [
     year: '2022',
     status: 'Active',
     technologies: ['React', 'TypeScript', 'Laravel', 'AI/ML APIs'],
-    images: ['/projects/Pixelfed-ui/1.png', '/projects/Pixelfed-ui/2.png', '/projects/Pixelfed-ui/3.png'],
-    metrics: { users: '100K+' }
+    images: ['/projects/Pixelfed-ui/1.png', '/projects/Pixelfed-ui/2.png', '/projects/Pixelfed-ui/3.png', '/projects/Pixelfed-ui/4.jpg', '/projects/Pixelfed-ui/5.png', '/projects/Pixelfed-ui/6.png'],
+    metrics: { users: '100K+' },
+    website: 'https://pixelfed.org'
   },
 
   // Consumer & Lifestyle Apps
@@ -238,7 +252,8 @@ export const projects: Project[] = [
     status: 'Launched',
     technologies: ['Kotlin', 'TensorFlow', 'WebRTC', 'Firebase', 'OpenAI GPT-4'],
     images: ['/projects/BeMyEyes/1.png', '/projects/BeMyEyes/2.png', '/projects/BeMyEyes/3.png'],
-    metrics: { users: '10M+', awards: '3 International Awards' }
+    metrics: { users: '10M+', awards: '3 International Awards' },
+    website: 'https://bemyeyes.com'
   },
   {
     id: 'bombas',
@@ -250,7 +265,8 @@ export const projects: Project[] = [
     status: 'Active',
     technologies: ['Shopify', 'React', 'Node.js', 'Stripe'],
     images: ['/projects/Bombas/1.png', '/projects/Bombas/2.png', '/projects/Bombas/3.png'],
-    metrics: { users: '1M+' }
+    metrics: { users: '1M+' },
+    website: 'https://bombas.com'
   },
   {
     id: 'untappd',
@@ -261,8 +277,9 @@ export const projects: Project[] = [
     year: '2022',
     status: 'Launched',
     technologies: ['React', 'Redux', 'Node.js', 'PostgreSQL'],
-    images: ['/projects/Untappd/1.jpg', '/projects/Untappd/2.gif', '/projects/Untappd/3.jpg'],
-    metrics: { users: '8M+' }
+    images: ['/projects/Untappd/1.jpg', '/projects/Untappd/2.gif', '/projects/Untappd/3.jpg', '/projects/Untappd/4.png', '/projects/Untappd/5.webp', '/projects/Untappd/6.jpg'],
+    metrics: { users: '8M+' },
+    website: 'https://untappd.com'
   },
   {
     id: 'path',
@@ -274,7 +291,8 @@ export const projects: Project[] = [
     status: 'Acquired',
     technologies: ['React Native', 'Node.js', 'MongoDB', 'AWS'],
     images: ['/projects/Path/1.jpg', '/projects/Path/2.webp', '/projects/Path/3.webp'],
-    metrics: { users: '3M+' }
+    metrics: { users: '3M+' },
+    website: 'https://path.com'
   },
   {
     id: 'small-business-bonfire',
@@ -285,8 +303,9 @@ export const projects: Project[] = [
     year: '2021',
     status: 'Active',
     technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS'],
-    images: ['/projects/Small Business Bonfire/1.webp', '/projects/Small Business Bonfire/2.png', '/projects/Small Business Bonfire/3.png'],
-    metrics: { users: '50K+' }
+    images: ['/projects/Small Business Bonfire/1.webp', '/projects/Small Business Bonfire/2.png', '/projects/Small Business Bonfire/3.png', '/projects/Small Business Bonfire/4.png'],
+    metrics: { users: '50K+' },
+    website: 'https://smallbusinessbonfire.com'
   },
   {
     id: 'hellomobility',
@@ -298,7 +317,8 @@ export const projects: Project[] = [
     status: 'Active',
     technologies: ['React Native', 'Node.js', 'MongoDB', 'Google Maps API'],
     images: ['/projects/Hellomobility/1.png', '/projects/Hellomobility/2.png', '/projects/Hellomobility/3.png'],
-    metrics: { users: '200K+' }
+    metrics: { users: '200K+' },
+    website: 'https://hellomobility.jp'
   },
 
   // Media, Entertainment & Content
@@ -312,7 +332,8 @@ export const projects: Project[] = [
     status: 'Active',
     technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL'],
     images: ['/projects/MyAnimeList/1.jpeg', '/projects/MyAnimeList/2.avif', '/projects/MyAnimeList/3.webp'],
-    metrics: { users: '15M+' }
+    metrics: { users: '15M+' },
+    website: 'https://myanimelist.net'
   },
   {
     id: 'marvel-content',
@@ -348,7 +369,8 @@ export const projects: Project[] = [
     status: 'Active',
     technologies: ['React', 'Next.js', 'WordPress', 'AWS'],
     images: ['/projects/VentureBeat/1.jpg', '/projects/VentureBeat/2.png', '/projects/VentureBeat/3.webp'],
-    metrics: { users: '2M+' }
+    metrics: { users: '2M+' },
+    website: 'https://venturebeat.com'
   },
 
   // Business & Productivity Tools
@@ -362,7 +384,8 @@ export const projects: Project[] = [
     status: 'Active',
     technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS', 'HIPAA Compliance'],
     images: ['/projects/Doximity/1.webp', '/projects/Doximity/2.webp', '/projects/Doximity/3.png'],
-    metrics: { users: '2M+' }
+    metrics: { users: '2M+' },
+    website: 'https://doximity.com'
   },
   {
     id: 'eversystem',
@@ -374,7 +397,8 @@ export const projects: Project[] = [
     status: 'Active',
     technologies: ['React', 'Node.js', 'PostgreSQL', 'Docker', 'Kubernetes'],
     images: ['/projects/Eversystem Inc/1.png', '/projects/Eversystem Inc/2.jpeg', '/projects/Eversystem Inc/3.png'],
-    metrics: { users: '100K+' }
+    metrics: { users: '100K+' },
+    website: 'https://evrsystem.com'
   },
   {
     id: 'polywork-business',
@@ -410,7 +434,8 @@ export const projects: Project[] = [
     status: 'Active',
     technologies: ['React', 'TypeScript', 'WebRTC', 'Canvas API', 'Real-time Collaboration'],
     images: ['/projects/Pair/1.jpg', '/projects/Pair/2.jpg', '/projects/Pair/3.jpg'],
-    metrics: { users: '500K+' }
+    metrics: { users: '500K+' },
+    website: 'https://pair.com'
   },
   {
     id: 'ravelry',
@@ -422,7 +447,8 @@ export const projects: Project[] = [
     status: 'Active',
     technologies: ['Ruby on Rails', 'PostgreSQL', 'Redis', 'AWS'],
     images: ['/projects/Ravelry/1.jpg', '/projects/Ravelry/2.jpg', '/projects/Ravelry/3.jpg'],
-    metrics: { users: '8M+' }
+    metrics: { users: '8M+' },
+    website: 'https://ravelry.com'
   },
   {
     id: 'trust-cafe',
@@ -433,8 +459,9 @@ export const projects: Project[] = [
     year: '2022',
     status: 'Active',
     technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS'],
-    images: ['/projects/trust-cafe_0/1.png', '/projects/trust-cafe_0/2.png', '/projects/trust-cafe_0/3.png'],
-    metrics: { users: '50K+' }
+    images: ['/projects/trust-cafe_0/1.png', '/projects/trust-cafe_0/2.png', '/projects/trust-cafe_0/3.png', '/projects/trust-cafe_0/4.png', '/projects/trust-cafe_0/5.png', '/projects/trust-cafe_0/6.webp'],
+    metrics: { users: '50K+' },
+    website: 'https://trust-cafe.com'
   },
   {
     id: 'yummygum',
@@ -446,6 +473,7 @@ export const projects: Project[] = [
     status: 'Active',
     technologies: ['React', 'Next.js', 'Contentful', 'AWS'],
     images: ['/projects/Yummygum/1.webp', '/projects/Yummygum/2.webp', '/projects/Yummygum/3.webp'],
-    metrics: { users: '25K+' }
+    metrics: { users: '25K+' },
+    website: 'https://yummygum.com'
   }
 ];
