@@ -16,45 +16,44 @@ export const SkillsPage: React.FC = () => {
     { id: 'ai', name: 'AI & Machine Learning', color: 'purple' },
     { id: 'web', name: 'Web Development', color: 'cyan' },
     { id: 'android', name: 'Android Development', color: 'green' },
-    { id: 'blockchain', name: 'Blockchain', color: 'blue' },
-    { id: 'management', name: 'Management', color: 'yellow' },
+    { id: 'management', name: 'Backend & Cloud', color: 'blue' },
+    { id: 'leadership', name: 'Management', color: 'yellow' },
   ];
 
   const skills: Skill[] = [
     // AI & Machine Learning
-    { name: 'TensorFlow', level: 5, years: 4, category: 'ai', projects: ['Soundraw', 'BeMyEyes'] },
-    { name: 'PyTorch', level: 4, years: 3, category: 'ai', projects: ['AI Research'] },
-    { name: 'OpenAI API', level: 5, years: 2, category: 'ai', projects: ['ChatBot', 'Content Gen'] },
-    { name: 'LangChain', level: 4, years: 1, category: 'ai', projects: ['RAG System'] },
-    { name: 'Computer Vision', level: 4, years: 3, category: 'ai', projects: ['BeMyEyes', 'AR App'] },
+    { name: 'TensorFlow', level: 5, years: 4, category: 'ai', projects: ['AI Solutions', 'Workflow Automation'] },
+    { name: 'OpenAI API', level: 5, years: 3, category: 'ai', projects: ['AI Integrations', 'Automation Workflows'] },
+    { name: 'AI Model Integration', level: 5, years: 3, category: 'ai', projects: ['Client Systems', 'Internal Tools'] },
+    { name: 'Workflow Automation', level: 5, years: 4, category: 'ai', projects: ['Zapier', 'n8n', 'AI Workflows'] },
 
     // Web Development
-    { name: 'React', level: 5, years: 7, category: 'web', projects: ['Polywork', 'Untappd', 'Portfolio'] },
-    { name: 'Next.js', level: 5, years: 5, category: 'web', projects: ['Yummygum', 'Business Apps'] },
-    { name: 'TypeScript', level: 5, years: 6, category: 'web', projects: ['All Modern Projects'] },
-    { name: 'Node.js', level: 5, years: 8, category: 'web', projects: ['Backend APIs', 'Microservices'] },
-    { name: 'GraphQL', level: 4, years: 4, category: 'web', projects: ['Polywork', 'Data APIs'] },
-    { name: 'Tailwind CSS', level: 5, years: 3, category: 'web', projects: ['UI Libraries', 'Dashboards'] },
+    { name: 'JavaScript', level: 5, years: 8, category: 'web', projects: ['React Apps', 'Node.js Backends'] },
+    { name: 'React', level: 5, years: 6, category: 'web', projects: ['Scalable Web Apps', 'Client Projects'] },
+    { name: 'Node.js', level: 5, years: 7, category: 'web', projects: ['Backend Services', 'REST APIs'] },
+    { name: 'TypeScript', level: 5, years: 5, category: 'web', projects: ['All Modern Projects'] },
+    { name: 'GraphQL', level: 4, years: 4, category: 'web', projects: ['API Design', 'Data APIs'] },
+    { name: 'PHP', level: 4, years: 6, category: 'web', projects: ['Legacy Systems', 'CMS Development'] },
+    { name: 'Python', level: 4, years: 4, category: 'web', projects: ['AI Integration', 'Automation Scripts'] },
 
     // Android Development
-    { name: 'Kotlin', level: 5, years: 6, category: 'android', projects: ['BeMyEyes', 'AR Shopping'] },
-    { name: 'Java', level: 4, years: 10, category: 'android', projects: ['Legacy Apps'] },
-    { name: 'Jetpack Compose', level: 4, years: 2, category: 'android', projects: ['Modern Apps'] },
-    { name: 'Firebase', level: 5, years: 5, category: 'android', projects: ['Real-time Apps'] },
-    { name: 'ARCore', level: 4, years: 2, category: 'android', projects: ['AR Shopping', '3D Apps'] },
+    { name: 'Kotlin', level: 5, years: 6, category: 'android', projects: ['Modern Android Apps', 'Client Projects'] },
+    { name: 'Java', level: 4, years: 7, category: 'android', projects: ['Legacy Apps', 'Enterprise Solutions'] },
+    { name: 'Android Development', level: 5, years: 7, category: 'android', projects: ['Cross-platform Apps', 'UI/UX Optimization'] },
+    { name: 'Cross-platform Development', level: 4, years: 4, category: 'android', projects: ['Mobile Solutions', 'Client Apps'] },
 
-    // Blockchain
-    { name: 'Solidity', level: 4, years: 3, category: 'blockchain', projects: ['Smart Contracts'] },
-    { name: 'Rust', level: 3, years: 2, category: 'blockchain', projects: ['Astar Network'] },
-    { name: 'Substrate', level: 3, years: 2, category: 'blockchain', projects: ['Astar Network'] },
-    { name: 'Web3.js', level: 4, years: 3, category: 'blockchain', projects: ['DApps', 'Wallets'] },
-    { name: 'DeFi Protocols', level: 3, years: 2, category: 'blockchain', projects: ['Trading Bots'] },
 
+    // Backend & Cloud
+    { name: 'AWS', level: 5, years: 6, category: 'management', projects: ['Cloud Infrastructure', 'Server Setup'] },
+    { name: 'Docker', level: 4, years: 4, category: 'management', projects: ['Containerization', 'Deployment'] },
+    { name: 'MySQL', level: 4, years: 6, category: 'management', projects: ['Database Design', 'Data Management'] },
+    { name: 'MongoDB', level: 4, years: 4, category: 'management', projects: ['NoSQL Solutions', 'Data Storage'] },
+    
     // Management
-    { name: 'Agile/Scrum', level: 5, years: 8, category: 'management', projects: ['All Projects'] },
-    { name: 'Team Leadership', level: 5, years: 6, category: 'management', projects: ['Multiple Teams'] },
-    { name: 'Client Communication', level: 5, years: 10, category: 'management', projects: ['Client Projects'] },
-    { name: 'Project Planning', level: 5, years: 8, category: 'management', projects: ['Enterprise Projects'] },
+    { name: 'Agile/Scrum', level: 5, years: 7, category: 'leadership', projects: ['Team Management', 'Project Delivery'] },
+    { name: 'Team Leadership', level: 5, years: 5, category: 'leadership', projects: ['Cross-functional Teams', 'Mentoring'] },
+    { name: 'Client Communication', level: 5, years: 8, category: 'leadership', projects: ['International Clients', 'Requirement Analysis'] },
+    { name: 'Project Management', level: 5, years: 7, category: 'leadership', projects: ['50+ Projects', 'Timely Delivery'] },
   ];
 
   const filteredSkills = selectedCategory === 'all' 
@@ -85,7 +84,7 @@ export const SkillsPage: React.FC = () => {
             </span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            My expertise across AI, web development, mobile, blockchain, and team leadership
+            My expertise across AI, web development, mobile, and team leadership
           </p>
         </div>
 
@@ -167,7 +166,7 @@ export const SkillsPage: React.FC = () => {
         {/* Summary Stats */}
         <div className="mt-16 grid md:grid-cols-4 gap-6">
           {[
-            { label: 'Years of Experience', value: '10+', color: 'blue' },
+            { label: 'Years of Experience', value: '9+', color: 'blue' },
             { label: 'Technologies Mastered', value: skills.length.toString(), color: 'purple' },
             { label: 'Expert Level Skills', value: skills.filter(s => s.level === 5).length.toString(), color: 'cyan' },
             { label: 'Active Categories', value: '5', color: 'green' }

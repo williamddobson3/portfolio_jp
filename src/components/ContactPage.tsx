@@ -15,7 +15,6 @@ export const ContactPage: React.FC = () => {
     'AI/ML Development',
     'Web Application',
     'Android Application',
-    'Blockchain/Web3',
     'Full Stack Project',
     'Team Leadership',
     'Consulting',

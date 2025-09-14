@@ -1,112 +1,13 @@
 import React, { useState } from 'react';
 import { ExternalLink, Github, Calendar, Users } from 'lucide-react';
-
-interface Project {
-  id: string;
-  title: string;
-  category: string;
-  description: string;
-  role: string;
-  year: string;
-  status: string;
-  technologies: string[];
-  image: string;
-  metrics?: {
-    users?: string;
-    downloads?: string;
-    awards?: string;
-  };
-}
+import { projects, projectCategories, Project } from '../data/projects';
 
 export const ProjectsPage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  const categories = [
-    { id: 'all', name: 'All Projects', color: 'blue' },
-    { id: 'social', name: 'Social & Community', color: 'pink' },
-    { id: 'arvr', name: 'AR/VR/3D', color: 'cyan' },
-    { id: 'blockchain', name: 'Blockchain & Web3', color: 'blue' },
-    { id: 'ai', name: 'AI/ML Tools', color: 'purple' },
-    { id: 'consumer', name: 'Consumer Apps', color: 'green' },
-    { id: 'media', name: 'Media & Entertainment', color: 'orange' },
-    { id: 'business', name: 'Business & Productivity', color: 'gray' },
-  ];
+  const categories = projectCategories;
 
-  // Sample projects - replace with your actual project data
-  const projects: Project[] = [
-    {
-      id: '1',
-      title: 'BeMyEyes',
-      category: 'social',
-      description: 'Accessibility app connecting blind and visually impaired users with volunteers worldwide.',
-      role: 'Android Lead Developer',
-      year: '2024',
-      status: 'Launched',
-      technologies: ['Kotlin', 'TensorFlow', 'WebRTC', 'Firebase'],
-      image: 'https://images.pexels.com/photos/5077047/pexels-photo-5077047.jpeg?auto=compress&cs=tinysrgb&w=800',
-      metrics: { users: '10M+', awards: '3 International Awards' }
-    },
-    {
-      id: '2',
-      title: 'Astar Network',
-      category: 'blockchain',
-      description: 'Multi-chain smart contract platform enabling interoperability between different blockchains.',
-      role: 'Full Stack Engineer',
-      year: '2023',
-      status: 'Active',
-      technologies: ['Rust', 'Substrate', 'React', 'Web3.js'],
-      image: 'https://images.pexels.com/photos/8369648/pexels-photo-8369648.jpeg?auto=compress&cs=tinysrgb&w=800',
-      metrics: { users: '500K+' }
-    },
-    {
-      id: '3',
-      title: 'Soundraw AI',
-      category: 'ai',
-      description: 'AI-powered music generation platform for content creators and musicians.',
-      role: 'AI Engineer & PM',
-      year: '2023',
-      status: 'Launched',
-      technologies: ['Python', 'TensorFlow', 'React', 'Node.js'],
-      image: 'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=800',
-      metrics: { users: '2M+', downloads: '5M+' }
-    },
-    {
-      id: '4',
-      title: 'Untappd',
-      category: 'social',
-      description: 'Social discovery platform for beer enthusiasts with rating and review system.',
-      role: 'Frontend Developer',
-      year: '2022',
-      status: 'Launched',
-      technologies: ['React', 'Redux', 'Node.js', 'PostgreSQL'],
-      image: 'https://images.pexels.com/photos/1267279/pexels-photo-1267279.jpeg?auto=compress&cs=tinysrgb&w=800',
-      metrics: { users: '8M+' }
-    },
-    {
-      id: '5',
-      title: 'AR Shopping Experience',
-      category: 'arvr',
-      description: 'Immersive AR application for furniture visualization in home spaces.',
-      role: 'AR/Android Developer',
-      year: '2022',
-      status: 'Beta',
-      technologies: ['Unity', 'ARCore', 'Kotlin', 'Cloud Anchors'],
-      image: 'https://images.pexels.com/photos/7887804/pexels-photo-7887804.jpeg?auto=compress&cs=tinysrgb&w=800'
-    },
-    {
-      id: '6',
-      title: 'Polywork Platform',
-      category: 'business',
-      description: 'Professional networking platform showcasing diverse career achievements.',
-      role: 'Full Stack Developer',
-      year: '2021',
-      status: 'Acquired',
-      technologies: ['Next.js', 'GraphQL', 'PostgreSQL', 'AWS'],
-      image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800'
-    }
-    // Add more projects here...
-  ];
 
   const filteredProjects = selectedCategory === 'all' 
     ? projects 
@@ -123,7 +24,7 @@ export const ProjectsPage: React.FC = () => {
             </span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Explore my constellation of projects spanning AI, blockchain, mobile, and web development
+            Explore my portfolio of 30+ projects across social platforms, AR/VR experiences, AI tools, consumer apps, media platforms, and business solutions
           </p>
         </div>
 
@@ -155,7 +56,7 @@ export const ProjectsPage: React.FC = () => {
             >
               <div className="aspect-video overflow-hidden">
                 <img
-                  src={project.image}
+                  src={project.images[0]}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -219,14 +120,14 @@ export const ProjectsPage: React.FC = () => {
             <div className="relative">
               <button
                 onClick={() => setSelectedProject(null)}
-                className="absolute top-6 right-6 text-white/70 hover:text-white z-10"
+                className="absolute top-6 right-6 w-10 h-10 bg-red-500/20 hover:bg-red-500/30 text-red-400 hover:text-red-300 rounded-full flex items-center justify-center transition-all duration-300 z-10 border border-red-500/30 hover:border-red-500/50"
               >
                 ✕
               </button>
               
               <div className="aspect-video overflow-hidden rounded-t-3xl">
                 <img
-                  src={selectedProject.image}
+                  src={selectedProject.images[0]}
                   alt={selectedProject.title}
                   className="w-full h-full object-cover"
                 />
@@ -286,14 +187,28 @@ export const ProjectsPage: React.FC = () => {
                 )}
                 
                 <div className="flex space-x-4">
-                  <button className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors">
-                    <ExternalLink size={18} />
-                    <span>Live Demo</span>
-                  </button>
-                  <button className="flex items-center space-x-2 bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg transition-colors">
-                    <Github size={18} />
-                    <span>View Code</span>
-                  </button>
+                  {selectedProject.website && (
+                    <a 
+                      href={selectedProject.website} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors"
+                    >
+                      <ExternalLink size={18} />
+                      <span>Live Demo</span>
+                    </a>
+                  )}
+                  {selectedProject.github && (
+                    <a 
+                      href={selectedProject.github} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-2 bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg transition-colors"
+                    >
+                      <Github size={18} />
+                      <span>View Code</span>
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

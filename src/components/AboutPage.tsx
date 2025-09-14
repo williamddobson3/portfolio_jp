@@ -15,68 +15,42 @@ export const AboutPage: React.FC = () => {
 
   const timeline: TimelineEvent[] = [
     {
-      year: '2024',
-      title: 'Leading AI Innovation',
-      description: 'Currently leading engineering teams and developing cutting-edge AI solutions.',
-      location: 'Japan',
+      year: '2023-Present',
+      title: 'Freelance Engineer & Project Manager',
+      description: 'Leading distributed teams to deliver web, AI, and Android projects worldwide.',
+      location: 'Japan / Remote',
       type: 'milestone',
       highlights: [
-        'Leading 8-person engineering team',
-        'Developing proprietary AI tools',
-        'Building unique and special projects',
-        'Maintaining 98% client satisfaction rate'
+        'Leading distributed team of developers and designers',
+        'Built AI-powered automation workflows',
+        'Developed Android applications with modern UI/UX',
+        'Managed client communications via CrowdWorks and Upwork'
       ]
     },
     {
-      year: '2023',
-      title: 'Blockchain & AI Integration',
-      description: 'Expanded into blockchain development while maintaining AI expertise.',
-      location: 'Japan',
-      type: 'achievement',
-      highlights: [
-        'Contributed to Astar Network ecosystem',
-        'Launched Soundraw AI platform',
-        'Built cross-chain applications',
-        'Integrated ML models with blockchain'
-      ]
-    },
-    {
-      year: '2020',
-      title: 'Return to Japan & New Challenges',
-      description: 'Moved back to Japan and started new ventures in the local market.',
-      location: 'Japan',
-      type: 'milestone',
-      highlights: [
-        'Established Japan-based operations',
-        'Built trust with Japanese clients',
-        'Adapted to local business culture',
-        'Started CrowdWorks engagement'
-      ]
-    },
-    {
-      year: '2013-2020',
-      title: 'Malaysian Freelance Era',
-      description: '7 years of international freelance work building global relationships.',
-      location: 'Malaysia',
+      year: '2016-Present',
+      title: 'International Freelance Engineer',
+      description: 'Delivering projects remotely to clients in Malaysia, Singapore & worldwide.',
+      location: 'Japan / Remote',
       type: 'work',
       highlights: [
-        'Worked with 50+ international clients',
-        'Built remote team management skills',
-        'Mastered cross-cultural communication',
-        'Developed expertise in multiple tech stacks'
+        'Delivered 50+ projects in web, mobile, and AI automation',
+        'Specialized in full-stack development and AI solutions',
+        'Managed international client communications across time zones',
+        'Implemented automation workflows using Zapier, n8n, and OpenAI API'
       ]
     },
     {
-      year: '2003-2013',
-      title: 'Foundation Years',
-      description: '10 years as a dedicated company employee building core skills.',
-      location: 'Japan',
+      year: '2015-2023',
+      title: 'Software Engineer & Project Manager',
+      description: 'Full-stack and Android engineer at Rakuten, later promoted to project manager.',
+      location: 'Rakuten, Japan',
       type: 'work',
       highlights: [
-        'Learned responsibility and reliability',
-        'Built strong work ethics',
-        'Developed project management skills',
-        'Established industry connections'
+        'Designed and implemented scalable web applications',
+        'Built backend services, REST/GraphQL APIs, and cloud infrastructure',
+        'Led cross-functional teams and collaborated with UI/UX designers',
+        'Developed AI-based solutions and workflow automation'
       ]
     }
   ];
@@ -89,7 +63,7 @@ export const AboutPage: React.FC = () => {
     },
     {
       title: 'Innovation Focus',
-      description: 'Always pushing boundaries with cutting-edge AI, blockchain, and mobile technologies.',
+      description: 'Always pushing boundaries with cutting-edge AI and mobile technologies.',
       icon: '🚀'
     },
     {
@@ -115,8 +89,8 @@ export const AboutPage: React.FC = () => {
             </span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            From 10 years of corporate experience to 7 years of international freelancing, 
-            now leading innovative projects that bridge AI, blockchain, and mobile development.
+            With 9+ years of experience spanning corporate engineering at Rakuten and international freelancing, 
+            now leading distributed teams to deliver AI, web, and mobile solutions worldwide.
           </p>
         </div>
 
@@ -133,7 +107,17 @@ export const AboutPage: React.FC = () => {
                 Open for new collaborations
               </div>
             </div>
-            <button className="flex items-center space-x-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white px-6 py-3 rounded-xl transition-all duration-300">
+            <button 
+              className="flex items-center space-x-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white px-6 py-3 rounded-xl transition-all duration-300"
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = '/resume.pdf';
+                link.download = 'Satoshi_Kobayashi_Resume.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+            >
               <Download size={20} />
               <span>Download Resume</span>
             </button>
@@ -225,8 +209,8 @@ export const AboutPage: React.FC = () => {
         {/* Stats */}
         <div className="grid md:grid-cols-4 gap-6">
           {[
-            { label: 'Years of Experience', value: '20+', icon: Calendar },
-            { label: 'Projects Completed', value: '150+', icon: Award },
+            { label: 'Years of Experience', value: '9+', icon: Calendar },
+            { label: 'Projects Completed', value: '50+', icon: Award },
             { label: 'Team Members Led', value: '50+', icon: Users },
             { label: 'Countries Worked', value: '15+', icon: MapPin }
           ].map((stat, index) => (
@@ -245,8 +229,8 @@ export const AboutPage: React.FC = () => {
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
               "Continue creating unique and special projects that push the boundaries of technology, 
               while maintaining the trust and integrity that has been the foundation of my career. 
-              My goal is to deliver exceptional value to clients worldwide through innovative AI, 
-              blockchain, and mobile solutions."
+              My goal is to deliver exceptional value to clients worldwide through innovative AI 
+              and mobile solutions."
             </p>
           </div>
         </div>

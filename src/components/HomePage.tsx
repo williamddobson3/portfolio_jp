@@ -3,7 +3,7 @@ import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
 
 export const HomePage: React.FC = () => {
   const [textIndex, setTextIndex] = useState(0);
-  const titles = ['AI Engineer', 'Web Developer', 'Android Developer', 'Blockchain Expert'];
+  const titles = ['AI Engineer', 'Web Developer', 'Android Developer'];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -16,8 +16,7 @@ export const HomePage: React.FC = () => {
     { name: 'AI/ML', color: 'purple', delay: 0 },
     { name: 'React', color: 'blue', delay: 1 },
     { name: 'Android', color: 'green', delay: 2 },
-    { name: 'Blockchain', color: 'cyan', delay: 3 },
-    { name: 'Node.js', color: 'emerald', delay: 4 },
+    { name: 'Node.js', color: 'emerald', delay: 3 },
   ];
 
   return (
@@ -33,7 +32,7 @@ export const HomePage: React.FC = () => {
                 left: '50%',
                 top: '50%',
                 animation: `orbit 20s linear infinite`,
-                animationDelay: `${node.delay * 4}s`
+                animationDelay: `${node.delay * 5}s`
               }}
             >
               <div className={`w-full h-full bg-${node.color}-500/20 border-2 border-${node.color}-500/50 rounded-full flex items-center justify-center backdrop-blur-sm hover:scale-110 transition-transform duration-300 cursor-pointer`}>
@@ -50,7 +49,7 @@ export const HomePage: React.FC = () => {
         <div className="mb-8">
           <h1 className="text-6xl md:text-8xl font-bold text-white mb-4 tracking-tight">
             <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent">
-              Kenta Sato
+              Satoshi Kobayashi
             </span>
           </h1>
           
@@ -65,8 +64,7 @@ export const HomePage: React.FC = () => {
         {/* Tagline */}
         <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
           Building future-ready experiences with{' '}
-          <span className="text-purple-400 font-semibold">AI</span>,{' '}
-          <span className="text-blue-400 font-semibold">Blockchain</span>, and{' '}
+          <span className="text-purple-400 font-semibold">AI</span> and{' '}
           <span className="text-cyan-400 font-semibold">Immersive Web</span>
         </p>
 
@@ -114,7 +112,7 @@ export const HomePage: React.FC = () => {
         <ChevronDown className="text-white/50" size={32} />
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes orbit {
           from {
             transform: rotate(0deg) translateX(150px) rotate(0deg);
