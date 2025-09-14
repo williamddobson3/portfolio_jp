@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
-import { ExternalLink, Github, Calendar, Users } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { ExternalLink, Github, Calendar, Users, ChevronLeft, ChevronRight } from 'lucide-react';
 import { projects, projectCategories, Project } from '../data/projects';
 
 export const ProjectsPage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState<{ [key: string]: number }>({});
+  const [modalImageIndex, setModalImageIndex] = useState(0);
 
   const categories = projectCategories;
 
@@ -12,6 +14,65 @@ export const ProjectsPage: React.FC = () => {
   const filteredProjects = selectedCategory === 'all' 
     ? projects 
     : projects.filter(p => p.category === selectedCategory);
+
+  // Auto-rotate images for project cards
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex(prev => {
+        const newIndex = { ...prev };
+        filteredProjects.forEach(project => {
+          if (project.images.length > 1) {
+            newIndex[project.id] = ((newIndex[project.id] || 0) + 1) % project.images.length;
+          }
+        });
+        return newIndex;
+      });
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [filteredProjects]);
+
+  const handleImageClick = (project: Project, imageIndex: number) => {
+    setSelectedProject(project);
+    setModalImageIndex(imageIndex);
+  };
+
+  // Reset modal image index when project changes
+  useEffect(() => {
+    if (selectedProject) {
+      setModalImageIndex(0);
+    }
+  }, [selectedProject]);
+
+  // Keyboard navigation for modal
+  useEffect(() => {
+    const handleKeyPress = (e: KeyboardEvent) => {
+      if (selectedProject && selectedProject.images.length > 1) {
+        if (e.key === 'ArrowLeft') {
+          prevModalImage();
+        } else if (e.key === 'ArrowRight') {
+          nextModalImage();
+        }
+      }
+    };
+
+    if (selectedProject) {
+      document.addEventListener('keydown', handleKeyPress);
+      return () => document.removeEventListener('keydown', handleKeyPress);
+    }
+  }, [selectedProject, modalImageIndex]);
+
+  const nextModalImage = () => {
+    if (selectedProject) {
+      setModalImageIndex((prev) => (prev + 1) % selectedProject.images.length);
+    }
+  };
+
+  const prevModalImage = () => {
+    if (selectedProject) {
+      setModalImageIndex((prev) => (prev - 1 + selectedProject.images.length) % selectedProject.images.length);
+    }
+  };
 
   return (
     <div className="min-h-screen pt-24 pb-12 px-6">
@@ -54,12 +115,49 @@ export const ProjectsPage: React.FC = () => {
               style={{ animationDelay: `${index * 100}ms` }}
               onClick={() => setSelectedProject(project)}
             >
-              <div className="aspect-video overflow-hidden">
-                <img
-                  src={project.images[0]}
-                  alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
+              <div className="aspect-video overflow-hidden relative">
+                <div className="relative w-full h-full">
+                  {project.images.map((image, imgIndex) => (
+                    <img
+                      key={imgIndex}
+                      src={image}
+                      alt={`${project.title} - Image ${imgIndex + 1}`}
+                      className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-in-out ${
+                        (currentImageIndex[project.id] || 0) === imgIndex
+                          ? 'opacity-100 scale-100'
+                          : 'opacity-0 scale-105'
+                      } group-hover:scale-110`}
+                      onClick={() => handleImageClick(project, imgIndex)}
+                    />
+                  ))}
+                  
+                  {/* Image indicators */}
+                  {project.images.length > 1 && (
+                    <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                      {project.images.map((_, imgIndex) => (
+                        <button
+                          key={imgIndex}
+                          className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                            (currentImageIndex[project.id] || 0) === imgIndex
+                              ? 'bg-white scale-125'
+                              : 'bg-white/50 hover:bg-white/75'
+                          }`}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setCurrentImageIndex(prev => ({ ...prev, [project.id]: imgIndex }));
+                          }}
+                        />
+                      ))}
+                    </div>
+                  )}
+                  
+                  {/* Image counter */}
+                  {project.images.length > 1 && (
+                    <div className="absolute top-3 right-3 bg-black/50 backdrop-blur-sm text-white text-xs px-2 py-1 rounded-full">
+                      {(currentImageIndex[project.id] || 0) + 1} / {project.images.length}
+                    </div>
+                  )}
+                </div>
               </div>
               
               <div className="p-6">
@@ -125,12 +223,63 @@ export const ProjectsPage: React.FC = () => {
                 ✕
               </button>
               
-              <div className="aspect-video overflow-hidden rounded-t-3xl">
-                <img
-                  src={selectedProject.images[0]}
-                  alt={selectedProject.title}
-                  className="w-full h-full object-cover"
-                />
+              <div className="aspect-video overflow-hidden rounded-t-3xl relative">
+                <div className="relative w-full h-full">
+                  {selectedProject.images.map((image, imgIndex) => (
+                    <img
+                      key={imgIndex}
+                      src={image}
+                      alt={`${selectedProject.title} - Image ${imgIndex + 1}`}
+                      className={`absolute inset-0 w-full h-full object-cover transition-all duration-500 ease-in-out ${
+                        modalImageIndex === imgIndex
+                          ? 'opacity-100 scale-100'
+                          : 'opacity-0 scale-105'
+                      }`}
+                    />
+                  ))}
+                  
+                  {/* Navigation arrows */}
+                  {selectedProject.images.length > 1 && (
+                    <>
+                      <button
+                        onClick={prevModalImage}
+                        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-300 hover:scale-110"
+                      >
+                        <ChevronLeft size={20} />
+                      </button>
+                      <button
+                        onClick={nextModalImage}
+                        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-300 hover:scale-110"
+                      >
+                        <ChevronRight size={20} />
+                      </button>
+                    </>
+                  )}
+                  
+                  {/* Image indicators */}
+                  {selectedProject.images.length > 1 && (
+                    <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                      {selectedProject.images.map((_, imgIndex) => (
+                        <button
+                          key={imgIndex}
+                          className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                            modalImageIndex === imgIndex
+                              ? 'bg-white scale-125'
+                              : 'bg-white/50 hover:bg-white/75'
+                          }`}
+                          onClick={() => setModalImageIndex(imgIndex)}
+                        />
+                      ))}
+                    </div>
+                  )}
+                  
+                  {/* Image counter */}
+                  {selectedProject.images.length > 1 && (
+                    <div className="absolute top-4 left-4 bg-black/50 backdrop-blur-sm text-white text-sm px-3 py-1 rounded-full">
+                      {modalImageIndex + 1} / {selectedProject.images.length}
+                    </div>
+                  )}
+                </div>
               </div>
               
               <div className="p-8">
