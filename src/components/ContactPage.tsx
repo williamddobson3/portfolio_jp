@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Linkedin, Github, Send, Clock, CheckCircle } from 'lucide-react';
+import { Mail, Github, Send, Clock, CheckCircle, MessageCircle, Users } from 'lucide-react';
 
 export const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -24,24 +24,31 @@ export const ContactPage: React.FC = () => {
   const socialLinks = [
     {
       name: 'Email',
-      href: 'mailto:your.email@example.com',
+      href: 'mailto:satoshiengineer92@gmail.com',
       icon: Mail,
       description: 'Direct email contact',
       color: 'blue'
     },
     {
-      name: 'LinkedIn',
-      href: 'https://linkedin.com/in/yourprofile',
-      icon: Linkedin,
-      description: 'Professional network',
-      color: 'blue'
-    },
-    {
       name: 'GitHub',
-      href: 'https://github.com/yourusername',
+      href: 'https://github.com/williamddobson3',
       icon: Github,
       description: 'Code repositories',
       color: 'gray'
+    },
+    {
+      name: 'Telegram',
+      href: 'https://t.me/ErosPhoenix',
+      icon: MessageCircle,
+      description: 'Quick messaging',
+      color: 'cyan'
+    },
+    {
+      name: 'Discord',
+      href: 'https://discord.com/users/cupid076831',
+      icon: Users,
+      description: 'Gaming & chat',
+      color: 'purple'
     }
   ];
 

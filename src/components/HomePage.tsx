@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ChevronDown, Github, Mail, MessageCircle, Users } from 'lucide-react';
 
 export const HomePage: React.FC = () => {
   const [textIndex, setTextIndex] = useState(0);
@@ -91,13 +91,16 @@ export const HomePage: React.FC = () => {
         {/* Social Links */}
         <div className="flex justify-center space-x-8">
           {[
-            { Icon: Github, href: '#', label: 'GitHub' },
-            { Icon: Linkedin, href: '#', label: 'LinkedIn' },
-            { Icon: Mail, href: '#', label: 'Contact' }
+            { Icon: Github, href: 'https://github.com/williamddobson3', label: 'GitHub' },
+            { Icon: Mail, href: 'mailto:satoshiengineer92@gmail.com', label: 'Email' },
+            { Icon: MessageCircle, href: 'https://t.me/ErosPhoenix', label: 'Telegram' },
+            { Icon: Users, href: 'https://discord.com/users/cupid076831', label: 'Discord' }
           ].map(({ Icon, href, label }) => (
             <a
               key={label}
               href={href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors duration-300 transform hover:scale-110"
               aria-label={label}
             >
