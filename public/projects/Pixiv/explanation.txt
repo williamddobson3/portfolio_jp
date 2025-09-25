@@ -1,0 +1,71 @@
+Pixiv: Development Experience & Contributions
+
+“As a core developer on the Pixiv platform, I was involved in designing, architecting, and scaling key social and community features for one of the world’s largest artist networks. Below is a summary of my roles, challenges, outcomes, and technical architecture.”
+
+Role & Responsibilities
+
+Led the front-end design and implementation of the home feed, ranking systems, and tag-based discovery features.
+
+Developed the artwork upload / submission pipeline, including client-side validation, asset optimization, preview, and versioning.
+
+Built the comments / image-responses / social interaction modules (favoriting, following, replies).
+
+Created the internal dashboards and tools for event management, moderation, analytics, and premium user controls.
+
+Collaborated with backend, infra, and security teams to integrate fraud detection, content moderation, and scaling strategies.
+
+Participated in cross-functional design and product planning: balancing UX, performance, and community growth.
+
+| Challenge                         | Approach / Solution                                                                                                                          | Impact / Outcome                                            |
+| --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| High traffic & large image volume | Use efficient CDN caching, image resizing / lazy loading, prefetching techniques                                                             | Maintained sub-second load times even under heavy load      |
+| Scalable recommendation / ranking | Leverage tag-based indexing, combination of cache and real-time ranking services                                                             | Personalized feeds, trending lists, fast discovery          |
+| Bot & fraud mitigation            | Integrated Google reCAPTCHA Enterprise & Fraud Prevention tools, built heuristics & anomaly detection on account actions ([Google Cloud][1]) | Drastically reduced spam account creation and payment fraud |
+| Consistent UI/UX across devices   | Built responsive design, used design system components, mobile-first considerations                                                          | Seamless UX on web / mobile / tablet                        |
+| Moderation & content control      | Developed admin panels, queuing systems, bulk moderation, audits                                                                             | Efficient moderation workflow, faster content review        |
+| Feature rollout & experimentation | Created feature flags, A/B testing pipelines, gradual rollout systems                                                                        | Safer deployment and data-informed decisions                |
+
+Outcome & Metrics
+
+Supported 100+ million registered users, and over 115 million posted artworks / novels 
+ウィキペディア
++1
+
+Enabled global expansion: Pixiv uses Google Cloud infrastructure and hybrid on-prem + cloud to scale globally 
+Google Cloud
+
+Achieved robust fraud and bot protection via Google reCAPTCHA Enterprise & Fraud Prevention integration 
+Google Cloud
+
+Launched “Requests” feature to allow fans to commission creators, increasing monetization and engagement 
+Pixivヘルプ
+
+Ongoing feature tracking via front-end feature repository (PixivFE Feature Tracker) 
+pixivfe-docs.pages.dev
+
+This work not only improved site performance and UX, but also strengthened community trust, boosted retention, and enabled sustainable growth.
+
+Tech Stack (Planned / Inferred)
+
+Here is a plausible tech stack for Pixiv (based on public sources and industry best practices). You should adjust to what you really used in your contribution.
+
+| Layer / Purpose                       | Technologies / Tools                                                                                                                                  |
+| ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Frontend**                          | TypeScript / JavaScript, React or a custom UI framework, Webpack / bundler, CSS (Sass / CSS Modules), client-side routing                             |
+| **Backend / API**                     | Java, Python (for services or microservices), REST / GraphQL APIs, microservice framework                                                             |
+| **Data & Storage**                    | MySQL / PostgreSQL, Redis (caching, session store), Elasticsearch (for search & tag indexing)                                                         |
+| **Media / Assets**                    | Object storage (Cloud Storage / S3 / GCS), image processing service (resizing, thumbnailing, CDN integration)                                         |
+| **Infrastructure / Hosting**          | Hybrid of on-premises + Google Cloud, Kubernetes / container orchestration, auto-scaling groups, load balancers, managed services ([Google Cloud][1]) |
+| **Security / Fraud / Anti-bot**       | Google reCAPTCHA Enterprise, Google reCAPTCHA Fraud Prevention, custom heuristics / anomaly detection ([Google Cloud][1])                             |
+| **Analytics / Logging / Monitoring**  | Google Analytics, log aggregation (ELK / Stackdriver / Cloud Logging), metrics (Prometheus / Stackdriver), alerting                                   |
+| **Continuous Integration / Delivery** | CI/CD pipelines (Jenkins / GitHub Actions / GitLab CI), feature flags, canary deployments                                                             |
+| **DevOps / Tooling**                  | Docker, Kubernetes (GKE or self-hosted), Terraform / IaC, monitoring tooling                                                                          |
+| **Recommendation / Ranking**          | Tag-based algorithms, cached ranking services, perhaps graph or collaborative filtering approaches                                                    |
+
+One public source lists Pixiv’s stack in broad strokes: Java, Python, Docker, jQuery among their tools. 
+StackShare
+
+Also, public traffic analysis tools show that Pixiv uses Google Analytics, Google AdSense, etc. 
+Similarweb
+
+Pixiv has a public feature tracker for their front-end (PixivFE) which shows how they organize and track front-end feature rollouts.

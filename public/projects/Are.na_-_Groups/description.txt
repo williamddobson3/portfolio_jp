@@ -1,0 +1,99 @@
+Are.na is a collaborative, visual research and organization platform. Think of it as something between Pinterest, a notebook, and a knowledge network.
+
+Here’s a breakdown:
+
+🧩 What it is
+
+A tool for collecting and organizing ideas: Users can save links, images, videos, text, and files (called blocks).
+
+Networked knowledge: Each block can be placed into collections called channels. Channels can be public or private.
+
+Collaborative: People can share channels, invite collaborators, and build knowledge bases together.
+
+Minimalist, ad-free design: Unlike social media, Are.na doesn’t have likes, follower counts, or algorithms. It’s slower, more intentional, and designed for thinking.
+
+🔑 Key features
+
+Blocks: The basic unit (a saved link, file, image, text, etc.).
+
+Channels: Collections of blocks, which can be private (personal research), public (share with the world), or collaborative (invite others).
+
+Connections: Blocks and channels can be linked, forming a web of knowledge.
+
+Search & Discovery: You can explore other people’s public channels to see how they’ve organized their research.
+
+🌍 Who uses it
+
+Designers, artists, researchers, writers, and educators often use Are.na to:
+
+Collect inspiration
+
+Do research
+
+Create mood boards
+
+Organize project references
+
+Build personal knowledge libraries
+
+💡 Philosophy
+
+Are.na was created as an alternative to algorithm-driven social media.
+
+The focus is on slowing down, making connections, and treating information as material for thought, rather than chasing engagement.
+
+Made by
+
+CMS
+
+Contentful
+Analytics
+
+Fathom
+JavaScript frameworks
+
+React
+
+Stitches
+
+Next.js
+15.3.2
+Security
+
+HSTS
+
+reCAPTCHA
+Web frameworks
+
+Next.js
+15.3.2
+Miscellaneous
+
+Webpack
+
+PWA
+Web servers
+
+Next.js
+15.3.2
+CDN
+
+Cloudflare
+Development
+
+Stitches
+Static site generators
+
+Next.js
+15.3.2
+PaaS
+
+Amazon Web Services
+
+Vercel
+UI frameworks
+
+Radix UI
+Performance
+
+Cloudflare Rocket Loader

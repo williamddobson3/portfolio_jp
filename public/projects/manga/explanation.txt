@@ -1,0 +1,16 @@
+
+“From zero to launch: building MangaONE”
+
+During the initial phase, we set up the backend APIs and object storage for chapter pages, and integrated a global CDN to ensure fast load times for readers across Japan (and potentially overseas).
+
+The challenge was handling high concurrency: when a new popular manga chapter drops, thousands of users may access it simultaneously. We designed a caching + load-balancer + auto-scaling architecture to mitigate this.
+
+For the “free reads / lives” system, we built a small stateful service that maintains users’ remaining reads per day, resets at scheduled times (9 AM / 9 PM), and is consistent under concurrent access.
+
+Mobile support involved writing native iOS/Android apps that sync reading progress, prefetch several pages ahead, and gracefully handle offline / network transitions.
+
+Content management (CMS) enabled editors to upload new manga pages, set metadata, schedule publication, and preview before making live.
+
+Performance tuning focused on optimizing image formats, enabling progressive loading, using lazy loading, and compressing images smartly while preserving clarity.
+
+Monitoring & continuous improvement allowed us to catch slow endpoints, track user drop-off points, refine recommendation heuristics, and plan capacity scaling.
