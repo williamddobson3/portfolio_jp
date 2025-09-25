@@ -22,8 +22,8 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
     const translations: Record<string, Record<Language, string>> = {
       // HomePage
       'home.title': {
-        en: 'Satoshi Kobayashi',
-        ja: '小林 聡'
+        en: 'Keishin Mie',
+        ja: '三重 慧心'
       },
       'home.subtitle.ai': {
         en: 'AI Engineer',
