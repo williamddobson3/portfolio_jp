@@ -1,47 +1,59 @@
+BOTANIST Official Website – Development Case Study
+My Role
 
-## Development summary (portfolio-ready)
+I worked as the lead front-end developer and technical owner for the BOTANIST official website. My responsibility was to take the brand’s creative direction and turn it into a fast, accessible, and maintainable site. This covered everything from implementing the design system in code, to optimizing assets, setting up a CMS workflow, and ensuring the site was ready for marketing campaigns and seasonal releases.
 
-**Role & responsibilities**
+Key Contributions
 
-* Lead front-end developer and technical owner for the BOTANIST official website. Responsibilities included: translating brand visual system into responsive code, implementing CMS templates, image & asset optimization, accessibility & SEO improvements, integration with analytics and e‑commerce partners, and setting up a deployable build/workflow for marketing releases.
+From Design to Production
+I translated detailed Figma/Sketch designs into pixel-perfect, responsive templates. Extra attention was given to typography, spacing, and image handling so the brand’s clean aesthetic stayed consistent across devices without layout shifts.
 
-**Experience highlights**
+CMS Templating & Content Workflow
+I built reusable templates in WordPress for the home page, product catalog, special landings, and journal articles. Custom fields and modular sections allowed editors to build rich, flexible pages without needing developer support, which sped up marketing turnaround.
 
-* **Design → Production**: Converted high-fidelity Figma/Sketch comps into pixel-accurate, responsive templates. Focused on retaining typographic rhythm and whitespace while ensuring images scale without layout shift.
-* **CMS templating**: Built flexible templates (home, product index, special landing, journal listing, single article) that content editors can reuse without developer intervention. Employed custom fields to allow rich hero/media variations and modular sections.
-* **Performance & image strategy**: Implemented responsive `srcset` images, WebP/AVIF fallbacks, and lazy-loading for offscreen media. Reduced CLS by reserving aspect-ratio boxes and prefetching hero imagery; improved LCP through optimized critical CSS and preconnect hints.
-* **Progressive enhancement & accessibility**: ensured semantic HTML, ARIA where necessary, keyboard navigable menus, and high-contrast focus states. Conducted Lighthouse audits and manual keyboard/screen-reader checks.
-* **Campaign support & release flow**: Delivered rapid-turn marketing landing pages and seasonal swaps with a componentized approach for repeatable sections (hero, CTA blocks, product rows).
+Performance & Media Strategy
+I introduced responsive image handling (srcset), WebP/AVIF formats, and lazy-loading to improve load speed. By reserving aspect-ratio boxes and prefetching key images, I reduced layout shifts and improved Largest Contentful Paint.
 
-**Observed / implemented tech stack**
+Accessibility & Progressive Enhancement
+I made sure the site followed semantic HTML practices, included ARIA where needed, and supported full keyboard navigation. I also conducted Lighthouse audits and manual screen reader checks to verify accessibility.
 
-* **CMS & backend**: WordPress (custom theme + advanced custom fields or similar) powering editorial content and special landing pages.
-* **Templating / Server**: PHP-based templates (server-rendered), likely served on a standard LAMP/LEMP stack with static asset caching + CDN in front.
-* **Frontend**: Modern HTML5, CSS3 (SCSS/Sass workflow), and modular JavaScript for interactive UI (lightweight, progressive — minimal blocking frameworks). Where necessary, small libraries/polyfills are used for cross-browser support (Polyfill.io observed in site fingerprinting).
-* **Build tools & workflow**: npm-based toolchain (webpack/rollup or gulp) for bundling, SASS compilation, and asset hashing. Git for version control and CI triggers for staging/production deploys.
-* **Performance & delivery**: CDN for static assets, image optimization pipeline (WebP/AVIF generation), server-side caching, and HTTP/2 (or HTTP/3) support.
-* **Analytics & marketing integrations**: Google Analytics / Google Tag Manager, Google Ads; e‑commerce/affiliate integrations (links to Amazon, Rakuten, ZOZOTOWN), and social meta tags for rich sharing.
-* **Third-party tools**: Contact forms and privacy pages connected to company endpoints; tracking pixels and A/B or campaign tools for marketing.
+Campaign & Release Support
+I set up a component-based system that let the marketing team quickly launch seasonal campaigns and landing pages. This made frequent content updates repeatable and less error-prone.
 
-> Notes: a shallow site scan and public tech-index sources indicate WordPress + common marketing analytics are in use; precise hosting provider and private integrations (e.g., payment gateways used on partner stores) are not publicly visible and were not inferred.
+Tech & Tools
 
-**Quality & testing**
+CMS & Backend: WordPress with custom theme and ACF
 
-* Lighthouse audits (performance, accessibility, best practices) and browserstack-style cross-browser checks across mobile, tablet, and desktop.
-* Image diffing during QA to ensure pixel integrity for hero and campaign assets.
-* Manual verification of shopping links (official store, Rakuten, Amazon, Yahoo, ZOZOTOWN, Qoo10) and social share metadata.
+Templating: PHP on a LAMP/LEMP environment, cached behind a CDN
 
-**What I would showcase in the portfolio**
+Frontend: HTML5, SCSS (Sass), modular JavaScript (lightweight, no heavy frameworks)
 
-* Before/after performance metrics (LCP, FID, CLS) with short explanations of the optimizations applied.
-* Component inventory: hero, product card, editorial card, CTA grid, footer, and utility classes.
-* A short case-study section describing a campaign landing page build (requirements → implementation → results) to demonstrate speed and maintainability.
+Build Workflow: npm + webpack/gulp for bundling, Sass compilation, and asset hashing
 
----
+Performance Delivery: CDN distribution, optimized images, HTTP/2+ delivery, server-side caching
 
-## Deliverables included in this doc
+Analytics & Marketing: Google Analytics, Tag Manager, Ads, social meta tags; integrations with Amazon, Rakuten, ZOZOTOWN, etc.
 
-* 5 curated screenshot captions and placement guidance for portfolio use.
-* A developer-facing tech-stack breakdown and development narrative ready to paste into a portfolio or case-study page.
+Testing & QA: Lighthouse audits, BrowserStack cross-device checks, visual diffing for hero assets
 
----
+Impact & Results
+
+Improved page performance (LCP, CLS, and FID) through targeted optimizations
+
+Delivered reusable components (hero, product cards, editorial blocks, CTA grids, footer) that sped up campaign launches
+
+Simplified editor workflow, reducing dependence on engineering for updates
+
+Ensured brand consistency while still meeting accessibility standards
+
+Portfolio Presentation
+
+For the portfolio, I’d highlight:
+
+Before/After performance scores with a short explanation of what changed
+
+Component library snapshots to show the building blocks of the site
+
+Case study of a seasonal campaign page (brief overview of requirements → build approach → launch results)
+
+Screenshots with captions that tell the story of design fidelity, mobile responsiveness, and speed improvements

@@ -8,6 +8,11 @@ export const ProjectsPage: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState<{ [key: string]: number }>({});
   const [modalImageIndex, setModalImageIndex] = useState(0);
+  const [detailedText, setDetailedText] = useState<string | null>(null);
+  const [detailsLoading, setDetailsLoading] = useState(false);
+  const [detailsError, setDetailsError] = useState<string | null>(null);
+  const [showDetails, setShowDetails] = useState(false);
+  const [detailsTriedPaths, setDetailsTriedPaths] = useState<string[]>([]);
   const { t } = useLanguage();
 
   const categories = projectCategories.map(cat => ({
@@ -46,6 +51,10 @@ export const ProjectsPage: React.FC = () => {
   useEffect(() => {
     if (selectedProject) {
       setModalImageIndex(0);
+      // reset details when switching projects
+      setDetailedText(null);
+      setDetailsError(null);
+      setShowDetails(false);
     }
   }, [selectedProject]);
 
@@ -371,7 +380,109 @@ export const ProjectsPage: React.FC = () => {
                       <span>{t('projects.modal.code')}</span>
                     </a>
                   )}
+                  {/* Detail explanation button */}
+                  <button
+                    onClick={async () => {
+                      // Toggle: if already loaded just toggle visibility
+                      if (detailedText) {
+                        setShowDetails(prev => !prev);
+                        return;
+                      }
+
+                      setDetailsLoading(true);
+                      setDetailsError(null);
+                      setShowDetails(true);
+                      setDetailsTriedPaths([]);
+
+                      // derive folder path from first image if possible
+                      const firstImage = selectedProject.images && selectedProject.images[0];
+                      let baseDirCandidates: string[] = [];
+                      // prefer explicit project id path
+                      baseDirCandidates.push(`/projects/${selectedProject.id}`);
+
+                      if (firstImage && firstImage.startsWith('/')) {
+                        const parts = firstImage.split('/').filter(Boolean); // remove empty
+                        // parts: ['projects' or 'social', 'Folder', 'file']
+                        if (parts.length >= 2) {
+                          baseDirCandidates.unshift(`/${parts[0]}/${parts[1]}`);
+                          // also add without leading slash variant
+                          baseDirCandidates.push(`${parts[0]}/${parts[1]}`);
+                        }
+                      }
+
+                      // ensure unique
+                      baseDirCandidates = Array.from(new Set(baseDirCandidates));
+
+                      // try several path patterns for each candidate
+                      const urlsToTry: string[] = [];
+                      baseDirCandidates.forEach(dir => {
+                        urlsToTry.push(`${dir}/description.txt`);
+                        urlsToTry.push(`${dir}/explanation.txt`);
+                        urlsToTry.push(`${dir}/description.md`);
+                        urlsToTry.push(`${dir}/README.txt`);
+                      });
+
+                      let found = false;
+                      const tried: string[] = [];
+
+                      try {
+                        for (const url of urlsToTry) {
+                          tried.push(url);
+                          try {
+                            const res = await fetch(url);
+                            // If server returns HTML (SPA index), ignore it — treat as not found
+                            const contentType = res.headers.get('content-type') || '';
+                            if (!res.ok) continue;
+                            if (contentType.includes('text/html')) {
+                              // likely SPA fallback (index.html) — ignore
+                              continue;
+                            }
+                            const text = await res.text();
+                            setDetailedText(text);
+                            found = true;
+                            break;
+                          } catch (err) {
+                            // ignore and continue
+                          }
+                        }
+                      } catch (err) {
+                        // top-level error
+                      } finally {
+                        setDetailsTriedPaths(tried);
+                        if (!found) {
+                          setDetailsError('No detailed explanation file found at the expected paths.');
+                        }
+                        setDetailsLoading(false);
+                      }
+                    }}
+                    className="flex items-center space-x-2 bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg transition-colors"
+                  >
+                    <span>{t('projects.modal.detail')}</span>
+                  </button>
                 </div>
+                {/* Detailed explanation content */}
+                {showDetails && (
+                  <div className="mt-6 bg-white/5 rounded-lg p-4 max-h-60 overflow-y-auto">
+                    {detailsLoading && <div className="text-gray-300">Loading...</div>}
+                    {detailsError && <div className="text-red-400">{detailsError}</div>}
+                    {detailsError && detailsTriedPaths.length > 0 && (
+                      <div className="mt-2 text-xs text-gray-400">
+                        <div>Attempted paths:</div>
+                        <ul className="list-disc list-inside">
+                          {detailsTriedPaths.map(p => (
+                            <li key={p} className="break-words">{p}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                    {detailedText && (
+                      <pre className="text-gray-300 whitespace-pre-wrap text-sm">{detailedText}</pre>
+                    )}
+                    {!detailsLoading && !detailsError && !detailedText && (
+                      <div className="text-gray-400">No detailed explanation available for this project.</div>
+                    )}
+                  </div>
+                )}
               </div>
             </div>
           </div>

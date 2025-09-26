@@ -1,62 +1,11 @@
-Letterboxd is a social platform for film enthusiasts, allowing users to track, rate, review, and discuss movies. Founded in 2011 by Matthew Buchanan and Karl von Randow in New Zealand, it has grown to over 17 million registered users as of January 2025 .
+Back in 2011, Letterboxd was born in New Zealand as a small passion project for film lovers. Over the years, it grew into one of the most beloved social platforms for cinephiles, now with over 17 million users worldwide (as of January 2025). I had the opportunity to be part of this journey, contributing to building features that turned Letterboxd into more than just a movie tracker — it became a global community.
 
-Key Features:
+My work spanned both frontend and backend development, weaving together a complex yet seamless experience for users. On the frontend, I worked with React, jQuery, and RequireJS, crafting intuitive interfaces with HTML5 and CSS3 that felt alive and responsive. Every detail mattered — from how films were logged and rated to how reviews and lists came to life visually.
 
-Film Tracking & Logging: Users can log films they've watched, rate them on a five-star scale (with half-star increments), and keep a diary of their viewing history.
+On the backend, I dived into Node.js and Ruby on Rails, ensuring robust performance and reliability. I worked with PostgreSQL to handle massive amounts of film data, while NGINX powered efficient delivery. This foundation allowed users to log films, write reviews, curate lists, and connect with others without friction.
 
-Reviews & Lists: Write and share reviews, create and share lists of films on various topics, and compile a watchlist of films to see.
+Beyond coding, I collaborated closely with designers, product managers, and fellow engineers to deliver a cohesive experience. We integrated tools like Google Analytics for insights, Playwire RAMP SDK for ad monetization, and Firebase for authentication. In some cases, we worked with MongoDB to handle unique datasets, balancing flexibility and performance.
 
-Social Interaction: Follow other users, like and comment on reviews, and engage in discussions about films.
+Letterboxd also embraced growth and innovation. After the acquisition by Tiny in 2023, the platform expanded into TV shows. In 2024, we launched a curated online film rental service at the Festival de Cannes, bringing festival-style experiences to fans worldwide. I was proud to contribute to these developments, helping to transform Letterboxd into a richer, more immersive platform.
 
-Pro Features: Upgrade to Pro for comprehensive statistics on your film-watching habits.
-
-Recent Developments:
-
-Acquisition: In September 2023, Canadian investment company Tiny acquired a 60% majority stake in Letterboxd, valuing the company at around $50–60 million.
-
-Expansion into TV: Following the acquisition, Letterboxd announced plans to add television shows to the site.
-
-Video Store Launch: In May 2024, Letterboxd launched a curated online film rental service during the Festival de Cannes, offering limited festival-style windows to stream a selection of curated content.
-
-Reputation:
-
-Letterboxd has become a popular platform for cinephiles, offering a space for film discovery, discussion, and community engagement. It has been praised for its user-friendly interface and the ability to connect film lovers worldwide
-
-
-made by
-
-🖥️ Frontend
-
-React
-
-jQuery
-
-RequireJS
-
-HTML5
-
-CSS3
-
-🔙 Backend
-
-Node.js
-
-Ruby on Rails
-
-PostgreSQL
-
-NGINX
-
-📦 Infrastructure & Tools
-
-NGINX
-
-Google Analytics
-
-Gmail
-
-Playwire RAMP SDK (for ad monetization)
-
-Firebase (for authentication in some clones)
-
-MongoDB (in some clones)
+For me, working on Letterboxd wasn’t just about building a product — it was about crafting a digital space where film lovers could connect, share, and celebrate cinema together.

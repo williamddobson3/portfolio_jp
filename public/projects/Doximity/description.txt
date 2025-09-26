@@ -1,133 +1,15 @@
-Doximity is a digital platform designed for U.S. medical professionals, offering a suite of tools to enhance communication, collaboration, and career management. Launched in 2011, it has become one of the largest networks for U.S. healthcare professionals, with over 80% of U.S. physicians and more than 50% of nurse practitioners and physician assistants as verified members. 
+During my time working with Doximity, I was part of a journey to build and evolve one of the largest digital platforms for U.S. healthcare professionals. Launched in 2011, Doximity grew into a network that now connects over 80% of U.S. physicians and more than 50% of nurse practitioners and physician assistants. Being part of this story was not just about coding — it was about contributing to a product that empowers doctors, improves patient care, and shapes the future of healthcare.
 
+My role involved working across the platform’s front-end, back-end, mobile, and infrastructure layers — helping bring innovative features to life while ensuring stability and scalability.
 
-🔑 Core Features
+On the front-end, I worked with Nuxt.js and Backbone.js, building interfaces that deliver a seamless experience for doctors and medical teams. This included professional profile pages, the personalized DocNews feed, and telehealth tools that needed to be both fast and intuitive.
 
-Secure Messaging: HIPAA-compliant communication for discussing patient care and professional matters.
+On the back-end, I contributed to complex systems built with Ruby on Rails and Go, supported by GraphQL APIs, Elasticsearch, Kafka, and Neo4j. These systems processed sensitive healthcare data with HIPAA-compliant security, powering core features like secure messaging and clinical decision support.
 
-Professional Profiles: Digital CVs showcasing credentials, specialties, and research.
+In the mobile space, I developed and optimized applications for both iOS (Swift, RxSwift) and Android (Kotlin). One of the most rewarding projects was enhancing Doximity Dialer — enabling physicians to call patients directly from their phones while displaying the office number, and expanding this to video consultations with integrated clinical guidance through partnerships like UpToDate.
 
-Curated Medical Newsfeed (DocNews): Personalized updates on medical news, research, and clinical guidelines.
+I also had the opportunity to work with data and analytics tools such as Python, Snowflake, and Hex to ensure data-driven decision-making across the platform. On the infrastructure side, we relied on AWS, Docker, Kubernetes, and Terraform to maintain a robust and scalable environment.
 
-Telehealth Tools:
+Working at Doximity also meant supporting rapid innovation and strategic growth. I was involved during exciting milestones, including the acquisition of Amion (on-call scheduling) and Pathway Medical (AI-based clinical tools), and the integration of powerful partnerships that brought cutting-edge capabilities to healthcare professionals.
 
-Dialer: Allows physicians to call patients from their personal cell phones, displaying the doctor's office number on caller ID.
-
-Dialer Video: Enables video consultations directly from smartphones.
-
-Career Management: Tools for job opportunities, residency navigation, and recruitment.
-
-Medical Affairs Solutions: Services for pharmaceutical companies to engage with healthcare professionals.
-
-🏥 Recent Developments
-
-Acquisitions:
-
-Amion (February 2022): A company specializing in on-call doctor scheduling.
-
-Pathway Medical (August 2025): A Canadian startup focusing on medical AI and clinical reference tools. 
-
-
-Partnerships:
-
-UpToDate (2025): Integrated clinical decision support into Doximity Dialer, providing access to over 12,000 clinical topics during live patient encounters.
-
-📈 Financial Overview (2024)
-
-Revenue: $619–$631 million (projected)
-
-Adjusted EBITDA: $306.6–$307.6 million
-
-Net Income: $147.6 million
-
-Assets: $1.08 billion
-
-Equity: $901.4 million
-
-Employees: 827 
-
-
-🏆 Recognition
-
-KLAS Awards: Named #1 in Telehealth Video Conferencing Platforms for four consecutive years.
-
-Deloitte Technology Fast 500: Recognized multiple times for rapid growth.
-
-
-Made by
-
-Frontend:
-
-Nuxt.js
-
-Backbone.js
-
-JavaScript
-
-HTML5
-
-CSS3
-
-Backend:
-
-Ruby on Rails
-
-Go
-
-GraphQL
-
-Elasticsearch
-
-Kafka
-
-Neo4j
-
-Mobile:
-
-Kotlin
-
-Swift
-
-RxSwift
-
-Data & Analytics:
-
-Python
-
-Snowflake
-
-Hex
-
-DevOps & Infrastructure:
-
-AWS
-
-Docker
-
-Kubernetes
-
-Terraform
-
-Media & CDN:
-
-Cloudinary
-
-Version Control:
-
-Git
-
-GitHub
-
-Monitoring & Logging:
-
-Sumo Logic
-
-Other Tools:
-
-Node.js
-
-Git
-
-Python
-
-Node.js
+For me, this wasn’t just software development — it was building tools that doctors trust, enabling better healthcare, and contributing to a platform recognized as a leader in telehealth and medical collaboration.

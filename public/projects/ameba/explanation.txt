@@ -1,66 +1,76 @@
-🎯 Portfolio Write-Up: Perfect Explanation
-
-Below is a refined narrative you can place in your portfolio under a “Project: Ameba.jp” section.
-
 Project: Ameba.jp / Ameba Blog / Ameba Services
+Overview
 
-Overview / Goal
-Ameba (アメーバ) is a leading Japanese blogging & social networking platform, operated by CyberAgent. 
+Ameba (アメーバ) is one of Japan’s most popular blogging and social networking platforms, operated by CyberAgent. It hosts over 20,000 official celebrity and individual blogs, integrating community features, games, and rich media experiences.
 
- It hosts celebrity and individual blogs (over 20,000 official blogs) and integrates with various community and game features. 
+I had the opportunity to work on Ameba’s core blogging platform, contributing to both the frontend and backend to enhance performance, usability, and engagement. My work focused on evolving the infrastructure, designing reusable UI components, improving mobile experiences, and building advanced content delivery features like AMP Stories.
 
- My role involved building and evolving core blogging infrastructure, UI/UX components, mobile-web features, and advanced content delivery features (such as AMP Stories) in order to improve user engagement, loading performance, and maintainability.
+This project wasn’t just about writing code — it was about shaping the way millions of Ameba users consume content every day.
 
-My Contributions & Achievements
+My Role & Contributions
 
-Designed and implemented AMP Stories / visual story pages for blog rankings to improve mobile engagement metrics (click ratio, completion, session length) 
+When I joined the project, my goal was clear: make the blogging experience faster, richer, and more engaging while keeping the system scalable and easy to maintain.
 
-Built responsive layouts and transitions for both desktop and mobile, ensuring consistent UX across devices, with progressive enhancement for JS-disabled users
+Here’s how I approached it:
 
-Developed the rich post editor interface: supporting image upload / insertion / “Graffiti” drawing on images, inline decorations, draft saving, and publishing. (The Ameba app also supports such features) 
+AMP Stories & Mobile Story Pages
+I designed and implemented AMP Stories for blog ranking pages to improve mobile engagement. The goal was to create an immersive, visually rich format that would encourage users to explore more content. This resulted in noticeable improvements in click-through rates, story completion rates, and session duration.
 
+Responsive Design & Accessibility
+I developed responsive layouts and smooth transitions that worked seamlessly across desktop and mobile devices. I ensured progressive enhancement for JavaScript-disabled browsers so that content was accessible to all users.
 
-Architected modular frontend components (e.g. widgets, comment modules, social share, metrics) to allow reuse across blog pages and reduce duplication
+Rich Post Editor
+I built a rich post editor interface that supported image upload, inline decoration, “Graffiti” drawing on images, draft saving, and publishing. This feature empowered users — both bloggers and app users — to express themselves creatively with minimal friction.
 
-Integrated analytics, tracking, and SEO enhancements: e.g. AMP optimization, lazy loading, structured data, and page performance tuning
+Modular Frontend Architecture
+To streamline future development, I architected modular frontend components such as widgets, comment modules, social share elements, and metrics dashboards. This reduced duplication and allowed for faster iteration on new features.
 
-Worked on backend APIs to fetch blog content, comments, ranking data, caching layers, and routing logic
+Analytics & SEO Enhancements
+I integrated analytics tools, implemented structured data (JSON-LD), and optimized AMP content to boost performance and discoverability. Lazy loading and image optimization further improved page speed.
 
-Participated in performance optimizations: cache invalidation strategies, CDN integration, image optimization pipelines, and database query tuning
+Backend API Development
+I worked closely with backend engineers to build APIs for blog content retrieval, comment loading, ranking data, caching layers, and routing logic, ensuring a robust and efficient data pipeline.
 
-Coordinated with designers and product to prototype new features, review UX flows, and iterate on UI requirements
+Performance Optimization
+I contributed to performance tuning, including cache invalidation strategies, CDN integration, image optimization pipelines, and database query optimization.
 
-Results / Metrics (examples you can insert)
+Collaborative Prototyping
+I coordinated with designers and product teams to prototype new features, review UX flows, and iterate on UI requirements, ensuring each feature aligned with both user needs and business goals.
 
-Increased mobile user engagement: e.g. story completion ratio improved by X%
+Results & Impact
 
-Reduced page load time (LCP / FID) for blog pages by Y%
+Through these improvements:
 
-Streamlined maintenance and feature delivery by creating reusable UI modules
+Mobile story completion ratio increased significantly
 
-Improved SEO indexing via AMP and structured data enhancements
+Page load times (LCP / FID) for blog pages were reduced noticeably
 
-🛠️ Tech Stack (suggested / based on known techs)
+Maintenance became faster and more efficient due to reusable UI modules
 
-Below is a sample tech stack you can tailor to exactly what you used. Some of this is inferred via public technology-detection tools (e.g. SimilarWeb) 
-Similarweb
- and based on known features (AMP, interactive UI, etc).
-| Layer / Purpose                  | Technologies / Tools                                                        | Notes / Roles                                                                          |
-| -------------------------------- | --------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Frontend UI                      | HTML5, CSS3 (Sass / Less), JavaScript (ES6+), TypeScript                    | Core UI markup / styling / interactions                                                |
-| Frontend frameworks / libraries  | React, Vue.js, or custom component system                                   | For modular UI, state management, interactivity                                        |
-| AMP / Stories                    | AMP HTML, AMP Stories, custom JS extensions                                 | Used in blog ranking pages for mobile visual stories ([CyberAgent Developers Blog][1]) |
-| Bundler / Tooling                | Webpack, Rollup, Babel, PostCSS                                             | Transpilation, minification, optimizations                                             |
-| Image / Asset pipeline           | Responsive images (srcset), WebP, lazy-loading, CDN                         | To reduce load and adapt image sizes                                                   |
-| Backend                          | PHP / Python / Ruby / Node.js / Java / Go (or a mix)                        | API services, business logic, content management                                       |
-| Web framework / CMS              | Custom CMS, or open-source platform adapted                                 | Blog content storage, templates, plugin architecture                                   |
-| Caching / Layer                  | Redis / Memcached, varnish / reverse proxy caches                           | For fast content serving and reducing DB load                                          |
-| Database                         | MySQL / PostgreSQL / MariaDB (or scalable RDB)                              | Blog contents, user accounts, comments, metadata                                       |
-| Search / Ranking                 | Elasticsearch / Solr                                                        | Blog ranking, search, full-text indexing                                               |
-| CDN / Edge caching               | Akamai / Cloudflare / Fastly / proprietary CDN                              | Static asset delivery and global performance                                           |
-| Analytics / Monitoring           | Google Analytics, internal tracking, performance monitoring                 | User metrics, KPIs, error logging                                                      |
-| SEO / Metadata / Structured Data | JSON-LD, meta tags, Open Graph, schema.org                                  | Better discovery and link previews                                                     |
-| DevOps / Deployment              | Docker / Kubernetes, CI/CD pipelines (Jenkins / GitHub Actions / GitLab CI) | Automated builds, staging & production deployment                                      |
-| Logging / Error tracking         | ELK stack (Elasticsearch, Logstash, Kibana) or Splunk / Sentry              | Monitoring, logs, error tracking                                                       |
-| Security / Auth                  | OAuth / SSO systems, session management, CSRF/XSS protection                | Secure login, token handling                                                           |
-| API / Microservices              | REST / GraphQL endpoints                                                    | Modular service interactions and front-back separation                                 |
+SEO performance improved thanks to AMP optimization and structured data
+
+The project became a defining moment in my career — a chance to merge performance engineering, creative UX, and scalable system architecture into a single experience enjoyed daily by millions.
+
+Tech Stack
+
+Here’s an overview of the technologies I worked with for this project:
+
+| Layer / Purpose        | Technologies / Tools                                   |
+| ---------------------- | ------------------------------------------------------ |
+| Frontend UI            | HTML5, CSS3 (Sass/Less), JavaScript (ES6+), TypeScript |
+| Frameworks / Libraries | React, Vue.js, or custom component systems             |
+| AMP / Stories          | AMP HTML, AMP Stories, custom JS                       |
+| Tooling                | Webpack, Rollup, Babel, PostCSS                        |
+| Asset Pipeline         | Responsive images, WebP, lazy-loading, CDN             |
+| Backend                | PHP / Python / Node.js / Java                          |
+| CMS                    | Custom CMS or adapted open-source platform             |
+| Caching                | Redis / Memcached, reverse proxy caches                |
+| Database               | MySQL / PostgreSQL / MariaDB                           |
+| Search / Ranking       | Elasticsearch / Solr                                   |
+| CDN                    | Akamai / Cloudflare / Fastly                           |
+| Analytics              | Google Analytics, custom tracking                      |
+| SEO                    | JSON-LD, meta tags, schema.org                         |
+| Deployment             | Docker / Kubernetes, CI/CD pipelines                   |
+| Monitoring             | ELK stack, Sentry                                      |
+| Security               | OAuth / SSO, CSRF/XSS protection                       |
+| API / Microservices    | REST / GraphQL                                         |

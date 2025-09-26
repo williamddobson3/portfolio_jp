@@ -1,53 +1,45 @@
-Development Experience:
+Development Experience
 
-Developing the Ampersand website was a collaborative effort that focused on creating a seamless user experience. The project involved:
+Building the Ampersand website was a team effort where my focus was on delivering a smooth and engaging user experience from start to finish. The project went through several key stages:
 
-Planning & Strategy: Defining the website's objectives and target audience.
+Planning & Strategy – We started by clearly defining the website’s goals and identifying the target audience to make sure the design and features matched user needs.
 
-Design: Creating wireframes and prototypes to visualize the user interface.
+Design – I worked on wireframes and prototypes to shape the interface and ensure the flow felt intuitive.
 
-Development: Coding the website using modern web technologies.
+Development – Using modern web technologies, I built the site with clean, scalable code that could grow with future needs.
 
-Testing: Conducting usability testing to ensure functionality across devices.
+Testing – I carried out usability and cross-device testing to make sure the site worked seamlessly across browsers and platforms.
 
-Launch: Deploying the website and monitoring performance.
+Launch – Once deployed, I monitored performance and fine-tuned the site for stability and speed.
 
-Tech Stack:
+Tech Stack
 
-Frontend:
+Frontend
 
-HTML5: For structuring content.
+HTML5 & CSS3 – Structured and styled content for a clean, responsive layout.
 
-CSS3: For styling and layout.
+JavaScript & React.js – Added interactivity and built reusable UI components.
 
-JavaScript: For interactivity and dynamic content.
+Backend
 
-React.js: For building user interfaces.
+Node.js & Express.js – Developed APIs and handled server-side logic.
 
-Backend:
+Database
 
-Node.js: For server-side scripting.
+MongoDB – Used for flexible, document-based data storage.
 
-Express.js: For building web applications and APIs.
+DevOps
 
-Database:
+Docker – Ensured consistent environments through containerization.
 
-MongoDB: For storing data in a flexible, JSON-like format.
+AWS – Deployed and managed hosting in the cloud.
 
-DevOps:
+Tools & Libraries
 
-Docker: For containerization and consistent development environments.
+Webpack & Babel – For bundling and transpiling modern JavaScript.
 
-AWS: For hosting and cloud services.
+Jest – For writing and running unit tests.
 
-Tools & Libraries:
+Sass – To manage and scale CSS more effectively.
 
-Webpack: For module bundling.
-
-Babel: For JavaScript transpiling.
-
-Jest: For testing JavaScript code.
-
-Sass: For advanced CSS styling.
-
-This tech stack was chosen to ensure scalability, maintainability, and performance.
+This stack was chosen not only for performance and scalability but also for maintainability, making sure the project can adapt to future requirements.

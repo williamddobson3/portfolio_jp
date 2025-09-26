@@ -1,65 +1,58 @@
-2. Technical Explanation and Experience:
+Overview
+Cookpad is one of Japan’s most popular recipe-sharing platforms, with millions of users posting, discovering, and sharing cooking ideas every day. The project focused on keeping the site simple and easy to use while making sure it could handle heavy traffic and community-driven content. My role was to develop and improve core features of the website, working across both the front end and back end to deliver a better overall experience for users.
 
-Here’s an example structure of how the tech stack and your experience can be explained:
+Key Responsibilities
 
-Project: Cookpad Japanese Website (https://cookpad.com/jp
-)
+Led development of new features on both the front end and back end to enhance usability and interactivity.
 
-Overview:
-Cookpad is a popular Japanese recipe-sharing platform where users can submit, discover, and share cooking recipes. The platform emphasizes simplicity, ease of use, and community-driven content. My involvement was in developing and enhancing key features of the website to improve the overall user experience and functionality.
+Worked closely with designers to translate wireframes into seamless, accessible interfaces.
 
-Key Responsibilities:
+Optimized site performance with a focus on speed, scalability, and mobile responsiveness.
 
-Lead the development of front-end and back-end features to enhance user experience and interaction.
+Improved data handling, ensuring that recipe searches and submissions remained smooth even at scale.
 
-Collaborated with UX/UI designers to create seamless user interfaces that prioritize usability and accessibility.
+Tech Stack
 
-Optimized performance, focusing on mobile responsiveness and efficient data handling.
+Frontend
 
-Tech Stack:
+React.js – Built dynamic and responsive interfaces.
 
-Frontend:
+HTML5 / JavaScript / CSS (SASS) – Structured and styled the site, ensuring a clean and consistent look across devices.
 
-React.js: Utilized for building dynamic and responsive user interfaces.
+Webpack – Handled bundling and optimization for efficient performance.
 
-CSS/SASS: For styling the web pages and ensuring consistent design across devices.
+Backend
 
-Webpack: For bundling and optimizing the application.
+Ruby on Rails – The core backend framework, used for fast development and stable database management.
 
-HTML5 & JavaScript: For building the structure and interactivity of the website.
+PostgreSQL – Managed large amounts of recipe data with efficient querying.
 
-Backend:
+Redis – Implemented caching strategies to keep response times fast.
 
-Ruby on Rails: Cookpad's backend was primarily built with Ruby on Rails, providing rapid development capabilities and solid database management.
+Cloud & Hosting
 
-PostgreSQL: Used for data storage, ensuring high-performance querying for large volumes of recipe data.
+AWS (S3, EC2) – Used for storage, scaling, and deployment.
 
-Redis: Implemented for caching and improving response times for frequently accessed data.
+Docker – Standardized development and deployment with containerization.
 
-Cloud & Hosting:
+API & Integrations
 
-AWS (Amazon Web Services): Utilized for hosting, scaling, and managing infrastructure needs. S3 for file storage and EC2 for server deployment.
+RESTful APIs – Built and maintained APIs to connect the front end with the backend.
 
-Docker: Used for containerization, making development and deployment more efficient and consistent.
+Integrated third-party services for features like meal planning, grocery shopping, and social sharing.
 
-API & Integrations:
+Collaboration & Tools
 
-RESTful APIs: Developed and maintained to handle communication between the front-end and back-end.
+Git/GitHub – Version control and collaborative workflows.
 
-Third-Party Integrations: Integrated external services for meal planning, grocery shopping, and social sharing features.
+JIRA – Task tracking and sprint planning.
 
-Tools and Collaboration:
+Slack – Team communication.
 
-Git/GitHub: For version control and collaborative development.
+Challenges & Solutions
 
-JIRA: For project management and issue tracking.
+Scalability: With millions of recipes and growing traffic, performance was a major challenge. I implemented database indexing and caching strategies that kept queries fast and responsive.
 
-Slack: For team communication and collaboration.
+Mobile Optimization: Since a large percentage of users accessed the site via mobile, I invested significant effort into responsive layouts and flexible grid systems, ensuring an intuitive experience on all screen sizes.
 
-Challenges & Solutions:
-
-Scalability: As the platform grew, handling a high volume of traffic and recipe submissions was a challenge. Implemented efficient database indexing and caching strategies to ensure that the site remained fast and responsive.
-
-Mobile Optimization: With many users accessing Cookpad via mobile, a significant amount of time was spent ensuring that the mobile version was responsive and intuitive. Used media queries and flexible grid systems to accommodate various screen sizes.
-
-User Engagement: Worked on developing features that enhanced user engagement, such as social media sharing, ratings, and comment sections for recipes, which increased the amount of user-generated content.
+User Engagement: To keep the community active, I helped develop features like recipe ratings, comments, and social sharing. These additions increased interaction and boosted user-generated content.

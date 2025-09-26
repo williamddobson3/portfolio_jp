@@ -194,7 +194,7 @@ export const projects: Project[] = [
     year: '2021',
     status: 'Active',
     technologies: ['HTML5', 'CSS/Sass', 'JavaScript', 'TypeScript', 'React/Vue', 'Webpack', 'AMP'],
-    images: ['/social/ameba/1.png', '/social/ameba/2.png', '/social/ameba/3.png', '/social/ameba/4.png'],
+    images: ['/projects/ameba/1.png', '/projects/ameba/2.png', '/projects/ameba/3.png', '/projects/ameba/4.png'],
     website: 'https://www.ameba.jp/'
   },
   {
@@ -206,7 +206,7 @@ export const projects: Project[] = [
     year: '2020',
     status: 'Active',
     technologies: ['React/Next.js', 'Node.js', 'CMS', 'PostgreSQL', 'Redis', 'Elasticsearch', 'CDN'],
-    images: ['/social/buzzfeed/1.jpg', '/social/buzzfeed/2.jpg', '/social/buzzfeed/3.jpg', '/social/buzzfeed/4.png'],
+    images: ['/projects/buzzfeed/1.jpg', '/projects/buzzfeed/2.jpg', '/projects/buzzfeed/3.jpg', '/projects/buzzfeed/4.png'],
     website: 'https://www.buzzfeed.com/jp'
   },
   {
@@ -218,7 +218,7 @@ export const projects: Project[] = [
     year: '2022',
     status: 'Launched',
     technologies: ['Laravel (PHP)', 'React', 'MySQL', 'Elasticsearch', 'Redis', 'Docker', 'Kubernetes', 'AWS'],
-    images: ['/social/itmedia/1.png', '/social/itmedia/2.jpg', '/social/itmedia/3.png', '/social/itmedia/4.jpg'],
+    images: ['/projects/itmedia/1.png', '/projects/itmedia/2.jpg', '/projects/itmedia/3.png', '/projects/itmedia/4.jpg'],
     website: 'https://www.itmedia.co.jp/'
   },
   {
@@ -230,7 +230,7 @@ export const projects: Project[] = [
     year: '2021',
     status: 'Active',
     technologies: ['Node.js', 'CDN', 'Caching', 'Load Balancer', 'iOS', 'Android'],
-    images: ['/social/manga/1.jpg', '/social/manga/2.webp', '/social/manga/3.png', '/social/manga/4.jpg'],
+    images: ['/projects/manga/1.jpg', '/projects/manga/2.webp', '/projects/manga/3.png', '/projects/manga/4.jpg'],
     website: 'https://manga-one.com/'
   },
   {
@@ -242,7 +242,7 @@ export const projects: Project[] = [
     year: '2020',
     status: 'Active',
     technologies: ['JavaScript', 'React', 'CDN', 'Caching'],
-    images: ['/social/nicovideo/1.jpeg', '/social/nicovideo/2.jpeg', '/social/nicovideo/3.jpeg', '/social/nicovideo/4.jpg'],
+    images: ['/projects/nicovideo/1.jpeg', '/projects/nicovideo/2.jpeg', '/projects/nicovideo/3.jpeg', '/projects/nicovideo/4.jpg'],
     website: 'https://www.nicovideo.jp/'
   },
   {
@@ -254,7 +254,7 @@ export const projects: Project[] = [
     year: '2021',
     status: 'Active',
     technologies: ['TypeScript', 'React', 'Node/Java services', 'MySQL/PostgreSQL', 'Redis', 'Elasticsearch', 'CDN'],
-    images: ['/social/Pixiv/1.jpg', '/social/Pixiv/2.jpg', '/social/Pixiv/3.png', '/social/Pixiv/4.png'],
+    images: ['/projects/Pixiv/1.jpg', '/projects/Pixiv/2.jpg', '/projects/Pixiv/3.png', '/projects/Pixiv/4.png'],
     website: 'https://www.pixiv.co.jp/'
   },
 

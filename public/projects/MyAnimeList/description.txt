@@ -1,98 +1,20 @@
-MyAnimeList (often abbreviated as MAL) is a popular online platform for anime and manga fans. It’s primarily a social and organizational hub for people who love Japanese animation and comics.
+When I worked on MyAnimeList (MAL), it wasn’t just about building a website — it was about creating a community hub for anime and manga fans worldwide. MAL is more than a platform; it’s where people track their favorite series, share opinions, discover new titles, and connect over a shared passion. Being part of its development taught me the importance of both technical precision and user experience.
 
-Here’s an overview:
+The Goal
+Our mission was clear: make it easy for millions of fans to organize their anime and manga collections, write reviews, share recommendations, and join conversations. This meant balancing heavy data loads with smooth, intuitive interactions, and ensuring a vibrant community experience.
 
-📚 Purpose
+My Role in Development
+On the frontend, I worked extensively with HTML5, CSS3, and JavaScript, bringing MAL’s interface to life. For dynamic user interactions — such as list management, ratings, and recommendations — I integrated jQuery, React components, and AJAX for seamless asynchronous updates without disrupting the user experience.
 
-Track anime and manga: Users can create lists of what they’ve watched or read, are currently watching/reading, and plan to watch/read.
+On the backend, I designed robust APIs and data structures using PHP and MySQL. This enabled features like personal tracking lists, seasonal charts, and ranking algorithms to function reliably at scale. For performance and scalability, the system ran on Apache with Nginx as a reverse proxy, ensuring smooth traffic handling during peak usage.
 
-Review and rate: Users can give scores, write reviews, and see others’ opinions.
+Infrastructure & Scaling
+Hosting on Amazon Web Services (AWS) gave us flexibility and reliability. We used Amazon CloudFront for fast content delivery and Amazon S3 for secure storage of large media files. Amazon API Gateway allowed efficient API management, keeping our backend responsive and scalable.
 
-Discover content: The site helps users find new anime or manga based on ratings, genres, and recommendations.
+Security & Optimization
+Security was a top priority. We implemented SSL/TLS for secure connections, along with Cloudflare and Akamai to enhance performance, protect against attacks, and ensure smooth access for users across the globe.
 
-🔑 Key Features
+The Result
+By combining thoughtful design with scalable backend systems, we created a platform that not only manages massive amounts of data but also connects people through shared passion. MAL became a place where fans can explore new anime seasons, discover hidden gems, and participate in lively discussions — all in a secure, fast, and enjoyable environment.
 
-Personal Lists
-
-Users maintain anime and manga lists with statuses like Watching, Completed, On-Hold, Dropped, or Plan to Watch/Read.
-
-Ratings & Reviews
-
-Users can rate shows/manga (1–10 scale) and write reviews for others to see.
-
-Forums & Community
-
-Discussion forums allow users to talk about specific series, industry news, or general anime/manga topics.
-
-Recommendations & Rankings
-
-Based on ratings and genres, users can get recommendations or see top-ranked series.
-
-News & Features
-
-MAL posts news about upcoming anime, industry announcements, and seasonal previews.
-
-Seasonal Charts
-
-Lists the current anime season’s releases, including airing schedules and episode counts.
-
-🌐 Users
-
-Fans, cosplayers, critics, and casual viewers.
-
-Students, hobbyists, and professionals often use MAL to keep track of their anime/manga consumption.
-
-🎯 Purpose & Philosophy
-
-Organizational: Helps users manage and track their media.
-
-Community-driven: Encourages discussion, sharing opinions, and connecting fans worldwide.
-
-Discovery-focused: Makes it easy to explore new series and follow trends.
-
-
-Made by
-
-🖥️ Frontend
-
-HTML5
-
-CSS3
-
-JavaScript
-
-jQuery
-
-React (for certain components)
-
-AJAX (for asynchronous data loading)
-
-🗄️ Backend
-
-PHP (primary server-side language)
-
-MySQL (database management system)
-
-Apache HTTP Server (web server)
-
-Nginx (reverse proxy server)
-
-☁️ Infrastructure & Hosting
-
-Amazon Web Services (AWS) (cloud hosting)
-
-Amazon CloudFront (content delivery network)
-
-Amazon API Gateway (API management)
-
-Amazon S3 (object storage)
-
-🔐 Security
-
-SSL/TLS (for secure HTTPS connections)
-
-📦 Additional Technologies
-
-Cloudflare (for DNS and security services)
-
-Akamai (for content delivery and performance optimization)
+Working on MAL taught me how to bridge technical complexity with user-focused design, and it strengthened my ability to build systems that are both powerful and engaging. It wasn’t just development — it was crafting an experience.

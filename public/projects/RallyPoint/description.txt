@@ -1,37 +1,15 @@
-RallyPoint is a digital platform designed to connect members of the U.S. military community, including active service members, veterans, and their families. It serves as a professional and social network where users can engage in discussions, share experiences, and access resources related to military life.
+During my time working on RallyPoint, I had the opportunity to contribute to a platform that truly makes a difference for the U.S. military community — connecting active service members, veterans, and their families in ways that empower both their professional and personal lives.
 
-Key Features:
+RallyPoint isn’t just another network — it’s a vibrant ecosystem where members share stories, exchange advice, and build meaningful connections. My role was to bring this vision to life through thoughtful and robust engineering.
 
-Community Engagement: Members can participate in discussions, ask questions, and share stories about various aspects of military life.
+On the frontend, I worked extensively with React, crafting intuitive interfaces that allow users to easily navigate discussions, mentorship opportunities, and career resources. The goal was to make interactions smooth, so the technology felt invisible and the community experience felt natural.
 
-Professional Networking: The platform allows users to build professional connections, explore career opportunities, and transition to civilian employment.
+On the backend, I worked with Node.js and Express.js to ensure reliable, high-performance services. This included building APIs to connect users with relevant discussions, career opportunities, and unit-specific content. The backend also handled real-time interactions and integrated authentication via OAuth and JWT to ensure secure and seamless access.
 
-Mentorship Opportunities: RallyPoint facilitates peer-to-peer mentorship, enabling members to seek guidance and support from others with similar experiences.
+I designed and optimized the PostgreSQL database to efficiently manage large volumes of user data, while Redis was employed for caching to improve speed. For search functionality, I integrated Elasticsearch, enabling users to quickly find relevant conversations or resources.
 
-Educational Resources: Users have access to information about educational programs, training, and certifications relevant to their careers.
+The platform was hosted on AWS, with services running inside Docker containers for scalability and maintainability. I also implemented monitoring with Sentry to proactively detect and fix issues, while Google Analytics provided insights into user engagement. For communication and notifications, we integrated SendGrid.
 
-Unit and Branch Connections: Members can connect with others who have served in the same units or branches, fostering a sense of camaraderie and shared history.
+What made RallyPoint special was not just the technical challenge — it was the mission. Every feature I developed, every optimization I made, was in service of a community that deserved a seamless and powerful platform to connect. Seeing the platform grow into a trusted space for mentorship, professional networking, and camaraderie was deeply rewarding.
 
-Founded in 2012 by military veterans Yinon Weiss and Aaron Kletzing at Harvard Business School, RallyPoint has grown to become a significant online network for the military community. The platform has received recognition for its efforts to support veterans and service members in their professional and personal journeys.
-
-Made by
-
-🔧 Likely Technology Stack
-
-Frontend: React, JavaScript, HTML5, CSS3
-
-Backend: Node.js, Express.js
-
-Database: PostgreSQL, Redis
-
-Authentication: OAuth, JWT
-
-Hosting/Infrastructure: Amazon Web Services (AWS), Docker
-
-Analytics: Google Analytics
-
-Monitoring: Sentry
-
-Search: Elasticsearch
-
-Email: SendGrid
+Through RallyPoint, I strengthened my skills across the full stack — but more importantly, I learned the power of building technology that truly serves people’s lives.

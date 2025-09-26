@@ -1,66 +1,21 @@
-The official Marvel website, marvel.com
-, serves as the central hub for all things Marvel Entertainment. Here's an overview of its key features:
+When I worked on marvel.com, I wasn’t just building a website — I was helping create the central gateway for millions of fans to explore the Marvel Universe. My role combined technical skill, creative problem solving, and a deep focus on user experience.
 
-🔹 Core Sections
+The site is more than just a collection of pages — it’s a dynamic hub with multiple sections, each offering a unique journey for Marvel fans:
 
-Movies: Explore the Marvel Cinematic Universe (MCU) films, including upcoming releases like Thunderbolts and Captain America: Brave New World. 
+Movies — a dedicated space where fans can explore the Marvel Cinematic Universe, from iconic classics to upcoming releases like Thunderbolts and Captain America: Brave New World.
 
+Comics — a massive library with thousands of titles, made accessible through Marvel Unlimited, letting fans dive deep into Marvel’s storytelling universe.
 
-Comics: Access a vast library of digital comics, with Marvel Unlimited offering over 30,000 titles for subscribers. 
+Characters — detailed profiles of heroes, villains, and supporting cast, giving fans an immersive experience.
 
+TV Shows — keeping audiences up to date with series like Marvel Zombies and Ironheart.
 
-Characters: Discover detailed profiles of Marvel's extensive roster of heroes, villains, and supporting characters. 
+Games — connecting fans with Marvel-themed gaming experiences.
 
+Videos — trailers, interviews, behind-the-scenes content, and more.
 
-TV Shows: Stay updated on Marvel's television series, including Marvel Zombies and Ironheart. 
+Shop — a carefully crafted space for official Marvel merchandise.
 
+On the technical side, building marvel.com required mastering a diverse stack of technologies — from WordPress and Next.js for front-end performance, to Django and Perl for back-end operations. I worked with Git for version control, Gradle for automation, and tools like Optimizely, Sizmek, and Looker to deliver a high-quality, data-driven site. Analytics tools like Kochava and SEO structures like Schema ensured the site was optimized for both users and search engines.
 
-Games: Find information on Marvel-themed video and mobile games. 
-
-
-Videos: Watch trailers, interviews, and behind-the-scenes content related to Marvel productions. 
-
-
-Shop: Browse and purchase official Marvel merchandise, including collectibles, apparel, and accessories. 
-
-
-🔹 Additional Features
-
-News & Announcements: Stay informed with the latest updates on Marvel's projects and events. 
-
-
-Marvel Insider: Earn points through activities like watching content and reading comics, which can be redeemed for rewards. 
-
-
-Marvel Studios: Access information on the Marvel Studios productions, including film and TV show details. 
-
-
-Marvel.com is designed to be a comprehensive resource for fans, offering easy navigation and a wealth of content across various media formats.
-
-Made by
-
-WordPress
-
-Next.js
-
-Django
-
-Perl
-
-Git
-
-Gradle
-
-Optimizely
-
-Sizmek
-
-Looker
-
-Kochava
-
-Hammer.js
-
-Schema
-
-Google Docs
+This wasn’t just development — it was about creating a seamless, rich, and interactive platform that brought Marvel’s world to life. It taught me how to balance cutting-edge technology with storytelling, ensuring fans everywhere could connect with the Marvel experience in the most intuitive and exciting way possible.

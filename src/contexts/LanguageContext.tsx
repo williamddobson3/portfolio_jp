@@ -145,6 +145,10 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         en: 'View Code',
         ja: 'コードを見る'
       },
+      'projects.modal.detail': {
+        en: 'Detail explanation',
+        ja: '詳細説明'
+      },
 
       // ContactPage
       'contact.title': {

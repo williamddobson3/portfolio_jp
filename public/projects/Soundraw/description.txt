@@ -1,47 +1,13 @@
-Soundraw is an AI-powered music generation platform designed to help creators produce custom, royalty-free music tailored to their specific needs.
+During my time working on Soundraw, I had the chance to contribute to a truly unique project — an AI-powered music generation platform designed to empower creators with custom, royalty-free music tailored to their needs. This was more than just a technical challenge; it was a creative journey that blended cutting-edge AI with real-world user needs.
 
-🎵 Key Features
+One of the most exciting parts of the project was building the core music generation system. We designed it so that users could simply choose mood, genre, tempo, and instrumentation, and the AI would instantly create an original track. Behind the scenes, I worked closely with the team to ensure that this process was smooth and intuitive.
 
-AI-Generated Music: Create original tracks by selecting mood, genre, tempo, and instrumentation.
+To make the platform genuinely flexible for creators, I helped develop powerful customization tools — enabling users to shorten intros, rearrange choruses, or tweak arrangements without touching a complex DAW. The mixer interface became a highlight feature, letting creators toggle instruments, adjust intensity, and set track lengths with ease. This required thoughtful collaboration between frontend and backend teams to ensure responsiveness and reliability.
 
-Customization Tools: Adjust song structure, such as shortening intros or rearranging choruses.
+On the technical side, I worked across the stack — from Ruby on Rails backend systems to a JavaScript/Vue.js frontend (while we explored transitioning to TypeScript and React), integrating our AI models written in Python, and managing PostgreSQL and MongoDB databases. I also contributed to infrastructure and deployment pipelines on Heroku and AWS, using CircleCI for CI/CD, and ensured stability through monitoring with Papertrail and BugSnag.
 
-Mixer Interface: Toggle instruments, tweak intensity, and set track length without needing a digital audio workstation (DAW).
+What stood out most was the platform’s in-house training process — our AI was trained exclusively on Soundraw’s original music, guaranteeing every track was unique and royalty-free. This meant working closely with data engineers and ML specialists to maintain a robust pipeline and quality control.
 
-Royalty-Free Licensing: All generated music is original and safe for commercial use.
+The result was something creators could truly rely on — unlimited, high-quality downloads of WAV files or stems, ready for any creative project. Whether for YouTube videos, podcasts, films, games, or music production, Soundraw became a tool that blended creativity with technical precision.
 
-Unlimited Downloads: Download high-quality WAV files or separate stems for further editing.
-
-In-House Training: The AI is trained exclusively on Soundraw's original music, ensuring unique compositions.
-
-🎯 Ideal Users
-
-Content Creators: YouTubers, podcasters, and social media influencers seeking custom background music.
-
-Filmmakers & Game Developers: Those needing original scores or soundtracks for projects.
-
-Musicians & Producers: Artists looking for inspiration or base tracks to build upon.
-
-Made by
-
-🔧 Soundraw Tech Stack
-
-Backend: Ruby on Rails
-
-Frontend: JavaScript, Vue.js (potentially transitioning to TypeScript and React)
-
-Machine Learning: Python
-
-Database: PostgreSQL, MongoDB (possibly phasing out MongoDB), Redis
-
-Testing: Jest, RSpec
-
-Infrastructure: Heroku, AWS
-
-Monitoring: Papertrail, BugSnag
-
-CI/CD: CircleCI
-
-Source Code Management: GitHub
-
-Project Management: Pivotal Tracker
+Working on Soundraw wasn’t just about coding — it was about building a product that empowers people to create music in a way that’s personal, professional, and truly innovative.

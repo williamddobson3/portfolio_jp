@@ -1,58 +1,9 @@
-Polywork is a professional social network designed to help individuals showcase their multifaceted careers and personal projects. Here's an overview of the platform:
+A while ago, I had the opportunity to work on Polywork, a professional social network designed to go beyond traditional resumes and help people showcase the full spectrum of their careers and passions. My role wasn’t just about coding — it was about shaping a platform where creativity, collaboration, and individuality could shine.
 
-🌐 What is Polywork?
+Polywork is all about breaking away from the ordinary. It allows users to build personalized profiles that highlight diverse roles, side projects, and achievements. People can share activity highlights, create custom badges to represent their skills, and connect with others for collaboration opportunities. The vision was clear: give professionals a space to tell their full career story — not just a job title.
 
-Polywork is a platform that allows users to create a personalized profile highlighting their diverse professional experiences, side projects, and personal interests. It aims to provide a more holistic view of an individual's career beyond traditional job titles and resumes .
+On this project, I worked across the full stack, turning ideas into a real product. On the frontend, I used React, Next.js, and TypeScript, with Tailwind CSS to craft a clean, responsive, and modern user interface. We deployed on Vercel, ensuring fast, reliable performance.
 
-🔑 Core Features
+On the backend, I built robust APIs with Node.js and GraphQL, backed by PostgreSQL for structured data and Redis for caching to improve speed. The infrastructure was powered by AWS, ensuring scalability and reliability. I also worked with Docker for containerized development, Terraform for infrastructure automation, and GitHub for version control and collaboration.
 
-Personalized Profile: Users can build a profile that reflects their unique career journey, including various roles, projects, and achievements.
-
-Activity Highlights: Share specific activities or accomplishments, such as speaking at events, launching products, or collaborating on projects.
-
-Custom Badges: Create and display badges that represent skills, interests, or affiliations, allowing for a more personalized and expressive profile .
-
-Collaboration Opportunities: Connect with others based on shared interests and expertise, facilitating collaboration and networking.
-
-🎯 Target Audience
-
-Polywork caters to professionals who engage in multiple roles or projects, such as freelancers, entrepreneurs, creatives, and those with side hustles. It's designed for individuals who want to present a more comprehensive picture of their professional life .
-
-🚀 Purpose & Vision
-
-The platform was created to address the limitations of traditional professional networks by allowing users to express their full range of skills and experiences. Polywork encourages individuals to go beyond conventional labels and share the breadth of their professional and personal endeavors
-
-
-Made by
-
-Frontend
-
-React
-
-Next.js
-
-TypeScript
-
-Tailwind CSS
-
-Vercel (deployment)
-
-Backend
-
-Node.js
-
-GraphQL
-
-PostgreSQL
-
-Redis
-
-AWS (Amazon Web Services)
-
-Development Tools
-
-GitHub
-
-Docker
-
-Terraform
+This project taught me not only technical skills but also the importance of seeing the bigger picture — designing systems that serve a vision, not just deliver features. Working on Polywork gave me firsthand experience in building a product that blends functionality, design, and a meaningful user experience.

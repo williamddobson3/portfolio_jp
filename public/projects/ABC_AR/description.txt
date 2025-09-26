@@ -1,76 +1,17 @@
-🚀 What it is
+One of the most exciting projects I worked on was an AR educational app about space, created in partnership with the TV program Stargazing Live. The goal was to make space science more interactive and engaging, especially for families and students.
 
-It’s ABC’s AR experience focused on space; an educational and interactive app. 
+The app centered around three main experiences:
 
+Explore Jupiter – Users could place a detailed 3D model of Jupiter into their real-world environment and explore its unique features from every angle.
 
-Aimed at letting people, especially families and students, engage with space concepts through AR. 
+Assemble the ISS – This mode let users build the International Space Station piece by piece, learning the role of each component as they put it together.
 
+Space Debris Defense – A game-like challenge where players protected the ISS from incoming space junk using futuristic tools, making the serious issue of space debris both fun and memorable.
 
-🔍 Key Features / Activities
+The purpose was to go beyond what people saw on TV or read in textbooks, and instead let them experience space objects up close in their own living rooms. By blending education with play, the app helped learners understand scale, structure, and real-world challenges in space in a way that was both immersive and enjoyable.
 
-The app offers three main interactive activities: 
+From a technical perspective, the app was built with Unity for the 3D and AR functionality, with C# scripting, and leveraged ARKit (iOS) and ARCore (Android) for the AR features. It was released on both iOS and Android around 2018, and due to the rich 3D content, the app was fairly large (about 200MB+).
 
+This project gave me valuable hands-on experience in building large-scale AR applications, optimizing 3D models for performance, and creating interactive learning experiences that balance education and entertainment. It also taught me how to design for real-world conditions, since AR depends heavily on the user’s environment, lighting, and device capabilities.
 
-Explore Jupiter
-You can view a 3D model of Jupiter and learn about its interesting properties. The user can place the model in their real environment via AR. 
-
-
-Assemble the ISS (International Space Station)
-Users can “fly the parts” of the ISS together piece-by-piece, learning what each part does as it’s assembled. 
-
-
-Space Debris (Space Junk Defense)
-A game-like mode: defend the ISS from incoming space debris using laser/futuristic tools. It gives a playful but informative view on the issue of space debris. 
-
-
-🎯 Purpose & Context
-
-It was developed in conjunction with “Stargazing Live” (a TV program) to complement live broadcasts; so while the show discusses certain objects (like the ISS), users can explore those objects themselves via AR. 
-
-
-It's meant to make space science more tangible and immersive. Instead of reading or seeing on screen, learners can “place” virtual space objects in their living room, see them from all sides, interact with them. 
-
-
-⚙️ Technical & Availability
-
-Released ~2018. 
-
-
-Available for iOS and Android devices that support AR. 
-
-
-The app is relatively large: e.g. one listing says ~211 MB on iOS. 
-
-
-👍 Benefits & Limitations
-
-Benefits
-
-Good tool for education: helps with understanding spatial relationships and scale in space.
-
-Engaging format: gamified parts (assembling, defending ISS) make learning more fun.
-
-AR can help with retention: seeing models in 3D in your environment can make it more memorable.
-
-Limitations / Considerations
-
-Requires a device capable of AR; older phones or unsupported devices may not work.
-
-Since it was tied to a TV program, some of its content might feel dated if not updated.
-
-AR experiences depend also on lighting, space in user’s room, etc., so real-world constraints can limit the experience.
-
-
-Made by
-
-Unity (for 3D and AR functionality)
-
-ARKit (for iOS AR features)
-
-ARCore (for Android AR features)
-
-C# (Unity scripting)
-
-Native mobile frameworks (iOS / Android)
-
-3D models / assets (custom, possibly Blender/Maya etc.)
+Overall, it was a project that combined my technical expertise with my passion for making learning more engaging through technology.

@@ -1,83 +1,23 @@
-Yummygum is a digital product agency based in Amsterdam, specializing in helping tech scale-ups elevate their platforms through design and development. Founded in 2009 by Vince Schwidder and Leon Ephraïm, the agency has nearly two decades of experience in the industry. With a team of under 50 professionals, Yummygum focuses on transforming digital products from "good" to "wow" .
+Since 2009, Yummygum — a small but passionate digital product agency based in Amsterdam — has been on a mission: to transform good products into something truly remarkable. Founded by Vince Schwidder and Leon Ephraïm, the agency has grown into a tight-knit team of under 50 experts with nearly two decades of experience in design and development.
 
-Core Services:
+My journey with Yummygum has been nothing short of inspiring. Working alongside visionary designers, strategists, and developers, I’ve had the privilege of contributing to projects that shape the way people interact with technology. We’ve partnered with ambitious companies like Vio.com, Spider Strategies, On My Way, and Watermelon — collaborations that have helped our clients secure over $130 million in funding.
 
-Strategy: Providing UX/UI audits, accessibility audits, and conversion optimization.
+At Yummygum, every project starts with understanding the core challenge. Whether it’s a UX/UI audit, accessibility review, or technical consultation, I work hand in hand with the team to create strategies that align design and development seamlessly.
 
-Creative: Offering brand strategy, creative direction, and consulting.
+My work covers a broad spectrum: crafting intuitive UX/UI designs, building responsive websites, developing robust back-end systems, and delivering polished mobile applications. I’m deeply involved in both the creative and technical sides — from brand strategy and creative direction to front-end development and back-end architecture.
 
-Technical: Delivering technical strategy, consulting, and technical audits.
+Our technical stack reflects this holistic approach:
 
-Enablement: Conducting operational advisory, courses, workshops, and knowledge sharing.
+Frontend: Next.js, TypeScript, React, Storybook, GSAP, Framer, Zustand, Vercel, Netlify.
 
-Design: Specializing in UX/UI design, product design, mobile app design, and website design.
+Backend & CMS: DatoCMS.
 
-Development: Expertise in front-end and back-end development, website development, no-code development, product development, and native apps .
+Mobile: React Native (Expo).
 
-Notable Clients:
+CI/CD & Monitoring: GitHub Actions, Sentry.
 
-Yummygum has collaborated with several ambitious companies, including:
+Each tool and technology I use is chosen to bring efficiency and quality to the projects. But for me, development is more than code — it’s about creating experiences that spark joy for users and growth for clients.
 
-Vio.com
+At Yummygum, we live by values that guide everything we do: growth, excellence, joy, and synergy. These aren’t just words — they’re the reason why every line of code, every design decision, and every collaboration carries a deeper purpose.
 
-Spider Strategies
-
-On My Way
-
-Watermelon
-
-Tuple
-
-Classroomscreen
-
-Helixers
-
-These partnerships have helped startups secure over $130 million in funding .
-
-Core Values:
-
-Yummygum operates with the following principles:
-
-Growth: Encouraging continuous learning and skill development.
-
-Excellence: Striving to set high standards and overdeliver.
-
-Joy: Fostering passion and fun in their work.
-
-Synergy: Believing in the power of collaboration within their team and with clients
-
-Made by
-
-Frontend:
-
-Next.js
-
-TypeScript
-
-React
-
-Storybook
-
-GSAP
-
-Framer
-
-Zustand
-
-Vercel
-
-Netlify
-
-Backend & CMS:
-
-DatoCMS
-
-Mobile:
-
-React Native (Expo)
-
-CI/CD & Monitoring:
-
-GitHub Actions
-
-Sentry
+Through these experiences, I’ve learned that the real art of development lies in connecting creativity and technology — turning ideas into products that don’t just work, but inspire.
