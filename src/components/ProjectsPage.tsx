@@ -94,7 +94,7 @@ export const ProjectsPage: React.FC = () => {
           </p>
         </div>
 
-        {/* Category Filter */}
+  {/* Category Filter */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           {categories.map(category => (
             <button
@@ -109,6 +109,14 @@ export const ProjectsPage: React.FC = () => {
               {category.name}
             </button>
           ))}
+        </div>
+
+        {/* Debug: show how many projects are being displayed for the selected category */}
+        <div className="text-center mb-8">
+          <span className="text-sm text-gray-400">
+            {t('projects.showing')}: <strong className="text-white">{filteredProjects.length}</strong>
+            &nbsp;•&nbsp;{t(`projects.category.${selectedCategory}`)}
+          </span>
         </div>
 
         {/* Projects Grid */}

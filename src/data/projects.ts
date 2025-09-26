@@ -79,6 +79,18 @@ export const projects: Project[] = [
     website: 'https://ampersand.co.jp/'
   },
   {
+    id: 'abc_ar',
+    title: 'ABC_AR',
+    category: 'arvr',
+    descriptionKey: 'project.abc_ar.description',
+    role: 'AR Developer',
+    year: '2018',
+    status: 'Launched',
+    technologies: ['Unity', 'C#', 'ARKit', 'ARCore', '3D Modeling'],
+    images: ['/projects/ABC_AR/1.jpeg', '/projects/ABC_AR/2.jpeg', '/projects/ABC_AR/3.jpg'],
+    website: ''
+  },
+  {
     id: 'botanistofficial',
     title: 'BOTANIST Official',
     category: 'arvr',
@@ -182,7 +194,8 @@ export const projects: Project[] = [
     year: '2021',
     status: 'Active',
     technologies: ['HTML5', 'CSS/Sass', 'JavaScript', 'TypeScript', 'React/Vue', 'Webpack', 'AMP'],
-    images: ['/social/ameba/1.png', '/social/ameba/2.png', '/social/ameba/3.png', '/social/ameba/4.png']
+    images: ['/social/ameba/1.png', '/social/ameba/2.png', '/social/ameba/3.png', '/social/ameba/4.png'],
+    website: 'https://www.ameba.jp/'
   },
   {
     id: 'buzzfeed-jp',
@@ -193,7 +206,8 @@ export const projects: Project[] = [
     year: '2020',
     status: 'Active',
     technologies: ['React/Next.js', 'Node.js', 'CMS', 'PostgreSQL', 'Redis', 'Elasticsearch', 'CDN'],
-    images: ['/social/buzzfeed/1.jpg', '/social/buzzfeed/2.jpg', '/social/buzzfeed/3.jpg', '/social/buzzfeed/4.png']
+    images: ['/social/buzzfeed/1.jpg', '/social/buzzfeed/2.jpg', '/social/buzzfeed/3.jpg', '/social/buzzfeed/4.png'],
+    website: 'https://www.buzzfeed.com/jp'
   },
   {
     id: 'itmedia',
@@ -204,7 +218,8 @@ export const projects: Project[] = [
     year: '2022',
     status: 'Launched',
     technologies: ['Laravel (PHP)', 'React', 'MySQL', 'Elasticsearch', 'Redis', 'Docker', 'Kubernetes', 'AWS'],
-    images: ['/social/itmedia/1.png', '/social/itmedia/2.jpg', '/social/itmedia/3.png', '/social/itmedia/4.jpg']
+    images: ['/social/itmedia/1.png', '/social/itmedia/2.jpg', '/social/itmedia/3.png', '/social/itmedia/4.jpg'],
+    website: 'https://www.itmedia.co.jp/'
   },
   {
     id: 'manga',
@@ -215,7 +230,8 @@ export const projects: Project[] = [
     year: '2021',
     status: 'Active',
     technologies: ['Node.js', 'CDN', 'Caching', 'Load Balancer', 'iOS', 'Android'],
-    images: ['/social/manga/1.jpg', '/social/manga/2.webp', '/social/manga/3.png', '/social/manga/4.jpg']
+    images: ['/social/manga/1.jpg', '/social/manga/2.webp', '/social/manga/3.png', '/social/manga/4.jpg'],
+    website: 'https://manga-one.com/'
   },
   {
     id: 'nicovideo',
@@ -226,7 +242,8 @@ export const projects: Project[] = [
     year: '2020',
     status: 'Active',
     technologies: ['JavaScript', 'React', 'CDN', 'Caching'],
-    images: ['/social/nicovideo/1.jpeg', '/social/nicovideo/2.jpeg', '/social/nicovideo/3.jpeg', '/social/nicovideo/4.jpg']
+    images: ['/social/nicovideo/1.jpeg', '/social/nicovideo/2.jpeg', '/social/nicovideo/3.jpeg', '/social/nicovideo/4.jpg'],
+    website: 'https://www.nicovideo.jp/'
   },
   {
     id: 'pixiv',
@@ -237,7 +254,8 @@ export const projects: Project[] = [
     year: '2021',
     status: 'Active',
     technologies: ['TypeScript', 'React', 'Node/Java services', 'MySQL/PostgreSQL', 'Redis', 'Elasticsearch', 'CDN'],
-    images: ['/social/Pixiv/1.jpg', '/social/Pixiv/2.jpg', '/social/Pixiv/3.png', '/social/Pixiv/4.png']
+    images: ['/social/Pixiv/1.jpg', '/social/Pixiv/2.jpg', '/social/Pixiv/3.png', '/social/Pixiv/4.png'],
+    website: 'https://www.pixiv.co.jp/'
   },
 
   // AI / ML / Creative Tools
@@ -266,6 +284,7 @@ export const projects: Project[] = [
     website: 'https://midjourney.com'
   },
 
+
   // Media, Entertainment & Content
   {
     id: 'myanimelist',
@@ -278,6 +297,54 @@ export const projects: Project[] = [
     technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL'],
     images: ['/projects/MyAnimeList/1.jpeg', '/projects/MyAnimeList/2.avif', '/projects/MyAnimeList/3.webp'],
     website: 'https://myanimelist.net'
+  },
+  {
+    id: 'marvel',
+    title: 'Marvel',
+    category: 'media',
+    descriptionKey: 'project.marvel.description',
+    role: 'Frontend Engineer',
+    year: '2020',
+    status: 'Active',
+    technologies: ['React', 'Next.js', 'GraphQL', 'CDN'],
+    images: ['/projects/Marvel/1.webp', '/projects/Marvel/2.jpg', '/projects/Marvel/3.jpg'],
+    website: 'https://www.marvel.com'
+  },
+  {
+    id: 'letterboxd',
+    title: 'Letterboxd',
+    category: 'media',
+    descriptionKey: 'project.letterboxd.description',
+    role: 'Frontend Developer',
+    year: '2019',
+    status: 'Active',
+    technologies: ['React', 'TypeScript', 'Sass'],
+    images: ['/projects/Letterboxd/1.png', '/projects/Letterboxd/2.webp', '/projects/Letterboxd/3.webp'],
+    website: 'https://letterboxd.com'
+  },
+  {
+    id: 'soundraw',
+    title: 'Soundraw',
+    category: 'media',
+    descriptionKey: 'project.soundraw.description',
+    role: 'Full Stack Engineer',
+    year: '2022',
+    status: 'Active',
+    technologies: ['Vue', 'Node.js', 'Audio Processing', 'CDN'],
+    images: ['/projects/Soundraw/1.png', '/projects/Soundraw/2.png', '/projects/Soundraw/3.png'],
+    website: 'https://soundraw.io'
+  },
+  {
+    id: 'yummygum',
+    title: 'Yummygum',
+    category: 'media',
+    descriptionKey: 'project.yummygum.description',
+    role: 'UI Engineer',
+    year: '2018',
+    status: 'Launched',
+    technologies: ['HTML/CSS', 'JavaScript', 'Accessibility'],
+    images: ['/projects/Yummygum/1.webp', '/projects/Yummygum/2.webp', '/projects/Yummygum/3.webp'],
+    website: 'https://yummygum.com'
   },
 
   // Business & Productivity Tools
@@ -292,5 +359,54 @@ export const projects: Project[] = [
     technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS', 'HIPAA Compliance'],
     images: ['/projects/Doximity/1.webp', '/projects/Doximity/2.webp', '/projects/Doximity/3.png'],
     website: 'https://doximity.com'
+  }
+  ,
+  {
+    id: 'venturebeat',
+    title: 'VentureBeat',
+    category: 'business',
+    descriptionKey: 'project.venturebeat.description',
+    role: 'Frontend Engineer',
+    year: '2022',
+    status: 'Active',
+    technologies: ['React', 'TypeScript', 'Node.js', 'SEO', 'CDN'],
+    images: ['/projects/VentureBeat/1.jpg', '/projects/VentureBeat/2.png', '/projects/VentureBeat/3.webp'],
+    website: 'https://venturebeat.com'
+  },
+  {
+    id: 'polywork',
+    title: 'Polywork',
+    category: 'business',
+    descriptionKey: 'project.polywork.description',
+    role: 'Product Engineer',
+    year: '2021',
+    status: 'Active',
+    technologies: ['Next.js', 'React', 'GraphQL', 'TypeScript'],
+    images: ['/projects/Polywork/1.png', '/projects/Polywork/2.webp', '/projects/Polywork/3.jpg'],
+    website: 'https://polywork.com'
+  },
+  {
+    id: 'ravelry',
+    title: 'Ravelry',
+    category: 'business',
+    descriptionKey: 'project.ravelry.description',
+    role: 'Full Stack Developer',
+    year: '2020',
+    status: 'Launched',
+    technologies: ['Rails', 'PostgreSQL', 'Redis', 'CDN'],
+    images: ['/projects/Ravelry/1.jpg', '/projects/Ravelry/2.jpg', '/projects/Ravelry/3.jpg'],
+    website: 'https://www.ravelry.com'
+  },
+  {
+    id: 'rallypoint',
+    title: 'RallyPoint',
+    category: 'business',
+    descriptionKey: 'project.rallypoint.description',
+    role: 'Frontend Developer',
+    year: '2019',
+    status: 'Active',
+    technologies: ['React', 'Node.js', 'PostgreSQL'],
+    images: ['/projects/RallyPoint/1.png', '/projects/RallyPoint/2.webp', '/projects/RallyPoint/3.jpeg'],
+    website: 'https://www.rallypoint.com'
   }
 ];

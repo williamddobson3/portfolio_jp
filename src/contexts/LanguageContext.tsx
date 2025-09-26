@@ -117,6 +117,10 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         en: 'Business & Productivity Tools',
         ja: 'ビジネス・生産性ツール'
       },
+      'projects.showing': {
+        en: 'Showing',
+        ja: '表示中'
+      },
       'projects.modal.role': {
         en: 'My Role',
         ja: '私の役割'
@@ -347,6 +351,10 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         en: 'Led front‑end for the official site: CMS templating, performance/image strategy (srcset, lazy‑load), accessibility, SEO, and release workflow for campaigns.',
         ja: '公式サイトのフロントエンドをリード。CMSテンプレート、画像最適化（srcset・遅延読み込み）、アクセシビリティ、SEO、キャンペーンのリリースフローを構築。'
       },
+      'project.abc_ar.description': {
+        en: 'ABC_AR — an educational AR experience about space. Features: Explore Jupiter (3D models placed in the real world), Assemble the ISS with interactive parts, and a gamified Space Debris defense mode. Built with Unity, ARKit/ARCore and native mobile components; released for iOS and Android around 2018.',
+        ja: 'ABC_AR — 宇宙をテーマにした教育的なAR体験。機能: 木星の3Dモデルを現実空間に配置して観察、ISSをパーツごとに組み立てるインタラクティブモード、宇宙ゴミを防ぐゲーム型モード。Unity、ARKit/ARCore、ネイティブモバイルで開発され、2018年頃にiOS/Android向けにリリース。'
+      },
       'project.are-na.description': {
         en: 'Collaborative visual research and organization platform for collecting and organizing ideas, images, and knowledge networks.',
         ja: 'アイデア、画像、知識ネットワークを収集・整理するための協調的視覚研究・組織化プラットフォーム。'
@@ -386,6 +394,50 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
       'project.doximity.description': {
         en: 'Professional networking platform for healthcare professionals with secure messaging and collaboration tools.',
         ja: '安全なメッセージングとコラボレーションツールを備えた医療専門家向けプロフェッショナルネットワーキングプラットフォーム。'
+      },
+      'project.gptstudio.description': {
+        en: 'An internal studio for building and fine‑tuning GPT‑powered assistants with orchestration tools and plugin support.',
+        ja: 'GPTを活用したアシスタントを構築・ファインチューニングするためのスタジオ。オーケストレーションツールとプラグインサポートを備える。'
+      },
+      'project.codexpro.description': {
+        en: 'AI-assisted developer tooling providing code completion, refactoring suggestions, and CI integrations.',
+        ja: 'コード補完やリファクタリング提案、CI連携を備えたAI支援の開発者ツール。'
+      },
+      'project.voiceai.description': {
+        en: 'Speech recognition and synthesis platform with low-latency streaming and multilingual support.',
+        ja: '低遅延ストリーミングと多言語対応を備えた音声認識・合成プラットフォーム。'
+      },
+      'project.synthpix.description': {
+        en: 'Generative image platform creating high-fidelity synthesized imagery for AR/3D experiences.',
+        ja: 'AR/3D体験向けに高品質な合成画像を生成するジェネレーティブイメージプラットフォーム。'
+      },
+      'project.marvel.description': {
+        en: 'Fan-facing content and interactive features for Marvel.com — high-performance frontend, responsive layouts, and CMS integration.',
+        ja: 'Marvel.com向けのファン向けコンテンツとインタラクティブ機能。高性能フロントエンド、レスポンシブレイアウト、CMS連携を担当。'
+      },
+      'project.soundraw.description': {
+        en: 'Server-backed music generation platform: audio processing pipelines, real-time previews, and a responsive web studio.',
+        ja: '音楽生成プラットフォーム。オーディオ処理パイプライン、リアルタイムプレビュー、レスポンシブなウェブスタジオを実装。'
+      },
+      'project.yummygum.description': {
+        en: 'Creative agency website and design system work focusing on accessible UI, motion, and performance.',
+        ja: 'クリエイティブエージェンシーのウェブサイトとデザインシステム。アクセシブルなUI、モーション、パフォーマンスに注力。'
+      },
+      'project.venturebeat.description': {
+        en: 'News and analysis platform optimised for speed and ads: SEO, article caching, and a modular front-end.',
+        ja: 'ニュース・分析プラットフォームの高速化と広告最適化。SEO、記事キャッシュ、モジュール式フロントエンドを実装。'
+      },
+      'project.polywork.description': {
+        en: 'Collaboration and professional network UI: activity feeds, tagging, and cross-platform notifications.',
+        ja: 'コラボレーションとプロフェッショナルネットワークのUI。アクティビティフィード、タグ付け、クロスプラットフォーム通知を実装。'
+      },
+      'project.ravelry.description': {
+        en: 'Community-driven marketplace and pattern database — user profiles, search ranking, and storefront integration.',
+        ja: 'コミュニティ主導のマーケットプレイス兼パターンデータベース。ユーザープロフィール、検索ランキング、ストアフロント統合。'
+      },
+      'project.rallypoint.description': {
+        en: 'Professional military network features focused on profiles, groups, and secure messaging.',
+        ja: '兵士向けのプロフェッショナルネットワーク機能。プロフィール、グループ、セキュアメッセージングに注力。'
       },
 
       // SkillsPage
