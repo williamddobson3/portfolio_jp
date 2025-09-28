@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Home, Folder, Zap, User, Mail, Menu, X } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { LanguageSwitcher } from './LanguageSwitcher';
 
 interface NavigationProps {
   currentPage: string;
@@ -24,7 +23,8 @@ export const Navigation: React.FC<NavigationProps> = ({ currentPage }) => {
       {/* Desktop Navigation */}
       <nav className="fixed top-8 left-1/2 transform -translate-x-1/2 z-50 hidden md:block">
         <div className="bg-black/20 backdrop-blur-md border border-white/10 rounded-full px-6 py-3">
-          <div className="flex items-center space-x-8">
+          {/* Prevent wrapping so items stay on one line */}
+          <div className="flex items-center gap-4 whitespace-nowrap">
             {navItems.map(({ id, label, icon: Icon }) => (
               <button
                 key={id}
@@ -39,7 +39,8 @@ export const Navigation: React.FC<NavigationProps> = ({ currentPage }) => {
                 <span className="text-sm font-medium">{label}</span>
               </button>
             ))}
-            <LanguageSwitcher />
+            {/* Small inline badge for language (Japanese only) */}
+            
           </div>
         </div>
       </nav>
@@ -75,7 +76,9 @@ export const Navigation: React.FC<NavigationProps> = ({ currentPage }) => {
               </button>
             ))}
             <div className="mt-4 pt-4 border-t border-white/10">
-              <LanguageSwitcher />
+              <div className="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs text-gray-300 text-center inline-block">
+                日本語
+              </div>
             </div>
           </div>
         </div>

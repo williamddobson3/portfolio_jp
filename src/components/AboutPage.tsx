@@ -17,42 +17,42 @@ export const AboutPage: React.FC = () => {
 
   const timeline: TimelineEvent[] = [
     {
-      year: '2023-Present',
-      title: 'Freelance Engineer & Project Manager',
-      description: 'Leading distributed teams to deliver web, AI, and Android projects worldwide.',
-      location: 'Japan / Remote',
+      year: '2023〜現在',
+      title: 'フリーランス エンジニア／プロジェクトマネージャー',
+      description: '分散したチームを率い、ウェブ、人工知能、アンドロイド向けのプロジェクトを世界中で提供しています。',
+      location: '日本／リモート',
       type: 'milestone',
       highlights: [
-        'Leading distributed team of developers and designers',
-        'Built AI-powered automation workflows',
-        'Developed Android applications with modern UI/UX',
-        'Managed client communications via CrowdWorks and Upwork'
+        '開発者とデザイナーからなる分散チームを統率',
+        '人工知能を活用した自動化ワークフローを構築',
+        'モダンなUI/UXを備えたアンドロイドアプリを開発',
+        '各種プラットフォームを通じてクライアント対応を管理'
       ]
     },
     {
-      year: '2016-Present',
-      title: 'International Freelance Engineer',
-      description: 'Delivering projects remotely to clients in Malaysia, Singapore & worldwide.',
-      location: 'Japan / Remote',
+      year: '2016〜現在',
+      title: '国際フリーランス エンジニア',
+      description: 'マレーシア、シンガポールなどのクライアント向けにリモートでプロジェクトを提供しています。',
+      location: '日本／リモート',
       type: 'work',
       highlights: [
-        'Delivered 50+ projects in web, mobile, and AI automation',
-        'Specialized in full-stack development and AI solutions',
-        'Managed international client communications across time zones',
-        'Implemented automation workflows using Zapier, n8n, and OpenAI API'
+        'ウェブ、モバイル、及び自動化分野で50件以上のプロジェクトを提供',
+        'フルスタック開発と人工知能ソリューションを専門に担当',
+        '異なるタイムゾーンでの国際クライアントとのコミュニケーションを管理',
+        '各種自動化ツールとAPIを用いたワークフローを実装'
       ]
     },
     {
-      year: '2015-2023',
-      title: 'Software Engineer & Project Manager',
-      description: 'Full-stack and Android engineer at Rakuten, later promoted to project manager.',
-      location: 'Rakuten, Japan',
+      year: '2015〜2023',
+      title: 'ソフトウェアエンジニア／プロジェクトマネージャー',
+      description: '楽天にてフルスタックおよびアンドロイドエンジニアとして従事し、その後プロジェクトマネージャーに昇進しました。',
+      location: '楽天（日本）',
       type: 'work',
       highlights: [
-        'Designed and implemented scalable web applications',
-        'Built backend services, REST/GraphQL APIs, and cloud infrastructure',
-        'Led cross-functional teams and collaborated with UI/UX designers',
-        'Developed AI-based solutions and workflow automation'
+        'スケーラブルなウェブアプリケーションの設計・実装',
+        'バックエンドサービス、各種API、クラウドインフラの構築',
+        'クロスファンクショナルチームを率い、UI/UXデザイナーと協業',
+        '人工知能を活用したソリューションとワークフロー自動化の開発'
       ]
     }
   ];

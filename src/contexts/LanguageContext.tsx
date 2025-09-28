@@ -15,11 +15,76 @@ interface LanguageProviderProps {
 }
 
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('en');
+  // Default to Japanese for a fully-Japanese site view
+  const [language, setLanguage] = useState<Language>('ja');
 
   // Translation function
   const t = (key: string): string => {
     const translations: Record<string, Record<Language, string>> = {
+      // small UI keys
+      'language.toggle': {
+        en: 'Toggle language',
+        ja: '\u8a00\u8a9e\u3092\u5207\u308a\u66ff\u3048\u308b'
+      },
+      'home.and': {
+        en: 'and',
+        ja: 'と'
+      },
+      // generic messages
+      'loading': {
+        en: 'Loading...',
+        ja: '\u8aad\u307f\u8fbc\u307f\u4e2d...'
+      },
+      'projects.attempted_paths': {
+        en: 'Attempted paths:',
+        ja: '\u30c8\u30e9\u30a4\u3042\u305f\u308a\u3044\u3064\u304d\u8abf\u67fb\u3057\u305f\u30d1\u30b9\u30fb'
+      },
+      'projects.no_detail': {
+        en: 'No detailed explanation available for this project.',
+        ja: '\u3053\u306e\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306b\u5b9a\u4e0a\u3057\u305f\u8a73\u7d30\u8aac\u660e\u306f\u3042\u308a\u307e\u305b\u3093\u3002'
+      },
+      'projects.more': {
+        en: '+{n} more',
+        ja: '+{n}\u4ef6'
+      },
+      // metrics labels
+      'projects.metrics.users': {
+        en: 'users',
+        ja: '\u30e6\u30fc\u30b6'
+      },
+      'projects.metrics.downloads': {
+        en: 'downloads',
+        ja: '\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9'
+      },
+      'projects.metrics.awards': {
+        en: 'awards',
+        ja: '\u5951\u7d04\u6599\u91d1\u3068\u3044\u3046\u4f8b'
+      },
+      // contact placeholders and selects
+      'contact.placeholder.name': {
+        en: 'Enter your name',
+        ja: '\u540d\u524d\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044'
+      },
+      'contact.placeholder.email': {
+        en: 'your@email.com',
+        ja: 'example@domain.com'
+      },
+      'contact.form.select_project': {
+        en: 'Select project type',
+        ja: '\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30bf\u30a4\u30d7\u3092\u9078\u3079'
+      },
+      'contact.placeholder.details': {
+        en: 'Tell me about your project, timeline, budget, and any specific requirements...',
+        ja: '\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306e\u4e3b\u8981\u3001\u30b9\u30b1\u30b8\u30e5\u30fc\u30eb\u3001\u4e88\u7b97\u3001\u307e\u305f\u7279\u5b9a\u306e\u8981\u9808\u3092\u304a\u77e5\u3089\u305b\u304f\u3060\u3055\u3044\u3002'
+      },
+      'contact.availability.label_available': {
+        en: 'Available',
+        ja: '\u5229\u7528\u53ef\u80fd'
+      },
+      'contact.availability.tz': {
+        en: 'JST',
+        ja: '日本標準時 (JST)'
+      },
       // HomePage
       'home.title': {
         en: 'Keishin Mie',
@@ -247,17 +312,33 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         en: 'Direct email contact',
         ja: '直接メール連絡'
       },
+      'contact.social.email_name': {
+        en: 'Email',
+        ja: 'メール'
+      },
       'contact.social.github': {
         en: 'Code repositories',
         ja: 'コードリポジトリ'
+      },
+      'contact.social.github_name': {
+        en: 'GitHub',
+        ja: 'ギットハブ'
       },
       'contact.social.telegram': {
         en: 'Quick messaging',
         ja: 'クイックメッセージ'
       },
+      'contact.social.telegram_name': {
+        en: 'Telegram',
+        ja: 'テレグラム'
+      },
       'contact.social.discord': {
         en: 'Gaming & chat',
         ja: 'ゲーム・チャット'
+      },
+      'contact.social.discord_name': {
+        en: 'Discord',
+        ja: 'ディスコード'
       },
 
       // Project Types

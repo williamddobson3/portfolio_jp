@@ -122,7 +122,7 @@ export const ContactPage: React.FC = () => {
                     onChange={handleInputChange}
                     required
                     className="w-full bg-white/5 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 transition-all duration-300"
-                    placeholder="Enter your name"
+                    placeholder={t('contact.placeholder.name')}
                   />
                 </div>
                 <div>
@@ -136,7 +136,7 @@ export const ContactPage: React.FC = () => {
                     onChange={handleInputChange}
                     required
                     className="w-full bg-white/5 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 transition-all duration-300"
-                    placeholder="your@email.com"
+                    placeholder={t('contact.placeholder.email')}
                   />
                 </div>
               </div>
@@ -145,13 +145,13 @@ export const ContactPage: React.FC = () => {
                 <label className="block text-white text-sm font-medium mb-2">
                   {t('contact.form.project')}
                 </label>
-                <select
+                  <select
                   name="projectType"
                   value={formData.projectType}
                   onChange={handleInputChange}
                   className="w-full bg-white/5 border border-white/20 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 transition-all duration-300"
                 >
-                  <option value="" className="bg-gray-900">Select project type</option>
+                  <option value="" className="bg-gray-900">{t('contact.form.select_project') || 'プロジェクトタイプを選択'}</option>
                   {projectTypes.map(type => (
                     <option key={type} value={type} className="bg-gray-900">{type}</option>
                   ))}
@@ -169,7 +169,7 @@ export const ContactPage: React.FC = () => {
                   required
                   rows={6}
                   className="w-full bg-white/5 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 transition-all duration-300 resize-none"
-                  placeholder="Tell me about your project, timeline, budget, and any specific requirements..."
+                  placeholder={t('contact.placeholder.details')}
                 />
               </div>
 
@@ -258,7 +258,7 @@ export const ContactPage: React.FC = () => {
                       </div>
                       <div>
                         <h4 className="text-white font-semibold group-hover:text-blue-300 transition-colors">
-                          {link.name}
+                          {t(`contact.social.${link.name.toLowerCase() }_name`) || link.name}
                         </h4>
                         <p className="text-gray-400 text-sm">{link.description}</p>
                       </div>
@@ -273,11 +273,11 @@ export const ContactPage: React.FC = () => {
               <h3 className="text-lg font-bold text-white mb-4">{t('contact.availability')}</h3>
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-green-400 mb-1">Available</div>
+                  <div className="text-2xl font-bold text-green-400 mb-1">{t('contact.availability.label_available')}</div>
                   <div className="text-sm text-gray-400">{t('contact.availability.new')}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-400 mb-1">JST</div>
+                    <div className="text-2xl font-bold text-blue-400 mb-1">{t('contact.availability.tz')}</div>
                   <div className="text-sm text-gray-400">{t('contact.availability.timezone')}</div>
                 </div>
               </div>

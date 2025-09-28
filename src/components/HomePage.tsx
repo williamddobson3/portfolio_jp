@@ -20,9 +20,9 @@ export const HomePage: React.FC = () => {
   }, []);
 
   const orbitalNodes = [
-    { name: 'AI/ML', color: 'purple', delay: 0 },
+    { name: t('skills.category.ai'), color: 'purple', delay: 0 },
     { name: 'React', color: 'blue', delay: 1 },
-    { name: 'Android', color: 'green', delay: 2 },
+    { name: t('skills.category.android'), color: 'green', delay: 2 },
     { name: 'Node.js', color: 'emerald', delay: 3 },
   ];
 
@@ -98,10 +98,10 @@ export const HomePage: React.FC = () => {
         {/* Social Links */}
         <div className="flex justify-center space-x-8">
           {[
-            { Icon: Github, href: 'https://github.com/williamddobson3', label: 'GitHub' },
-            { Icon: Mail, href: 'mailto:satoshiengineer92@gmail.com', label: 'Email' },
-            { Icon: MessageCircle, href: 'https://t.me/ErosPhoenix', label: 'Telegram' },
-            { Icon: Users, href: 'https://discord.com/users/cupid076831', label: 'Discord' }
+            { Icon: Github, href: 'https://github.com/williamddobson3', label: t('contact.social.github') },
+            { Icon: Mail, href: 'mailto:satoshiengineer92@gmail.com', label: t('contact.social.email') },
+            { Icon: MessageCircle, href: 'https://t.me/ErosPhoenix', label: t('contact.social.telegram') },
+            { Icon: Users, href: 'https://discord.com/users/cupid076831', label: t('contact.social.discord') }
           ].map(({ Icon, href, label }) => (
             <a
               key={label}
