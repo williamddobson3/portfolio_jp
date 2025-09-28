@@ -88,7 +88,7 @@ export const projects: Project[] = [
     status: 'Launched',
     technologies: ['Unity', 'C#', 'ARKit', 'ARCore', '3D Modeling'],
     images: ['/projects/ABC_AR/1.jpeg', '/projects/ABC_AR/2.jpeg', '/projects/ABC_AR/3.jpg'],
-    website: ''
+    website: 'https://www.appsquare.com.au/abc-ar/'
   },
   {
     id: 'botanistofficial',
