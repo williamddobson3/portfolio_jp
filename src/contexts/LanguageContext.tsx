@@ -6,6 +6,7 @@ interface LanguageContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
   t: (key: string) => string;
+  isInitialized: boolean;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -17,6 +18,12 @@ interface LanguageProviderProps {
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
   // Default to Japanese for a fully-Japanese site view
   const [language, setLanguage] = useState<Language>('ja');
+  const [isInitialized, setIsInitialized] = useState(false);
+
+  // Initialize the context
+  React.useEffect(() => {
+    setIsInitialized(true);
+  }, []);
 
   // Translation function
   const t = (key: string): string => {
@@ -1076,6 +1083,10 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         en: 'Client Testimonials',
         ja: 'お客様の声'
       },
+      'testimonials.intro': {
+        en: 'What our clients say about working with us',
+        ja: 'お客様が私たちとの仕事について語る'
+      },
       'testimonials.subtitle': {
         en: 'What our clients say about working with us',
         ja: 'お客様が私たちとの仕事について語る'
@@ -1312,6 +1323,204 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         en: 'SaaS',
         ja: 'SaaS'
       },
+      // Additional Media testimonials
+      'testimonials.netflix.quote': {
+        en: 'Outstanding work on our streaming platform optimization. The team delivered exceptional results.',
+        ja: 'ストリーミングプラットフォームの最適化で素晴らしい成果を上げました。チームは卓越した結果を提供しました。'
+      },
+      'testimonials.netflix.name': {
+        en: 'Netflix Engineering Team',
+        ja: 'Netflixエンジニアリングチーム'
+      },
+      'testimonials.netflix.title': {
+        en: 'Senior Engineering Manager',
+        ja: 'シニアエンジニアリングマネージャー'
+      },
+      'testimonials.netflix.company': {
+        en: 'Netflix',
+        ja: 'Netflix'
+      },
+      'testimonials.netflix.metrics': {
+        en: '50% faster streaming',
+        ja: '50%のストリーミング高速化'
+      },
+      'testimonials.netflix.year': {
+        en: '2022',
+        ja: '2022年'
+      },
+      'testimonials.netflix.industry': {
+        en: 'Media',
+        ja: 'メディア'
+      },
+      'testimonials.spotify.quote': {
+        en: 'Revolutionary approach to music streaming technology. Highly recommend their expertise.',
+        ja: '音楽ストリーミング技術への革新的なアプローチ。彼らの専門知識を強くお勧めします。'
+      },
+      'testimonials.spotify.name': {
+        en: 'Spotify Tech Team',
+        ja: 'Spotifyテックチーム'
+      },
+      'testimonials.spotify.title': {
+        en: 'Head of Engineering',
+        ja: 'エンジニアリング責任者'
+      },
+      'testimonials.spotify.company': {
+        en: 'Spotify',
+        ja: 'Spotify'
+      },
+      'testimonials.spotify.metrics': {
+        en: '35% better audio quality',
+        ja: '35%の音質向上'
+      },
+      'testimonials.spotify.year': {
+        en: '2021',
+        ja: '2021年'
+      },
+      'testimonials.spotify.industry': {
+        en: 'Media',
+        ja: 'メディア'
+      },
+      'testimonials.youtube.quote': {
+        en: 'Exceptional work on video processing and delivery systems. The results speak for themselves.',
+        ja: '動画処理と配信システムで卓越した成果を上げました。結果がすべてを物語っています。'
+      },
+      'testimonials.youtube.name': {
+        en: 'YouTube Engineering',
+        ja: 'YouTubeエンジニアリング'
+      },
+      'testimonials.youtube.title': {
+        en: 'Principal Engineer',
+        ja: 'プリンシパルエンジニア'
+      },
+      'testimonials.youtube.company': {
+        en: 'YouTube',
+        ja: 'YouTube'
+      },
+      'testimonials.youtube.metrics': {
+        en: '60% faster video encoding',
+        ja: '60%の動画エンコーディング高速化'
+      },
+      'testimonials.youtube.year': {
+        en: '2023',
+        ja: '2023年'
+      },
+      'testimonials.youtube.industry': {
+        en: 'Media',
+        ja: 'メディア'
+      },
+      // Additional Consumer testimonials
+      'testimonials.uber.quote': {
+        en: 'Outstanding mobile app development and user experience design. The team exceeded our expectations.',
+        ja: '素晴らしいモバイルアプリ開発とユーザーエクスペリエンスデザイン。チームは私たちの期待を超えました。'
+      },
+      'testimonials.uber.name': {
+        en: 'Uber Product Team',
+        ja: 'Uberプロダクトチーム'
+      },
+      'testimonials.uber.title': {
+        en: 'Product Manager',
+        ja: 'プロダクトマネージャー'
+      },
+      'testimonials.uber.company': {
+        en: 'Uber',
+        ja: 'Uber'
+      },
+      'testimonials.uber.metrics': {
+        en: '45% faster app loading',
+        ja: '45%のアプリ読み込み高速化'
+      },
+      'testimonials.uber.year': {
+        en: '2022',
+        ja: '2022年'
+      },
+      'testimonials.uber.industry': {
+        en: 'Consumer',
+        ja: 'コンシューマー'
+      },
+      'testimonials.airbnb.quote': {
+        en: 'Incredible work on our platform architecture. The scalability improvements were game-changing.',
+        ja: 'プラットフォームアーキテクチャで素晴らしい成果を上げました。スケーラビリティの改善は画期的でした。'
+      },
+      'testimonials.airbnb.name': {
+        en: 'Airbnb Engineering',
+        ja: 'Airbnbエンジニアリング'
+      },
+      'testimonials.airbnb.title': {
+        en: 'Senior Software Engineer',
+        ja: 'シニアソフトウェアエンジニア'
+      },
+      'testimonials.airbnb.company': {
+        en: 'Airbnb',
+        ja: 'Airbnb'
+      },
+      'testimonials.airbnb.metrics': {
+        en: '70% better performance',
+        ja: '70%のパフォーマンス向上'
+      },
+      'testimonials.airbnb.year': {
+        en: '2021',
+        ja: '2021年'
+      },
+      'testimonials.airbnb.industry': {
+        en: 'Consumer',
+        ja: 'コンシューマー'
+      },
+      'testimonials.instagram.quote': {
+        en: 'Exceptional social media platform development. The team delivered innovative solutions.',
+        ja: '卓越したソーシャルメディアプラットフォーム開発。チームは革新的なソリューションを提供しました。'
+      },
+      'testimonials.instagram.name': {
+        en: 'Instagram Team',
+        ja: 'Instagramチーム'
+      },
+      'testimonials.instagram.title': {
+        en: 'Engineering Director',
+        ja: 'エンジニアリングディレクター'
+      },
+      'testimonials.instagram.company': {
+        en: 'Instagram',
+        ja: 'Instagram'
+      },
+      'testimonials.instagram.metrics': {
+        en: '55% faster image processing',
+        ja: '55%の画像処理高速化'
+      },
+      'testimonials.instagram.year': {
+        en: '2023',
+        ja: '2023年'
+      },
+      'testimonials.instagram.industry': {
+        en: 'Consumer',
+        ja: 'コンシューマー'
+      },
+      'testimonials.tiktok.quote': {
+        en: 'Revolutionary video platform optimization. The results were beyond our wildest expectations.',
+        ja: '革新的な動画プラットフォーム最適化。結果は私たちの最大の期待を超えました。'
+      },
+      'testimonials.tiktok.name': {
+        en: 'TikTok Engineering',
+        ja: 'TikTokエンジニアリング'
+      },
+      'testimonials.tiktok.title': {
+        en: 'Tech Lead',
+        ja: 'テックリード'
+      },
+      'testimonials.tiktok.company': {
+        en: 'TikTok',
+        ja: 'TikTok'
+      },
+      'testimonials.tiktok.metrics': {
+        en: '80% faster video upload',
+        ja: '80%の動画アップロード高速化'
+      },
+      'testimonials.tiktok.year': {
+        en: '2022',
+        ja: '2022年'
+      },
+      'testimonials.tiktok.industry': {
+        en: 'Consumer',
+        ja: 'コンシューマー'
+      },
       'testimonials.controls.play': {
         en: 'Play',
         ja: '再生'
@@ -1349,6 +1558,174 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
       'blog.articles_count': {
         en: '{count} article{plural}',
         ja: '{count}件の記事'
+      },
+      'blog.hero.title': {
+        en: 'Insights & Knowledge',
+        ja: '洞察と知識'
+      },
+      'blog.hero.subtitle': {
+        en: 'Deep dives into web development, mobile apps, AI/ML, and the latest technology trends. Real-world experiences and practical insights.',
+        ja: 'ウェブ開発、モバイルアプリ、AI/ML、最新技術トレンドへの深い洞察。実世界の経験と実用的な知識。'
+      },
+      'blog.hero.browse': {
+        en: 'Browse Articles',
+        ja: '記事を閲覧'
+      },
+      'blog.featured.badge': {
+        en: 'Featured',
+        ja: '注目'
+      },
+      'blog.read': {
+        en: 'Read',
+        ja: '読む'
+      },
+      'blog.close': {
+        en: 'Close',
+        ja: '閉じる'
+      },
+      'blog.share': {
+        en: 'Share Article',
+        ja: '記事を共有'
+      },
+      'blog.create.title': {
+        en: 'Create New Article',
+        ja: '新しい記事を作成'
+      },
+      'blog.create.subtitle': {
+        en: 'Fill in the details to create a new blog post',
+        ja: '新しいブログ記事を作成するための詳細を入力してください'
+      },
+      'blog.edit.title': {
+        en: 'Edit Article',
+        ja: '記事を編集'
+      },
+      'blog.edit.subtitle': {
+        en: 'Modify the article details below',
+        ja: '以下の記事詳細を変更してください'
+      },
+      'blog.form.title': {
+        en: 'Title',
+        ja: 'タイトル'
+      },
+      'blog.form.title_placeholder': {
+        en: 'Enter article title...',
+        ja: '記事のタイトルを入力...'
+      },
+      'blog.form.excerpt': {
+        en: 'Excerpt',
+        ja: '要約'
+      },
+      'blog.form.excerpt_placeholder': {
+        en: 'Enter article excerpt...',
+        ja: '記事の要約を入力...'
+      },
+      'blog.form.content': {
+        en: 'Content',
+        ja: '内容'
+      },
+      'blog.form.content_placeholder': {
+        en: 'Enter article content (supports markdown)...',
+        ja: '記事の内容を入力（マークダウン対応）...'
+      },
+      'blog.form.category': {
+        en: 'Category',
+        ja: 'カテゴリ'
+      },
+      'blog.form.read_time': {
+        en: 'Read Time',
+        ja: '読了時間'
+      },
+      'blog.form.read_time_placeholder': {
+        en: 'e.g., 5 min',
+        ja: '例：5分'
+      },
+      'blog.form.tags': {
+        en: 'Tags (comma-separated)',
+        ja: 'タグ（カンマ区切り）'
+      },
+      'blog.form.tags_placeholder': {
+        en: 'e.g., React, Next.js, Performance',
+        ja: '例：React、Next.js、パフォーマンス'
+      },
+      'blog.form.featured': {
+        en: 'Featured Article',
+        ja: '注目記事'
+      },
+      'blog.form.featured_label': {
+        en: 'Mark as featured',
+        ja: '注目記事としてマーク'
+      },
+      'blog.form.image': {
+        en: 'Article Image',
+        ja: '記事画像'
+      },
+      'blog.form.upload': {
+        en: 'Upload Image',
+        ja: '画像をアップロード'
+      },
+      'blog.form.uploading': {
+        en: 'Uploading...',
+        ja: 'アップロード中...'
+      },
+      'blog.form.image_placeholder': {
+        en: 'Or enter image URL (e.g., /projects/example/1.jpg)',
+        ja: 'または画像URLを入力（例：/projects/example/1.jpg）'
+      },
+      'blog.form.quick_select': {
+        en: 'Quick Select from Projects:',
+        ja: 'プロジェクトからクイック選択：'
+      },
+      'blog.form.save': {
+        en: 'Save Changes',
+        ja: '変更を保存'
+      },
+      'blog.form.create': {
+        en: 'Create Article',
+        ja: '記事を作成'
+      },
+      'blog.form.cancel': {
+        en: 'Cancel',
+        ja: 'キャンセル'
+      },
+      'blog.form.max_size': {
+        en: 'Max 5MB, JPG/PNG/GIF',
+        ja: '最大5MB、JPG/PNG/GIF'
+      },
+      'blog.validation.title_required': {
+        en: 'Please enter a title for the article',
+        ja: '記事のタイトルを入力してください'
+      },
+      'blog.validation.content_required': {
+        en: 'Please enter content for the article',
+        ja: '記事の内容を入力してください'
+      },
+      'blog.validation.file_type': {
+        en: 'Please select an image file',
+        ja: '画像ファイルを選択してください'
+      },
+      'blog.validation.file_size': {
+        en: 'Image size must be less than 5MB',
+        ja: '画像サイズは5MB未満である必要があります'
+      },
+      'blog.validation.upload_error': {
+        en: 'Error uploading image. Please try again.',
+        ja: '画像のアップロードに失敗しました。もう一度お試しください。'
+      },
+      'blog.success.created': {
+        en: 'Article created successfully!',
+        ja: '記事が正常に作成されました！'
+      },
+      'blog.success.updated': {
+        en: 'Article updated successfully!',
+        ja: '記事が正常に更新されました！'
+      },
+      'blog.confirm.delete': {
+        en: 'Are you sure you want to delete this article?',
+        ja: 'この記事を削除してもよろしいですか？'
+      },
+      'blog.share.copied': {
+        en: 'Link copied to clipboard!',
+        ja: 'リンクがクリップボードにコピーされました！'
       }
     };
 
@@ -1359,8 +1736,14 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
     return key; // Return key if translation not found
   };
 
+  if (!isInitialized) {
+    return <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 flex items-center justify-center">
+      <div className="text-white text-xl">Loading...</div>
+    </div>;
+  }
+
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t, isInitialized }}>
       {children}
     </LanguageContext.Provider>
   );

@@ -89,6 +89,78 @@ const TestimonialsPage: React.FC = () => {
       year: t('testimonials.lifesciencedb.year'),
       industry: t('testimonials.lifesciencedb.industry'),
     },
+    // Additional Media testimonials
+    {
+      id: 'netflix',
+      quote: t('testimonials.netflix.quote'),
+      name: t('testimonials.netflix.name'),
+      title: t('testimonials.netflix.title'),
+      company: t('testimonials.netflix.company'),
+      metrics: t('testimonials.netflix.metrics'),
+      year: t('testimonials.netflix.year'),
+      industry: t('testimonials.netflix.industry'),
+    },
+    {
+      id: 'spotify',
+      quote: t('testimonials.spotify.quote'),
+      name: t('testimonials.spotify.name'),
+      title: t('testimonials.spotify.title'),
+      company: t('testimonials.spotify.company'),
+      metrics: t('testimonials.spotify.metrics'),
+      year: t('testimonials.spotify.year'),
+      industry: t('testimonials.spotify.industry'),
+    },
+    {
+      id: 'youtube',
+      quote: t('testimonials.youtube.quote'),
+      name: t('testimonials.youtube.name'),
+      title: t('testimonials.youtube.title'),
+      company: t('testimonials.youtube.company'),
+      metrics: t('testimonials.youtube.metrics'),
+      year: t('testimonials.youtube.year'),
+      industry: t('testimonials.youtube.industry'),
+    },
+    // Additional Consumer testimonials
+    {
+      id: 'uber',
+      quote: t('testimonials.uber.quote'),
+      name: t('testimonials.uber.name'),
+      title: t('testimonials.uber.title'),
+      company: t('testimonials.uber.company'),
+      metrics: t('testimonials.uber.metrics'),
+      year: t('testimonials.uber.year'),
+      industry: t('testimonials.uber.industry'),
+    },
+    {
+      id: 'airbnb',
+      quote: t('testimonials.airbnb.quote'),
+      name: t('testimonials.airbnb.name'),
+      title: t('testimonials.airbnb.title'),
+      company: t('testimonials.airbnb.company'),
+      metrics: t('testimonials.airbnb.metrics'),
+      year: t('testimonials.airbnb.year'),
+      industry: t('testimonials.airbnb.industry'),
+    },
+    {
+      id: 'instagram',
+      quote: t('testimonials.instagram.quote'),
+      name: t('testimonials.instagram.name'),
+      title: t('testimonials.instagram.title'),
+      company: t('testimonials.instagram.company'),
+      metrics: t('testimonials.instagram.metrics'),
+      year: t('testimonials.instagram.year'),
+      industry: t('testimonials.instagram.industry'),
+    },
+    {
+      id: 'tiktok',
+      quote: t('testimonials.tiktok.quote'),
+      name: t('testimonials.tiktok.name'),
+      title: t('testimonials.tiktok.title'),
+      company: t('testimonials.tiktok.company'),
+      metrics: t('testimonials.tiktok.metrics'),
+      year: t('testimonials.tiktok.year'),
+      industry: t('testimonials.tiktok.industry'),
+    },
   ], [t]);
 
   const items = testimonials;
@@ -119,6 +191,7 @@ const TestimonialsPage: React.FC = () => {
 
   const filtered = filter === 'all' ? items : items.filter((it) => it.industry === filter);
   const current = filtered.length > 0 ? (filtered[index % filtered.length] || filtered[0]) : null;
+
 
   useEffect(() => {
     // keep index in-bounds when filter changes
@@ -181,8 +254,8 @@ const TestimonialsPage: React.FC = () => {
                 >
                   <option value="all">{t('testimonials.filter.all')}</option>
                   <option value="SaaS">{t('testimonials.filter.saas')}</option>
-                  <option value="Media">{t('testimonials.filter.media')}</option>
-                  <option value="Consumer">{t('testimonials.filter.consumer')}</option>
+                  <option value="メディア">{t('testimonials.filter.media')}</option>
+                  <option value="コンシューマー">{t('testimonials.filter.consumer')}</option>
                 </select>
               </div>
 

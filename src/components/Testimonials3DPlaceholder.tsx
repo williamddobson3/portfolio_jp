@@ -25,6 +25,18 @@ export const Testimonials3DPlaceholder: React.FC<{ playing: boolean }> = ({ play
       author: t('testimonials.buzzfeed.name'),
       company: t('testimonials.buzzfeed.company'), 
       metric: t('testimonials.buzzfeed.metrics')
+    },
+    {
+      quote: t('testimonials.netflix.quote'),
+      author: t('testimonials.netflix.name'),
+      company: t('testimonials.netflix.company'),
+      metric: t('testimonials.netflix.metrics')
+    },
+    {
+      quote: t('testimonials.uber.quote'),
+      author: t('testimonials.uber.name'),
+      company: t('testimonials.uber.company'),
+      metric: t('testimonials.uber.metrics')
     }
   ], [t]);
 

@@ -34,41 +34,41 @@ const BlogPage: React.FC = () => {
   const [blogPosts, setBlogPosts] = useState<BlogPost[]>([
     {
       id: '1',
-      title: 'Building High-Performance Web Applications with React and Next.js',
-      excerpt: 'Learn how to create lightning-fast web applications using modern React patterns, Next.js optimization techniques, and performance best practices.',
-      content: `In today's competitive digital landscape, web application performance is crucial for user engagement and business success. This comprehensive guide covers everything you need to know about building high-performance web applications using React and Next.js.
+      title: 'ReactとNext.jsでハイパフォーマンスWebアプリケーションを構築する',
+      excerpt: 'モダンなReactパターン、Next.js最適化技術、パフォーマンスベストプラクティスを使用して、高速なWebアプリケーションを作成する方法を学びます。',
+      content: `今日の競争の激しいデジタル環境において、Webアプリケーションのパフォーマンスはユーザーエンゲージメントとビジネス成功にとって重要です。この包括的なガイドでは、ReactとNext.jsを使用してハイパフォーマンスWebアプリケーションを構築するために知っておくべきすべてをカバーします。
 
-## The Foundation: React Performance Optimization
+## 基盤：Reactパフォーマンス最適化
 
-React's component-based architecture provides excellent opportunities for optimization. Key strategies include:
+Reactのコンポーネントベースアーキテクチャは、最適化の優れた機会を提供します。主要な戦略には以下が含まれます：
 
-- **Component Memoization**: Use React.memo() for expensive components
-- **Hook Optimization**: Implement useMemo() and useCallback() strategically
-- **Code Splitting**: Lazy load components to reduce initial bundle size
-- **Virtual Scrolling**: Handle large datasets efficiently
+- **コンポーネントメモ化**: 高コストなコンポーネントにReact.memo()を使用
+- **フック最適化**: useMemo()とuseCallback()を戦略的に実装
+- **コード分割**: 初期バンドルサイズを削減するためのコンポーネントの遅延読み込み
+- **仮想スクロール**: 大きなデータセットを効率的に処理
 
-## Next.js Performance Features
+## Next.jsパフォーマンス機能
 
-Next.js offers powerful built-in optimizations:
+Next.jsは強力な組み込み最適化を提供します：
 
-- **Automatic Code Splitting**: Pages are automatically split for optimal loading
-- **Image Optimization**: Next.js Image component with automatic WebP conversion
-- **Static Generation**: Pre-render pages at build time for maximum speed
-- **API Routes**: Serverless functions for backend logic
+- **自動コード分割**: ページが最適な読み込みのために自動的に分割
+- **画像最適化**: 自動WebP変換を備えたNext.js Imageコンポーネント
+- **静的生成**: 最大速度のためにビルド時にページをプリレンダリング
+- **APIルート**: バックエンドロジックのためのサーバーレス関数
 
-## Real-World Results
+## 実際の結果
 
-In my recent projects, implementing these techniques has resulted in:
-- **40% faster page load times**
-- **60% improvement in Core Web Vitals**
-- **2x better user engagement metrics**
+私の最近のプロジェクトでは、これらの技術を実装することで以下の結果を得ました：
+- **40%高速なページ読み込み時間**
+- **Core Web Vitalsの60%改善**
+- **2倍良いユーザーエンゲージメント指標**
 
-The key is understanding your users' needs and optimizing accordingly.`,
+重要なのは、ユーザーのニーズを理解し、それに応じて最適化することです。`,
       author: 'Keishin',
       date: '2024-01-15',
-      readTime: '8 min',
+      readTime: '8分',
       category: 'Web Development',
-      tags: ['React', 'Next.js', 'Performance', 'Web Development'],
+      tags: ['React', 'Next.js', 'パフォーマンス', 'Web開発'],
       image: '/projects/buzzfeed/1.jpg',
       views: 1247,
       likes: 89,
@@ -76,39 +76,39 @@ The key is understanding your users' needs and optimizing accordingly.`,
     },
     {
       id: '2',
-      title: 'Android App Development with Jetpack Compose: A Complete Guide',
-      excerpt: 'Discover the power of Jetpack Compose for creating modern, responsive Android applications with less code and better performance.',
-      content: `Jetpack Compose has revolutionized Android development by providing a declarative UI framework that's both powerful and intuitive. This guide covers everything from basic concepts to advanced patterns.
+      title: 'Jetpack ComposeによるAndroidアプリ開発：完全ガイド',
+      excerpt: 'Jetpack Composeの力を発見し、より少ないコードとより良いパフォーマンスでモダンでレスポンシブなAndroidアプリケーションを作成しましょう。',
+      content: `Jetpack Composeは、強力で直感的な宣言的UIフレームワークを提供することで、Android開発に革命をもたらしました。このガイドでは、基本概念から高度なパターンまで、すべてをカバーします。
 
-## Why Jetpack Compose?
+## なぜJetpack Composeなのか？
 
-Traditional Android development with XML layouts has several limitations:
-- Verbose and error-prone
-- Difficult to maintain
-- Limited reusability
-- Complex state management
+XMLレイアウトを使用した従来のAndroid開発には、いくつかの制限があります：
+- 冗長でエラーが発生しやすい
+- 保守が困難
+- 再利用性が限定的
+- 複雑な状態管理
 
-Jetpack Compose solves these issues by:
-- **Declarative UI**: Describe what you want, not how to achieve it
-- **Composable Functions**: Reusable, testable UI components
-- **State Management**: Built-in state handling with remember and mutableStateOf
-- **Material Design**: Seamless integration with Material 3
+Jetpack Composeは以下の方法でこれらの問題を解決します：
+- **宣言的UI**: 実現方法ではなく、何をしたいかを記述
+- **Composable関数**: 再利用可能でテスト可能なUIコンポーネント
+- **状態管理**: rememberとmutableStateOfによる組み込み状態処理
+- **Material Design**: Material 3とのシームレスな統合
 
-## Best Practices
+## ベストプラクティス
 
-1. **Keep Composables Small**: Single responsibility principle
-2. **Use State Hoisting**: Lift state up to the appropriate level
-3. **Implement Proper Testing**: Unit and UI tests for composables
-4. **Performance Optimization**: Use LazyColumn for large lists
+1. **Composableを小さく保つ**: 単一責任の原則
+2. **状態のホイスティングを使用**: 適切なレベルまで状態を上げる
+3. **適切なテストを実装**: ComposableのユニットテストとUIテスト
+4. **パフォーマンス最適化**: 大きなリストにはLazyColumnを使用
 
-## Real Project Example
+## 実際のプロジェクト例
 
-In my recent Android project, Jetpack Compose reduced development time by 30% while improving code maintainability significantly.`,
+私の最近のAndroidプロジェクトでは、Jetpack Composeにより開発時間を30%短縮し、コードの保守性を大幅に改善しました。`,
       author: 'Keishin',
       date: '2024-01-10',
-      readTime: '12 min',
+      readTime: '12分',
       category: 'Mobile Development',
-      tags: ['Android', 'Jetpack Compose', 'Mobile Development', 'Kotlin'],
+      tags: ['Android', 'Jetpack Compose', 'モバイル開発', 'Kotlin'],
       image: '/projects/ameba/1.png',
       views: 892,
       likes: 67,
@@ -116,43 +116,43 @@ In my recent Android project, Jetpack Compose reduced development time by 30% wh
     },
     {
       id: '3',
-      title: 'AI Model Development: From Prototype to Production',
-      excerpt: 'A comprehensive guide to building, training, and deploying AI models in production environments with MLOps best practices.',
-      content: `The journey from AI prototype to production-ready system involves numerous challenges. This guide covers the complete MLOps pipeline for successful AI deployment.
+      title: 'AIモデル開発：プロトタイプから本番環境まで',
+      excerpt: 'MLOpsベストプラクティスを使用して、本番環境でAIモデルを構築、訓練、デプロイするための包括的なガイド。',
+      content: `AIプロトタイプから本番対応システムへの道のりには、数多くの課題が伴います。このガイドでは、成功するAIデプロイメントのための完全なMLOpsパイプラインをカバーします。
 
-## The MLOps Pipeline
+## MLOpsパイプライン
 
-### 1. Data Preparation
-- **Data Collection**: Gathering relevant, high-quality datasets
-- **Data Cleaning**: Handling missing values, outliers, and inconsistencies
-- **Feature Engineering**: Creating meaningful features for model training
-- **Data Validation**: Ensuring data quality and consistency
+### 1. データ準備
+- **データ収集**: 関連性の高い高品質データセットの収集
+- **データクリーニング**: 欠損値、外れ値、不整合の処理
+- **特徴エンジニアリング**: モデル訓練のための意味のある特徴の作成
+- **データ検証**: データ品質と一貫性の確保
 
-### 2. Model Development
-- **Algorithm Selection**: Choosing the right model for your problem
-- **Hyperparameter Tuning**: Optimizing model performance
-- **Cross-Validation**: Ensuring model generalization
-- **Model Evaluation**: Comprehensive performance metrics
+### 2. モデル開発
+- **アルゴリズム選択**: 問題に適したモデルの選択
+- **ハイパーパラメータチューニング**: モデルパフォーマンスの最適化
+- **クロスバリデーション**: モデルの汎化性の確保
+- **モデル評価**: 包括的なパフォーマンス指標
 
-### 3. Production Deployment
-- **Containerization**: Docker for consistent environments
-- **API Development**: RESTful services for model inference
-- **Monitoring**: Real-time performance tracking
-- **Scaling**: Handling increased load and traffic
+### 3. 本番デプロイメント
+- **コンテナ化**: 一貫した環境のためのDocker
+- **API開発**: モデル推論のためのRESTfulサービス
+- **監視**: リアルタイムパフォーマンス追跡
+- **スケーリング**: 増加した負荷とトラフィックの処理
 
-## Real-World Success
+## 実際の成功事例
 
-In my recent AI projects, implementing proper MLOps practices has resulted in:
-- **50% faster model deployment**
-- **90% reduction in production issues**
-- **3x better model performance monitoring**
+私の最近のAIプロジェクトでは、適切なMLOpsプラクティスの実装により以下の結果を得ました：
+- **50%高速なモデルデプロイメント**
+- **本番問題の90%削減**
+- **3倍良いモデルパフォーマンス監視**
 
-The key is treating AI models as production software, not just research experiments.`,
+重要なのは、AIモデルを研究実験ではなく、本番ソフトウェアとして扱うことです。`,
       author: 'Keishin',
       date: '2024-01-05',
-      readTime: '15 min',
+      readTime: '15分',
       category: 'AI/ML',
-      tags: ['AI', 'MLOps', 'Machine Learning', 'Production'],
+      tags: ['AI', 'MLOps', '機械学習', '本番環境'],
       image: '/projects/OpenAI/1.png',
       views: 1563,
       likes: 124,
@@ -160,49 +160,49 @@ The key is treating AI models as production software, not just research experime
     },
     {
       id: '4',
-      title: 'Modern CSS Techniques for Stunning User Interfaces',
-      excerpt: 'Explore advanced CSS techniques including Grid, Flexbox, animations, and modern layout patterns for creating beautiful user interfaces.',
-      content: `CSS has evolved significantly, offering powerful tools for creating sophisticated user interfaces. This guide covers modern CSS techniques that every developer should know.
+      title: '素晴らしいユーザーインターフェースのためのモダンCSS技術',
+      excerpt: 'Grid、Flexbox、アニメーション、モダンレイアウトパターンを含む高度なCSS技術を探索し、美しいユーザーインターフェースを作成しましょう。',
+      content: `CSSは大幅に進化し、洗練されたユーザーインターフェースを作成するための強力なツールを提供しています。このガイドでは、すべての開発者が知っておくべきモダンCSS技術をカバーします。
 
-## Layout Systems
+## レイアウトシステム
 
 ### CSS Grid
-- **Two-dimensional layouts**: Perfect for complex page structures
-- **Responsive design**: Automatic adaptation to different screen sizes
-- **Grid areas**: Semantic naming for better maintainability
+- **2次元レイアウト**: 複雑なページ構造に最適
+- **レスポンシブデザイン**: 異なる画面サイズへの自動適応
+- **グリッドエリア**: より良い保守性のためのセマンティック命名
 
 ### Flexbox
-- **One-dimensional layouts**: Ideal for component-level layouts
-- **Alignment**: Precise control over item positioning
-- **Flexible sizing**: Automatic space distribution
+- **1次元レイアウト**: コンポーネントレベルのレイアウトに理想的
+- **配置**: アイテムの位置に対する精密な制御
+- **柔軟なサイズ調整**: 自動的なスペース配分
 
-## Advanced Techniques
+## 高度な技術
 
-1. **Custom Properties**: CSS variables for dynamic theming
-2. **Container Queries**: Responsive design based on container size
-3. **CSS Animations**: Smooth, performant animations
-4. **Modern Selectors**: Advanced targeting capabilities
+1. **カスタムプロパティ**: 動的テーマのためのCSS変数
+2. **コンテナクエリ**: コンテナサイズに基づくレスポンシブデザイン
+3. **CSSアニメーション**: スムーズで高性能なアニメーション
+4. **モダンセレクタ**: 高度なターゲティング機能
 
-## Performance Considerations
+## パフォーマンス考慮事項
 
-- Use transform and opacity for animations
-- Leverage CSS containment for better performance
-- Implement proper fallbacks for older browsers
-- Use CSS-in-JS libraries judiciously
+- アニメーションにはtransformとopacityを使用
+- より良いパフォーマンスのためにCSS containmentを活用
+- 古いブラウザ用の適切なフォールバックを実装
+- CSS-in-JSライブラリを慎重に使用
 
-## Real Project Impact
+## 実際のプロジェクトへの影響
 
-Implementing modern CSS techniques in my projects has resulted in:
-- **25% faster rendering**
-- **40% better user experience**
-- **60% reduction in JavaScript bundle size**
+私のプロジェクトでモダンCSS技術を実装した結果：
+- **25%高速なレンダリング**
+- **40%良いユーザーエクスペリエンス**
+- **60%のJavaScriptバンドルサイズ削減**
 
-The key is understanding when to use each technique and how they work together.`,
+重要なのは、各技術をいつ使用するか、そしてそれらがどのように連携するかを理解することです。`,
       author: 'Keishin',
       date: '2024-01-01',
-      readTime: '10 min',
+      readTime: '10分',
       category: 'Frontend',
-      tags: ['CSS', 'Frontend', 'UI/UX', 'Web Development'],
+      tags: ['CSS', 'フロントエンド', 'UI/UX', 'Web開発'],
       image: '/projects/muji/1.png',
       views: 743,
       likes: 56,
@@ -210,51 +210,51 @@ The key is understanding when to use each technique and how they work together.`
     },
     {
       id: '5',
-      title: 'Building Scalable Backend Systems with Node.js',
-      excerpt: 'Learn how to design and implement robust, scalable backend systems using Node.js, Express, and modern architectural patterns.',
-      content: `Backend development requires careful consideration of scalability, performance, and maintainability. This guide covers building production-ready backend systems with Node.js.
+      title: 'Node.jsでスケーラブルなバックエンドシステムを構築する',
+      excerpt: 'Node.js、Express、モダンなアーキテクチャパターンを使用して、堅牢でスケーラブルなバックエンドシステムを設計・実装する方法を学びましょう。',
+      content: `バックエンド開発では、スケーラビリティ、パフォーマンス、保守性を慎重に考慮する必要があります。このガイドでは、Node.jsを使用して本番対応のバックエンドシステムを構築する方法をカバーします。
 
-## Architecture Patterns
+## アーキテクチャパターン
 
-### Microservices
-- **Service Separation**: Independent, deployable services
-- **API Gateway**: Centralized request routing
-- **Service Discovery**: Dynamic service location
-- **Circuit Breakers**: Fault tolerance patterns
+### マイクロサービス
+- **サービス分離**: 独立したデプロイ可能なサービス
+- **APIゲートウェイ**: 集中化されたリクエストルーティング
+- **サービスディスカバリ**: 動的なサービス位置特定
+- **サーキットブレーカー**: フォルトトレランスパターン
 
-### Event-Driven Architecture
-- **Message Queues**: Asynchronous communication
-- **Event Sourcing**: Audit trail and state reconstruction
-- **CQRS**: Command Query Responsibility Segregation
-- **Saga Pattern**: Distributed transaction management
+### イベント駆動アーキテクチャ
+- **メッセージキュー**: 非同期通信
+- **イベントソーシング**: 監査証跡と状態再構築
+- **CQRS**: コマンドクエリ責任分離
+- **Sagaパターン**: 分散トランザクション管理
 
-## Performance Optimization
+## パフォーマンス最適化
 
-1. **Database Optimization**: Proper indexing and query optimization
-2. **Caching Strategies**: Redis for session and data caching
-3. **Load Balancing**: Distributing traffic across multiple servers
-4. **CDN Integration**: Static asset delivery optimization
+1. **データベース最適化**: 適切なインデックスとクエリ最適化
+2. **キャッシュ戦略**: セッションとデータキャッシュのためのRedis
+3. **ロードバランシング**: 複数のサーバー間でのトラフィック分散
+4. **CDN統合**: 静的アセット配信最適化
 
-## Security Best Practices
+## セキュリティベストプラクティス
 
-- **Authentication**: JWT tokens and session management
-- **Authorization**: Role-based access control
-- **Input Validation**: Preventing injection attacks
-- **Rate Limiting**: Protecting against abuse
+- **認証**: JWTトークンとセッション管理
+- **認可**: ロールベースアクセス制御
+- **入力検証**: インジェクション攻撃の防止
+- **レート制限**: 悪用からの保護
 
-## Real-World Results
+## 実際の結果
 
-Implementing these patterns in my backend projects has resulted in:
-- **70% better scalability**
-- **50% faster response times**
-- **90% reduction in downtime**
+私のバックエンドプロジェクトでこれらのパターンを実装した結果：
+- **70%良いスケーラビリティ**
+- **50%高速なレスポンス時間**
+- **90%のダウンタイム削減**
 
-The key is choosing the right architecture for your specific use case.`,
+重要なのは、特定のユースケースに適したアーキテクチャを選択することです。`,
       author: 'Keishin',
       date: '2023-12-28',
-      readTime: '14 min',
+      readTime: '14分',
       category: 'Backend',
-      tags: ['Node.js', 'Backend', 'Architecture', 'Scalability'],
+      tags: ['Node.js', 'バックエンド', 'アーキテクチャ', 'スケーラビリティ'],
       image: '/projects/cookpad/1.jpg',
       views: 1089,
       likes: 78,
@@ -262,54 +262,54 @@ The key is choosing the right architecture for your specific use case.`,
     },
     {
       id: '6',
-      title: 'The Future of Web Development: Trends and Predictions',
-      excerpt: 'Explore emerging trends in web development, from WebAssembly to edge computing, and how they will shape the future of the web.',
-      content: `The web development landscape is constantly evolving. This article explores current trends and future predictions for web development.
+      title: 'Web開発の未来：トレンドと予測',
+      excerpt: 'WebAssemblyからエッジコンピューティングまで、Web開発の新興トレンドを探索し、それらがWebの未来をどのように形作るかを学びましょう。',
+      content: `Web開発の風景は絶えず進化しています。この記事では、Web開発の現在のトレンドと将来の予測を探ります。
 
-## Emerging Technologies
+## 新興技術
 
 ### WebAssembly (WASM)
-- **Near-native performance**: Running compiled code in browsers
-- **Language diversity**: Support for C++, Rust, Go, and more
-- **Use cases**: Games, image processing, scientific computing
+- **ネイティブに近いパフォーマンス**: ブラウザでコンパイルされたコードを実行
+- **言語多様性**: C++、Rust、Goなどのサポート
+- **ユースケース**: ゲーム、画像処理、科学計算
 
-### Edge Computing
-- **Reduced latency**: Processing closer to users
-- **Better performance**: Faster response times
-- **Global distribution**: Content delivery optimization
+### エッジコンピューティング
+- **レイテンシ削減**: ユーザーに近い場所での処理
+- **より良いパフォーマンス**: 高速なレスポンス時間
+- **グローバル配信**: コンテンツ配信最適化
 
-### Progressive Web Apps (PWAs)
-- **Native-like experience**: App-like functionality in browsers
-- **Offline support**: Working without internet connection
-- **Push notifications**: Engaging users effectively
+### プログレッシブWebアプリ (PWA)
+- **ネイティブライクなエクスペリエンス**: ブラウザでのアプリライクな機能
+- **オフラインサポート**: インターネット接続なしでの動作
+- **プッシュ通知**: 効果的なユーザーエンゲージメント
 
-## Future Predictions
+## 将来の予測
 
-1. **AI Integration**: Machine learning in web applications
-2. **Voice Interfaces**: Conversational user experiences
-3. **AR/VR Web**: Immersive web experiences
-4. **Quantum Computing**: Revolutionary processing power
+1. **AI統合**: Webアプリケーションでの機械学習
+2. **音声インターフェース**: 会話型ユーザーエクスペリエンス
+3. **AR/VR Web**: 没入型Webエクスペリエンス
+4. **量子コンピューティング**: 革命的処理能力
 
-## Preparing for the Future
+## 未来への準備
 
-- **Stay updated**: Continuous learning and adaptation
-- **Experiment**: Try new technologies and frameworks
-- **Community involvement**: Contributing to open source
-- **Skill diversification**: Broad knowledge base
+- **最新情報を保つ**: 継続的な学習と適応
+- **実験**: 新しい技術とフレームワークを試す
+- **コミュニティ参加**: オープンソースへの貢献
+- **スキル多様化**: 幅広い知識基盤
 
-## Real-World Impact
+## 実際の影響
 
-Staying ahead of trends in my development work has resulted in:
-- **30% faster adoption of new technologies**
-- **50% better client satisfaction**
-- **40% increased project success rates**
+私の開発作業でトレンドに先んじた結果：
+- **30%高速な新技術の採用**
+- **50%良いクライアント満足度**
+- **40%増加したプロジェクト成功率**
 
-The key is balancing innovation with practical application.`,
+重要なのは、イノベーションと実用的な応用のバランスを取ることです。`,
       author: 'Keishin',
       date: '2023-12-20',
-      readTime: '11 min',
+      readTime: '11分',
       category: 'Technology',
-      tags: ['Future', 'Technology', 'Web Development', 'Trends'],
+      tags: ['未来', '技術', 'Web開発', 'トレンド'],
       image: '/projects/teamlab/1.jpg',
       views: 934,
       likes: 72,
@@ -327,38 +327,38 @@ The key is balancing innovation with practical application.`,
   const handleCreatePost = () => {
     const newPost: BlogPost = {
       id: Date.now().toString(),
-      title: 'New Article Title',
-      excerpt: 'Write a compelling excerpt that summarizes your article...',
-      content: `# Your Article Title
+      title: '新しい記事タイトル',
+      excerpt: '記事を要約する魅力的な要約を書いてください...',
+      content: `# あなたの記事タイトル
 
-Write your article content here. You can use markdown formatting:
+ここに記事の内容を書いてください。マークダウン形式を使用できます：
 
-## Section Headers
-Use ## for section headers
+## セクションヘッダー
+セクションヘッダーには ## を使用
 
-### Subsection Headers
-Use ### for subsection headers
+### サブセクションヘッダー
+サブセクションヘッダーには ### を使用
 
-**Bold text** and *italic text* are supported.
+**太字** と *斜体* がサポートされています。
 
-- Bullet points
-- Work great for lists
-- And organizing content
+- 箇条書き
+- リストに最適
+- コンテンツの整理に役立つ
 
-## Code Examples
+## コード例
 \`\`\`javascript
-// Code blocks are supported
+// コードブロックがサポートされています
 const example = "Hello World";
 console.log(example);
 \`\`\`
 
-## Conclusion
-Wrap up your article with key takeaways and next steps.`,
+## 結論
+重要なポイントと次のステップで記事をまとめましょう。`,
       author: 'Keishin',
       date: new Date().toISOString().split('T')[0],
-      readTime: '5 min',
+      readTime: '5分',
       category: 'Web Development',
-      tags: ['New Article', 'Technology'],
+      tags: ['新しい記事', '技術'],
       image: '/projects/teamlab/1.jpg',
       views: 0,
       likes: 0,
@@ -375,23 +375,23 @@ Wrap up your article with key takeaways and next steps.`,
     
     // Basic validation
     if (!editingPost.title.trim()) {
-      alert('Please enter a title for the article');
+      alert(t('blog.validation.title_required'));
       return;
     }
     if (!editingPost.content.trim()) {
-      alert('Please enter content for the article');
+      alert(t('blog.validation.content_required'));
       return;
     }
     
     if (isCreating) {
       // Add new article to the beginning of the list
       setBlogPosts(prev => [editingPost, ...prev]);
-      alert('Article created successfully!');
+      alert(t('blog.success.created'));
     } else {
       setBlogPosts(prev => prev.map(post => 
         post.id === editingPost.id ? editingPost : post
       ));
-      alert('Article updated successfully!');
+      alert(t('blog.success.updated'));
     }
     
     setIsEditing(false);
@@ -406,7 +406,7 @@ Wrap up your article with key takeaways and next steps.`,
   };
 
   const handleDeletePost = (postId: string) => {
-    if (window.confirm('Are you sure you want to delete this article?')) {
+    if (window.confirm(t('blog.confirm.delete'))) {
       setBlogPosts(prev => prev.filter(post => post.id !== postId));
       setSelectedPost(null);
     }
@@ -419,13 +419,13 @@ Wrap up your article with key takeaways and next steps.`,
 
     // Validate file type
     if (!file.type.startsWith('image/')) {
-      alert('Please select an image file');
+      alert(t('blog.validation.file_type'));
       return;
     }
 
     // Validate file size (max 5MB)
     if (file.size > 5 * 1024 * 1024) {
-      alert('Image size must be less than 5MB');
+      alert(t('blog.validation.file_size'));
       return;
     }
 
@@ -443,7 +443,7 @@ Wrap up your article with key takeaways and next steps.`,
       reader.readAsDataURL(file);
     } catch (error) {
       console.error('Error uploading image:', error);
-      alert('Error uploading image. Please try again.');
+      alert(t('blog.validation.upload_error'));
       setUploadingImage(false);
     }
   };
@@ -488,7 +488,7 @@ Wrap up your article with key takeaways and next steps.`,
       });
     } else {
       navigator.clipboard.writeText(window.location.href);
-      alert('Link copied to clipboard!');
+      alert(t('blog.share.copied'));
     }
   };
 
@@ -502,16 +502,15 @@ Wrap up your article with key takeaways and next steps.`,
         <div className="pt-10 relative z-10 max-w-6xl mx-auto text-center">
           <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
             <BookOpen className="w-5 h-5 text-blue-400" />
-            <span className="text-white/80 text-sm font-medium">Technical Blog</span>
+            <span className="text-white/80 text-sm font-medium">{t('blog.title')}</span>
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Insights & <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-coral-400">Knowledge</span>
+            {t('blog.hero.title')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-coral-400">Knowledge</span>
           </h1>
           
           <p className="text-xl text-white/80 mb-8 max-w-3xl mx-auto">
-            Deep dives into web development, mobile apps, AI/ML, and the latest technology trends. 
-            Real-world experiences and practical insights.
+            {t('blog.hero.subtitle')}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -520,7 +519,7 @@ Wrap up your article with key takeaways and next steps.`,
               className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center space-x-2"
             >
               <BookOpen className="w-5 h-5" />
-              <span>Browse Articles</span>
+              <span>{t('blog.hero.browse')}</span>
             </button>
           </div>
         </div>
@@ -536,7 +535,7 @@ Wrap up your article with key takeaways and next steps.`,
                 <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white/60 w-5 h-5" />
                 <input
                   type="text"
-                  placeholder="Search articles..."
+                  placeholder={t('blog.search.placeholder')}
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   className="w-full pl-12 pr-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -553,7 +552,7 @@ Wrap up your article with key takeaways and next steps.`,
                 >
                   {categories.map(category => (
                     <option key={category} value={category} className="bg-slate-800">
-                      {category === 'all' ? 'All Categories' : category}
+                      {category === 'all' ? t('blog.categories.all') : category}
                     </option>
                   ))}
                 </select>
@@ -570,7 +569,7 @@ Wrap up your article with key takeaways and next steps.`,
       {selectedCategory === 'all' && (
         <section className="py-12 px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold text-white mb-8">Featured Articles</h2>
+            <h2 className="text-2xl font-bold text-white mb-8">{t('blog.featured')}</h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {blogPosts.filter(post => post.featured).map(post => (
                 <article
@@ -586,7 +585,7 @@ Wrap up your article with key takeaways and next steps.`,
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <div className="absolute top-4 left-4">
                       <span className="px-3 py-1 bg-blue-600 text-white text-sm font-medium rounded-full">
-                        Featured
+                        {t('blog.featured.badge')}
                       </span>
                     </div>
                   </div>
@@ -648,10 +647,10 @@ Wrap up your article with key takeaways and next steps.`,
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-2xl font-bold text-white">
-              {selectedCategory === 'all' ? 'All Articles' : `${selectedCategory} Articles`}
+              {selectedCategory === 'all' ? t('blog.all_articles') : `${selectedCategory} Articles`}
             </h2>
             <span className="text-white/60">
-              {filteredPosts.length} article{filteredPosts.length !== 1 ? 's' : ''}
+              {filteredPosts.length} {t('blog.articles_count').replace('{count}', filteredPosts.length.toString()).replace('{plural}', filteredPosts.length !== 1 ? 's' : '')}
             </span>
           </div>
           
@@ -729,7 +728,7 @@ Wrap up your article with key takeaways and next steps.`,
                         onClick={() => setSelectedPost(post)}
                         className="flex items-center space-x-1 px-3 py-1 bg-blue-600 text-white hover:bg-blue-700 rounded-full transition-colors"
                       >
-                        <span className="text-sm">Read</span>
+                        <span className="text-sm">{t('blog.read')}</span>
                         <ArrowRight className="w-4 h-4" />
                       </button>
                     </div>
@@ -823,14 +822,9 @@ Wrap up your article with key takeaways and next steps.`,
                   onClick={() => setSelectedPost(null)}
                   className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
-                  Close
+                  {t('blog.close')}
                 </button>
-                <button
-                  onClick={() => handleShare(selectedPost)}
-                  className="px-8 py-3 border border-white/20 hover:border-white/40 text-white rounded-xl font-semibold transition-colors"
-                >
-                  Share Article
-                </button>
+                
               </div>
             </div>
           </div>
@@ -857,10 +851,10 @@ Wrap up your article with key takeaways and next steps.`,
                 
                 <div className="flex-1">
                   <h2 className="text-3xl font-bold text-white mb-2">
-                    {isCreating ? 'Create New Article' : 'Edit Article'}
+                    {isCreating ? t('blog.create.title') : t('blog.edit.title')}
                   </h2>
                   <p className="text-white/80 text-lg leading-relaxed">
-                    {isCreating ? 'Fill in the details to create a new blog post' : 'Modify the article details below'}
+                    {isCreating ? t('blog.create.subtitle') : t('blog.edit.subtitle')}
                   </p>
                 </div>
               </div>
@@ -871,42 +865,42 @@ Wrap up your article with key takeaways and next steps.`,
               <div className="space-y-6">
                 {/* Title */}
                 <div>
-                  <label className="block text-white font-semibold mb-2">Title</label>
+                  <label className="block text-white font-semibold mb-2">{t('blog.form.title')}</label>
                   <input
                     type="text"
                     value={editingPost.title}
                     onChange={(e) => setEditingPost({...editingPost, title: e.target.value})}
                     className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    placeholder="Enter article title..."
+                    placeholder={t('blog.form.title_placeholder')}
                   />
                 </div>
 
                 {/* Excerpt */}
                 <div>
-                  <label className="block text-white font-semibold mb-2">Excerpt</label>
+                  <label className="block text-white font-semibold mb-2">{t('blog.form.excerpt')}</label>
                   <textarea
                     value={editingPost.excerpt}
                     onChange={(e) => setEditingPost({...editingPost, excerpt: e.target.value})}
                     className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-blue-500 h-24 resize-none"
-                    placeholder="Enter article excerpt..."
+                    placeholder={t('blog.form.excerpt_placeholder')}
                   />
                 </div>
 
                 {/* Content */}
                 <div>
-                  <label className="block text-white font-semibold mb-2">Content</label>
+                  <label className="block text-white font-semibold mb-2">{t('blog.form.content')}</label>
                   <textarea
                     value={editingPost.content}
                     onChange={(e) => setEditingPost({...editingPost, content: e.target.value})}
                     className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-blue-500 h-48 resize-none"
-                    placeholder="Enter article content (supports markdown)..."
+                    placeholder={t('blog.form.content_placeholder')}
                   />
                 </div>
 
                 {/* Category and Tags */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-white font-semibold mb-2">Category</label>
+                    <label className="block text-white font-semibold mb-2">{t('blog.form.category')}</label>
                     <select
                       value={editingPost.category}
                       onChange={(e) => setEditingPost({...editingPost, category: e.target.value})}
@@ -922,33 +916,33 @@ Wrap up your article with key takeaways and next steps.`,
                   </div>
 
                   <div>
-                    <label className="block text-white font-semibold mb-2">Read Time</label>
+                    <label className="block text-white font-semibold mb-2">{t('blog.form.read_time')}</label>
                     <input
                       type="text"
                       value={editingPost.readTime}
                       onChange={(e) => setEditingPost({...editingPost, readTime: e.target.value})}
                       className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      placeholder="e.g., 5 min"
+                      placeholder={t('blog.form.read_time_placeholder')}
                     />
                   </div>
                 </div>
 
                 {/* Tags */}
                 <div>
-                  <label className="block text-white font-semibold mb-2">Tags (comma-separated)</label>
+                  <label className="block text-white font-semibold mb-2">{t('blog.form.tags')}</label>
                   <input
                     type="text"
                     value={editingPost.tags.join(', ')}
                     onChange={(e) => setEditingPost({...editingPost, tags: e.target.value.split(',').map(tag => tag.trim()).filter(tag => tag)})}
                     className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    placeholder="e.g., React, Next.js, Performance"
+                    placeholder={t('blog.form.tags_placeholder')}
                   />
                 </div>
 
                 {/* Featured and Image */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-white font-semibold mb-2">Featured Article</label>
+                    <label className="block text-white font-semibold mb-2">{t('blog.form.featured')}</label>
                     <label className="flex items-center space-x-3">
                       <input
                         type="checkbox"
@@ -956,12 +950,12 @@ Wrap up your article with key takeaways and next steps.`,
                         onChange={(e) => setEditingPost({...editingPost, featured: e.target.checked})}
                         className="w-5 h-5 text-blue-600 bg-white/10 border-white/20 rounded focus:ring-blue-500"
                       />
-                      <span className="text-white/80">Mark as featured</span>
+                      <span className="text-white/80">{t('blog.form.featured_label')}</span>
                     </label>
                   </div>
 
                   <div>
-                    <label className="block text-white font-semibold mb-2">Article Image</label>
+                    <label className="block text-white font-semibold mb-2">{t('blog.form.image')}</label>
                     
                     {/* Image Preview */}
                     {editingPost.image && (
@@ -993,16 +987,16 @@ Wrap up your article with key takeaways and next steps.`,
                           {uploadingImage ? (
                             <>
                               <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                              <span>Uploading...</span>
+                              <span>{t('blog.form.uploading')}</span>
                             </>
                           ) : (
                             <>
                               <Upload className="w-5 h-5" />
-                              <span>Upload Image</span>
+                              <span>{t('blog.form.upload')}</span>
                             </>
                           )}
                         </button>
-                        <p className="text-xs text-white/60 mt-1">Max 5MB, JPG/PNG/GIF</p>
+                        <p className="text-xs text-white/60 mt-1">{t('blog.form.max_size')}</p>
                       </div>
                       
                       {/* URL Input */}
@@ -1012,13 +1006,13 @@ Wrap up your article with key takeaways and next steps.`,
                           value={editingPost.image}
                           onChange={(e) => handleImageUrlChange(e.target.value)}
                           className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                          placeholder="Or enter image URL (e.g., /projects/example/1.jpg)"
+                          placeholder={t('blog.form.image_placeholder')}
                         />
                       </div>
                       
                       {/* Project Images Quick Select */}
                       <div>
-                        <label className="block text-white/80 text-sm mb-2">Quick Select from Projects:</label>
+                        <label className="block text-white/80 text-sm mb-2">{t('blog.form.quick_select')}</label>
                         <div className="grid grid-cols-2 gap-2">
                           {['/projects/teamlab/1.jpg', '/projects/buzzfeed/1.jpg', '/projects/ameba/1.png', '/projects/OpenAI/1.png', '/projects/muji/1.png', '/projects/cookpad/1.jpg'].map((imgPath) => (
                             <button
@@ -1045,13 +1039,13 @@ Wrap up your article with key takeaways and next steps.`,
                   className="px-8 py-3 bg-green-600 hover:bg-green-700 text-white rounded-xl font-semibold transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center space-x-2"
                 >
                   <Save className="w-5 h-5" />
-                  <span>{isCreating ? 'Create Article' : 'Save Changes'}</span>
+                  <span>{isCreating ? t('blog.form.create') : t('blog.form.save')}</span>
                 </button>
                 <button
                   onClick={handleCancelEdit}
                   className="px-8 py-3 border border-white/20 hover:border-white/40 text-white rounded-xl font-semibold transition-colors"
                 >
-                  Cancel
+                  {t('blog.form.cancel')}
                 </button>
               </div>
             </div>
