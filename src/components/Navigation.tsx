@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Home, Folder, Zap, User, Mail, Menu, X } from 'lucide-react';
+import { Home, Folder, Zap, User, Mail, Menu, X, Settings, MessageSquare, BookOpen } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 interface NavigationProps {
@@ -14,6 +14,9 @@ export const Navigation: React.FC<NavigationProps> = ({ currentPage }) => {
     { id: 'home', label: t('nav.home'), icon: Home },
     { id: 'projects', label: t('nav.projects'), icon: Folder },
     { id: 'skills', label: t('nav.skills'), icon: Zap },
+    { id: 'services', label: t('nav.services'), icon: Settings },
+    { id: 'testimonials', label: t('nav.testimonials'), icon: MessageSquare },
+    { id: 'blog', label: t('nav.blog'), icon: BookOpen },
     { id: 'about', label: t('nav.about'), icon: User },
     { id: 'contact', label: t('nav.contact'), icon: Mail },
   ];

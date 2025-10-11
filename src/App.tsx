@@ -4,6 +4,9 @@ import { Layout } from './components/Layout';
 import { HomePage } from './components/HomePage';
 import { ProjectsPage } from './components/ProjectsPage';
 import { SkillsPage } from './components/SkillsPage';
+import ServicesPage from './components/ServicesPage';
+import TestimonialsPage from './components/TestimonialsPage';
+import BlogPage from './components/Blog';
 import { AboutPage } from './components/AboutPage';
 import { ContactPage } from './components/ContactPage';
 
@@ -29,6 +32,12 @@ function App() {
 
   const renderPage = () => {
     switch (currentPage) {
+      case 'services':
+        return <ServicesPage />;
+      case 'testimonials':
+        return <TestimonialsPage />;
+      case 'blog':
+        return <BlogPage />;
       case 'projects':
         return <ProjectsPage />;
       case 'skills':
