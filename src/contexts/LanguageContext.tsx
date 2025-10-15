@@ -439,10 +439,6 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         en: 'Eyewear e‑commerce with customizable filters, real‑time inventory, and 3D product views. React front‑end with Node/Express backend and Stripe payments.',
         ja: 'カスタマイズ可能なフィルタ、在庫のリアルタイム反映、3D商品ビューを備えたメガネEC。ReactフロントとNode/Expressバックエンド、Stripe決済。'
       },
-      'project.lifesciencedb.description': {
-        en: 'Interactive 3D human anatomy explorer (BodyParts3D/Anatomography). Built WebGL/Three.js UI to select parts, adjust visualization, and embed/export models; integrated anatomical datasets (FMA).',
-        ja: '対話型3D人体解剖プラットフォーム（BodyParts3D/Anatomography）。WebGL/Three.jsで部位選択や可視化調整、埋め込み/エクスポートUIを実装し、FMAなどの解剖データセットを統合。'
-      },
       'project.teamlab.description': {
         en: 'Immersive digital art experiences with interactive 3D/real‑time visuals. Contributed to performant WebGL scenes, SSR UI, and real‑time interactions for exhibitions and virtual tours.',
         ja: '没入型デジタルアート体験。パフォーマンスに優れたWebGLシーン、SSR UI、リアルタイムインタラクションを実装し、展示やバーチャルツアーを支援。'

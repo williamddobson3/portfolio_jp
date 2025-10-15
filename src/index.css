@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -11,10 +11,11 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', 'Noto Sans JP', sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 code {
@@ -37,6 +38,52 @@ code {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(59, 130, 246, 0.7);
+}
+
+/* Japanese character optimization */
+.japanese-text {
+  font-family: 'Noto Sans JP', 'Inter', sans-serif;
+  font-feature-settings: 'palt' 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Navigation modal specific styles */
+.nav-modal {
+  font-family: 'Noto Sans JP', 'Inter', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-modal .nav-item {
+  font-feature-settings: 'palt' 1;
+  text-rendering: optimizeLegibility;
+}
+
+/* Perfect centering for modal */
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Ensure modal is perfectly centered */
+.nav-modal {
+  position: relative;
+  margin:auto;
+  margin-left:unset;
+  margin-top: unset;
+  display: block;
 }
 
 /* Smooth scrolling */

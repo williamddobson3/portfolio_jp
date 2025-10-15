@@ -1,14 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { LanguageProvider } from './contexts/LanguageContext';
 import { Layout } from './components/Layout';
 import { HomePage } from './components/HomePage';
 import { ProjectsPage } from './components/ProjectsPage';
 import { SkillsPage } from './components/SkillsPage';
-import ServicesPage from './components/ServicesPage';
-import TestimonialsPage from './components/TestimonialsPage';
-import BlogPage from './components/Blog';
 import { AboutPage } from './components/AboutPage';
 import { ContactPage } from './components/ContactPage';
+import ServicesPage from './components/ServicesPage';
+import TestimonialsPage from './components/TestimonialsPage';
+import BlogPage from './components/BlogPage';
+import { ChatPage } from './components/ChatPage';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -38,6 +39,8 @@ function App() {
         return <TestimonialsPage />;
       case 'blog':
         return <BlogPage />;
+      case 'chat':
+        return <ChatPage />;
       case 'projects':
         return <ProjectsPage />;
       case 'skills':
@@ -53,9 +56,13 @@ function App() {
 
   return (
     <LanguageProvider>
-      <Layout currentPage={currentPage}>
-        {renderPage()}
-      </Layout>
+      {currentPage === 'chat' ? (
+        <ChatPage />
+      ) : (
+        <Layout currentPage={currentPage}>
+          {renderPage()}
+        </Layout>
+      )}
     </LanguageProvider>
   );
 }
