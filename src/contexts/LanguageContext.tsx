@@ -359,6 +359,46 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         en: 'Discord',
         ja: 'ディスコード'
       },
+      'contact.email.title': {
+        en: 'Professional Email Contact',
+        ja: 'プロフェッショナルメール連絡'
+      },
+      'contact.email.subtitle': {
+        en: 'For business inquiries, project discussions, and professional collaboration',
+        ja: 'ビジネスお問い合わせ、プロジェクト相談、プロフェッショナルな協力について'
+      },
+      'contact.email.professional': {
+        en: 'Professional business email for all inquiries',
+        ja: 'すべてのお問い合わせ用のプロフェッショナルビジネスメール'
+      },
+      'contact.email.copy': {
+        en: 'Copy Email',
+        ja: 'メールをコピー'
+      },
+      'contact.email.copied': {
+        en: 'Email Copied!',
+        ja: 'メールをコピーしました！'
+      },
+      'contact.status.response': {
+        en: 'Quick Response',
+        ja: '迅速な回答'
+      },
+      'contact.status.professional': {
+        en: 'Professional',
+        ja: 'プロフェッショナル'
+      },
+      'contact.status.detailed': {
+        en: 'Detailed Replies',
+        ja: '詳細な回答'
+      },
+      'contact.availability.title': {
+        en: 'Available for Work',
+        ja: '仕事可能'
+      },
+      'contact.availability.response': {
+        en: 'Response Time',
+        ja: '回答時間'
+      },
 
       // Project Types
       'project.type.ai': {
