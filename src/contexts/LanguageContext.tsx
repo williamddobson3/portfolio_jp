@@ -399,6 +399,10 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         en: 'Response Time',
         ja: '回答時間'
       },
+      'contact.availability.tokyo': {
+        en: 'Tokyo (JST)',
+        ja: '東京（JST）'
+      },
       'contact.team.title': {
         en: 'MetaCore Team Channels',
         ja: 'MetaCoreチームチャンネル'
@@ -1255,6 +1259,14 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         en: 'Consumer',
         ja: 'コンシューマー'
       },
+      'testimonials.filter.entertainment': {
+        en: 'Entertainment',
+        ja: 'エンターテイメント'
+      },
+      'testimonials.filter.healthcare': {
+        en: 'Healthcare',
+        ja: 'ヘルスケア'
+      },
       'testimonials.case.view': {
         en: 'View Case Study',
         ja: 'ケーススタディを見る'
@@ -1410,6 +1422,90 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
       'testimonials.lifesciencedb.industry': {
         en: 'SaaS',
         ja: 'SaaS'
+      },
+      'testimonials.openai.quote': {
+        en: 'Revolutionary AI integration that transformed our platform capabilities.',
+        ja: 'プラットフォーム機能を変革した革新的なAI統合。'
+      },
+      'testimonials.openai.name': {
+        en: 'OpenAI Engineering Team',
+        ja: 'OpenAIエンジニアリングチーム'
+      },
+      'testimonials.openai.title': {
+        en: 'AI Platform Integration',
+        ja: 'AIプラットフォーム統合'
+      },
+      'testimonials.openai.company': {
+        en: 'OpenAI',
+        ja: 'OpenAI'
+      },
+      'testimonials.openai.metrics': {
+        en: '3x AI accuracy',
+        ja: '3倍のAI精度'
+      },
+      'testimonials.openai.year': {
+        en: '2023',
+        ja: '2023年'
+      },
+      'testimonials.openai.industry': {
+        en: 'SaaS',
+        ja: 'SaaS'
+      },
+      'testimonials.marvel.quote': {
+        en: 'Exceptional work on our digital platform. The team delivered beyond expectations.',
+        ja: 'デジタルプラットフォームでの卓越した仕事。チームは期待を超える成果を提供しました。'
+      },
+      'testimonials.marvel.name': {
+        en: 'Marvel Studios Team',
+        ja: 'マーベルスタジオチーム'
+      },
+      'testimonials.marvel.title': {
+        en: 'Digital Platform Development',
+        ja: 'デジタルプラットフォーム開発'
+      },
+      'testimonials.marvel.company': {
+        en: 'Marvel Studios',
+        ja: 'マーベルスタジオ'
+      },
+      'testimonials.marvel.metrics': {
+        en: '50% user engagement',
+        ja: '50%のユーザーエンゲージメント'
+      },
+      'testimonials.marvel.year': {
+        en: '2022',
+        ja: '2022年'
+      },
+      'testimonials.marvel.industry': {
+        en: 'Entertainment',
+        ja: 'エンターテイメント'
+      },
+      'testimonials.untappd.quote': {
+        en: 'Outstanding mobile app development with innovative features.',
+        ja: '革新的な機能を持つ卓越したモバイルアプリ開発。'
+      },
+      'testimonials.untappd.name': {
+        en: 'Untappd Development Team',
+        ja: 'Untappd開発チーム'
+      },
+      'testimonials.untappd.title': {
+        en: 'Mobile App Development',
+        ja: 'モバイルアプリ開発'
+      },
+      'testimonials.untappd.company': {
+        en: 'Untappd',
+        ja: 'Untappd'
+      },
+      'testimonials.untappd.metrics': {
+        en: '2x user retention',
+        ja: '2倍のユーザーリテンション'
+      },
+      'testimonials.untappd.year': {
+        en: '2021',
+        ja: '2021年'
+      },
+      'testimonials.untappd.industry': {
+        en: 'Consumer',
+        ja: 'コンシューマー'
       },
       // Additional Media testimonials
       'testimonials.netflix.quote': {
