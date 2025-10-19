@@ -399,6 +399,58 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         en: 'Response Time',
         ja: '回答時間'
       },
+      'contact.team.title': {
+        en: 'MetaCore Team Channels',
+        ja: 'MetaCoreチームチャンネル'
+      },
+      'contact.team.subtitle': {
+        en: 'Connect with our global development team through various communication channels',
+        ja: '様々なコミュニケーションチャンネルを通じてグローバル開発チームとつながる'
+      },
+      'contact.team.discord': {
+        en: 'Global team communication',
+        ja: 'グローバルチームコミュニケーション'
+      },
+      'contact.team.telegram': {
+        en: 'Team coordination',
+        ja: 'チーム調整'
+      },
+      'contact.team.chatwork': {
+        en: 'Japanese team workspace',
+        ja: '日本語チームワークスペース'
+      },
+      'contact.team.join_discord': {
+        en: 'Join Discord',
+        ja: 'Discordに参加'
+      },
+      'contact.team.join_telegram': {
+        en: 'Join Telegram',
+        ja: 'Telegramに参加'
+      },
+      'contact.team.join_chatwork': {
+        en: 'Join Chatwork',
+        ja: 'Chatworkに参加'
+      },
+      'contact.team.global': {
+        en: 'Global',
+        ja: 'グローバル'
+      },
+      'contact.team.team': {
+        en: 'Team',
+        ja: 'チーム'
+      },
+      'contact.team.japanese': {
+        en: 'Japanese',
+        ja: '日本語'
+      },
+      'contact.personal.title': {
+        en: 'Personal Contact Methods',
+        ja: '個人連絡方法'
+      },
+      'contact.personal.subtitle': {
+        en: 'Direct ways to reach me for personal inquiries and collaboration',
+        ja: '個人的なお問い合わせや協力のための直接的な連絡方法'
+      },
 
       // Project Types
       'project.type.ai': {
