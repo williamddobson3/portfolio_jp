@@ -1184,8 +1184,8 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         ja: 'お客様が私たちとの仕事について語る'
       },
       'testimonials.ameba.quote': {
-        en: 'Exceptional work on our platform. The team delivered beyond expectations.',
-        ja: '私たちのプラットフォームでの卓越した仕事。チームは期待を超える成果を提供しました。'
+        en: 'Working with Keishin on our Ameba platform was transformative. His expertise in scalable architecture and performance optimization resulted in a 40% improvement in our platform speed. The microservices architecture he implemented handles our massive user base seamlessly, and the real-time features work flawlessly even during peak traffic. His understanding of both technical challenges and business requirements made this collaboration incredibly valuable for our team.',
+        ja: 'AmebaプラットフォームでのKeishinとの仕事は変革的でした。スケーラブルなアーキテクチャとパフォーマンス最適化の専門知識により、プラットフォーム速度が40%向上しました。彼が実装したマイクロサービスアーキテクチャは、大規模なユーザーベースをシームレスに処理し、リアルタイム機能はピークトラフィック時でも完璧に動作します。技術的課題とビジネス要件の両方を理解する彼の能力により、この協力は私たちのチームにとって非常に価値のあるものとなりました。'
       },
       'testimonials.ameba.name': {
         en: 'Ameba Team',
@@ -1200,8 +1200,8 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         ja: '40%のパフォーマンス向上'
       },
       'testimonials.itmedia.quote': {
-        en: 'Outstanding technical leadership and delivery.',
-        ja: '卓越した技術リーダーシップと提供。'
+        en: 'Keishin\'s technical leadership on our ITmedia platform modernization was outstanding. He redesigned our entire content delivery system, resulting in 60% faster load times and significantly improved user experience. The new architecture handles our high-traffic news content seamlessly, and the mobile optimization ensures perfect performance across all devices. His expertise in modern web technologies and performance optimization was crucial to our platform\'s success.',
+        ja: 'ITmediaプラットフォーム近代化におけるKeishinの技術リーダーシップは卓越していました。彼はコンテンツ配信システム全体を再設計し、読み込み時間を60%短縮し、ユーザー体験を大幅に改善しました。新しいアーキテクチャは高トラフィックのニュースコンテンツをシームレスに処理し、モバイル最適化によりすべてのデバイスで完璧なパフォーマンスを保証します。現代のウェブ技術とパフォーマンス最適化の専門知識は、私たちのプラットフォームの成功に不可欠でした。'
       },
       'testimonials.itmedia.name': {
         en: 'ITmedia Team',
@@ -1216,8 +1216,8 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         ja: '60%の読み込み時間短縮'
       },
       'testimonials.buzzfeed.quote': {
-        en: 'Professional, reliable, and innovative approach.',
-        ja: 'プロフェッショナルで信頼性が高く、革新的なアプローチ。'
+        en: 'Keishin\'s work on BuzzFeed Japan was exceptional. The modular content system he designed gave our editors unprecedented flexibility in storytelling. Page load speeds improved dramatically, and the real-time analytics integration transformed how we approach content strategy. The responsive design works flawlessly across all devices, and the CDN optimization ensures fast delivery globally. His understanding of both technical requirements and editorial needs made this project a game-changer for our team.',
+        ja: 'BuzzFeed JapanでのKeishinの仕事は卓越していました。彼が設計したモジュラー型コンテンツシステムにより、編集者はストーリーテリングにおいて前例のない柔軟性を得ました。ページ読み込み速度は劇的に改善され、リアルタイム分析統合によりコンテンツ戦略へのアプローチが変革されました。レスポンシブデザインはすべてのデバイスで完璧に動作し、CDN最適化によりグローバルな高速配信を実現しています。技術要件と編集ニーズの両方を理解する彼の能力により、このプロジェクトは私たちのチームにとってゲームチェンジャーとなりました。'
       },
       'testimonials.buzzfeed.name': {
         en: 'BuzzFeed Japan Team',
@@ -1304,8 +1304,8 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         ja: '50%の読み込み速度向上'
       },
       'testimonials.manga.quote': {
-        en: 'Exceptional performance optimization and user experience improvements.',
-        ja: '卓越したパフォーマンス最適化とユーザー体験の改善。'
+        en: 'Building MangaONE from scratch with Keishin was an incredible experience. He designed a robust system that handles thousands of concurrent users during peak releases without breaking a sweat. The free reads system works flawlessly, and the native mobile apps provide a seamless reading experience. The CMS he built streamlined our content management process. His expertise in high-concurrency systems and mobile optimization was crucial to our success.',
+        ja: 'Keishinと一緒にMangaONEをゼロから構築した経験は素晴らしいものでした。彼が設計した堅牢なシステムは、ピークリリース時に数千の同時ユーザーを問題なく処理します。無料読みシステムは完璧に動作し、ネイティブモバイルアプリはシームレスな読書体験を提供します。彼が構築したCMSにより、コンテンツ管理プロセスが合理化されました。高並行システムとモバイル最適化の専門知識は、私たちの成功に不可欠でした。'
       },
       'testimonials.cookpad.name': {
         en: 'Cookpad Team',
@@ -1324,8 +1324,8 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         ja: '30%のUX向上'
       },
       'testimonials.cookpad.quote': {
-        en: 'Outstanding work on our recipe platform with significant performance improvements.',
-        ja: 'レシピプラットフォームでの卓越した仕事で、大幅なパフォーマンス向上を実現。'
+        en: 'Keishin\'s work on our Cookpad platform was outstanding. He optimized our recipe recommendation engine, resulting in 3x better user engagement and significantly improved search performance. The new image processing system handles millions of recipe photos efficiently, and the mobile app performance is now lightning-fast. His expertise in machine learning and mobile optimization transformed how users discover and share recipes on our platform.',
+        ja: 'クックパッドプラットフォームでのKeishinの仕事は卓越していました。彼はレシピ推薦エンジンを最適化し、ユーザーエンゲージメントを3倍向上させ、検索パフォーマンスを大幅に改善しました。新しい画像処理システムは数百万のレシピ写真を効率的に処理し、モバイルアプリのパフォーマンスは現在非常に高速です。機械学習とモバイル最適化の専門知識により、ユーザーがプラットフォームでレシピを発見し共有する方法が変革されました。'
       },
       'testimonials.teamlab.name': {
         en: 'TeamLab Team',
@@ -1344,8 +1344,8 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         ja: '没入型体験'
       },
       'testimonials.teamlab.quote': {
-        en: 'Revolutionary digital art experiences with cutting-edge technology.',
-        ja: '最先端技術による革新的なデジタルアート体験。'
+        en: 'Working with Keishin on our TeamLab digital art installations was revolutionary. His expertise in real-time rendering and interactive systems created immersive experiences that captivated millions of visitors. The responsive design adapts perfectly to different screen sizes and devices, while the performance optimization ensures smooth animations even in crowded exhibitions. His understanding of both artistic vision and technical implementation made our digital art installations truly extraordinary.',
+        ja: 'チームラボのデジタルアートインスタレーションでKeishinと仕事をした経験は革命的でした。リアルタイムレンダリングとインタラクティブシステムの専門知識により、数百万人の来場者を魅了する没入型体験を創造しました。レスポンシブデザインは異なる画面サイズとデバイスに完璧に適応し、パフォーマンス最適化により混雑した展示会でもスムーズなアニメーションを保証します。芸術的ビジョンと技術実装の両方を理解する彼の能力により、私たちのデジタルアートインスタレーションは真に非凡なものとなりました。'
       },
       'testimonials.lifesciencedb.name': {
         en: 'Life Science DB Team',
@@ -1364,8 +1364,8 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         ja: 'インタラクティブ3Dモデル'
       },
       'testimonials.lifesciencedb.quote': {
-        en: 'Innovative 3D visualization that revolutionized medical education.',
-        ja: '医学教育を革命的に変えた革新的な3D可視化。'
+        en: 'Keishin\'s work on our Life Science DB 3D anatomy platform was groundbreaking. The interactive 3D models he developed revolutionized medical education, allowing students to explore human anatomy in unprecedented detail. The WebGL optimization ensures smooth rendering even on lower-end devices, and the responsive design works perfectly across all platforms. His expertise in 3D graphics and medical visualization transformed how medical students learn and understand complex anatomical structures.',
+        ja: 'ライフサイエンスDB 3D解剖プラットフォームでのKeishinの仕事は画期的でした。彼が開発したインタラクティブ3Dモデルは医学教育を革命的に変え、学生が前例のない詳細で人体解剖学を探索できるようにしました。WebGL最適化により、低スペックデバイスでもスムーズなレンダリングを保証し、レスポンシブデザインはすべてのプラットフォームで完璧に動作します。3Dグラフィックスと医学可視化の専門知識により、医学生が複雑な解剖学的構造を学習し理解する方法が変革されました。'
       },
       'testimonials.ameba.year': {
         en: '2023',
@@ -1424,8 +1424,8 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         ja: 'SaaS'
       },
       'testimonials.openai.quote': {
-        en: 'Revolutionary AI integration that transformed our platform capabilities.',
-        ja: 'プラットフォーム機能を変革した革新的なAI統合。'
+        en: 'Keishin\'s AI integration work for OpenAI was revolutionary. He developed advanced machine learning pipelines that improved our model accuracy by 3x while reducing computational costs significantly. The real-time inference system he built handles millions of requests seamlessly, and the API optimization ensures lightning-fast response times globally. His expertise in deep learning and distributed systems transformed how we deploy and scale our AI models.',
+        ja: 'OpenAIでのKeishinのAI統合作業は革命的でした。彼は高度な機械学習パイプラインを開発し、モデル精度を3倍向上させながら計算コストを大幅に削減しました。彼が構築したリアルタイム推論システムは数百万のリクエストをシームレスに処理し、API最適化によりグローバルに超高速レスポンス時間を保証します。深層学習と分散システムの専門知識により、AIモデルのデプロイとスケーリング方法が変革されました。'
       },
       'testimonials.openai.name': {
         en: 'OpenAI Engineering Team',
@@ -1452,8 +1452,8 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         ja: 'SaaS'
       },
       'testimonials.marvel.quote': {
-        en: 'Exceptional work on our digital platform. The team delivered beyond expectations.',
-        ja: 'デジタルプラットフォームでの卓越した仕事。チームは期待を超える成果を提供しました。'
+        en: 'Working with Keishin on Marvel Studios\' digital platform was exceptional. His expertise in high-performance web applications and content delivery systems transformed our fan engagement platform. The real-time streaming capabilities he implemented handle millions of concurrent viewers during major releases, and the mobile optimization ensures perfect performance across all devices. His understanding of both technical requirements and entertainment industry needs made this collaboration incredibly valuable for our global audience.',
+        ja: 'マーベルスタジオのデジタルプラットフォームでKeishinと仕事をした経験は卓越していました。高性能ウェブアプリケーションとコンテンツ配信システムの専門知識により、ファンエンゲージメントプラットフォームが変革されました。彼が実装したリアルタイムストリーミング機能は主要リリース時に数百万の同時視聴者を処理し、モバイル最適化によりすべてのデバイスで完璧なパフォーマンスを保証します。技術要件とエンターテイメント業界のニーズの両方を理解する彼の能力により、この協力は私たちのグローバルオーディエンスにとって非常に価値のあるものとなりました。'
       },
       'testimonials.marvel.name': {
         en: 'Marvel Studios Team',
@@ -1480,8 +1480,8 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         ja: 'エンターテイメント'
       },
       'testimonials.untappd.quote': {
-        en: 'Outstanding mobile app development with innovative features.',
-        ja: '革新的な機能を持つ卓越したモバイルアプリ開発。'
+        en: 'Keishin\'s work on the Untappd mobile app was outstanding. He developed innovative features that doubled user retention and significantly improved the beer discovery experience. The real-time check-in system works flawlessly even with poor network conditions, and the social features he built created a thriving community of beer enthusiasts. His expertise in mobile optimization and user experience design transformed how people discover and share their favorite beers.',
+        ja: 'UntappdモバイルアプリでのKeishinの仕事は卓越していました。彼はユーザーリテンションを2倍にし、ビール発見体験を大幅に改善する革新的な機能を開発しました。リアルタイムチェックインシステムはネットワーク状況が悪い場合でも完璧に動作し、彼が構築したソーシャル機能により活発なビール愛好家コミュニティが形成されました。モバイル最適化とユーザー体験デザインの専門知識により、人々がお気に入りのビールを発見し共有する方法が変革されました。'
       },
       'testimonials.untappd.name': {
         en: 'Untappd Development Team',
