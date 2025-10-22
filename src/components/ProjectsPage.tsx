@@ -12,9 +12,7 @@ export const ProjectsPage: React.FC = () => {
   const [detailsLoading, setDetailsLoading] = useState(false);
   const [detailsError, setDetailsError] = useState<string | null>(null);
   const [showDetails, setShowDetails] = useState(false);
-  const [detailsTriedPaths, setDetailsTriedPaths] = useState<string[]>([]);
   const { t, language } = useLanguage();
-  const [projectDescriptions, setProjectDescriptions] = useState<{ [id: string]: string | null }>({});
 
   const categories = projectCategories.map(cat => ({
     ...cat,
@@ -26,38 +24,10 @@ export const ProjectsPage: React.FC = () => {
     ? projects 
     : projects.filter(p => p.category === selectedCategory);
 
-  // When language is Japanese, try to fetch per-project `explanation_JP.txt` and cache it.
-  useEffect(() => {
-    if (language !== 'ja') return;
-
-    filteredProjects.forEach(async (project) => {
-  if (projectDescriptions[project.id] !== undefined) return; // already fetched (or attempted)
-      const pathsToTry = [
-        `/projects/${project.id}/explanation_JP.txt`,
-        `/projects/${project.id}/explanation-jp.txt`,
-        `/projects/${project.id}/explanation.txt`
-      ];
-
-      let foundText: string | null = null;
-      for (const p of pathsToTry) {
-        try {
-          const res = await fetch(p);
-          if (!res.ok) continue;
-          const ct = res.headers.get('content-type') || '';
-          if (ct.includes('text/html')) continue;
-          const text = await res.text();
-          if (text && text.trim().length > 0) {
-            foundText = text;
-            break;
-          }
-        } catch (err) {
-          // ignore and try next path
-        }
-      }
-
-  setProjectDescriptions(prev => ({ ...prev, [project.id]: foundText }));
-    });
-  }, [language, filteredProjects]);
+  // Get project description from translations
+  const getProjectDescription = (projectId: string): string => {
+    return t(`project.${projectId}.description`);
+  };
 
   // Auto-rotate images for project cards
   useEffect(() => {
@@ -230,9 +200,7 @@ export const ProjectsPage: React.FC = () => {
                 </h3>
                 
                 <p className="text-gray-600 text-sm mb-4 line-clamp-3">
-                  {language === 'ja' && projectDescriptions[project.id]
-                    ? projectDescriptions[project.id]
-                    : t(project.descriptionKey)}
+                  {getProjectDescription(project.id)}
                 </p>
                 
                 <div className="flex items-center text-sm text-gray-600 mb-4">
@@ -272,7 +240,7 @@ export const ProjectsPage: React.FC = () => {
       {/* Project Detail Modal */}
       {selectedProject && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-6">
-          <div className="bg-white/95 backdrop-blur-md border border-gray-300 rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+          <div className="mt-20 bg-white/95 backdrop-blur-md border border-gray-300 rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
             <div className="relative">
               <button
                 onClick={() => setSelectedProject(null)}
@@ -353,9 +321,7 @@ export const ProjectsPage: React.FC = () => {
                 </div>
                 
                 <p className="text-gray-600 text-lg mb-6">
-                  {language === 'ja' && projectDescriptions[selectedProject.id]
-                    ? projectDescriptions[selectedProject.id]
-                    : t(selectedProject.descriptionKey)}
+                  {getProjectDescription(selectedProject.id)}
                 </p>
                 
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -432,7 +398,6 @@ export const ProjectsPage: React.FC = () => {
                       setDetailsLoading(true);
                       setDetailsError(null);
                       setShowDetails(true);
-                      setDetailsTriedPaths([]);
 
                       // derive folder path from first image if possible
                       const firstImage = selectedProject.images && selectedProject.images[0];
@@ -490,7 +455,6 @@ export const ProjectsPage: React.FC = () => {
                       } catch (err) {
                         // top-level error
                       } finally {
-                        setDetailsTriedPaths(tried);
                         if (!found) {
                           setDetailsError('No detailed explanation file found at the expected paths.');
                         }
@@ -507,14 +471,9 @@ export const ProjectsPage: React.FC = () => {
                   <div className="mt-6 bg-gray-100 rounded-lg p-4 max-h-60 overflow-y-auto">
                     {detailsLoading && <div className="text-gray-600">Loading...</div>}
                     {detailsError && <div className="text-red-600">{detailsError}</div>}
-                    {detailsError && detailsTriedPaths.length > 0 && (
+                    {detailsError && (
                       <div className="mt-2 text-xs text-gray-600">
-                        <div>Attempted paths:</div>
-                        <ul className="list-disc list-inside">
-                          {detailsTriedPaths.map(p => (
-                            <li key={p} className="break-words">{p}</li>
-                          ))}
-                        </ul>
+                        <div>No detailed explanation file found.</div>
                       </div>
                     )}
                     {detailedText && (

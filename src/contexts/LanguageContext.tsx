@@ -580,8 +580,8 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         ja: '公式サイトのフロントエンドをリード。CMSテンプレート、画像最適化（srcset・遅延読み込み）、アクセシビリティ、SEO、キャンペーンのリリースフローを構築。'
       },
       'project.abc_ar.description': {
-        en: 'ABC_AR — an educational AR experience about space. Features: Explore Jupiter (3D models placed in the real world), Assemble the ISS with interactive parts, and a gamified Space Debris defense mode. Built with Unity, ARKit/ARCore and native mobile components; released for iOS and Android around 2018.',
-        ja: 'ABC_AR — 宇宙をテーマにした教育的なAR体験。機能: 木星の3Dモデルを現実空間に配置して観察、ISSをパーツごとに組み立てるインタラクティブモード、宇宙ゴミを防ぐゲーム型モード。Unity、ARKit/ARCore、ネイティブモバイルで開発され、2018年頃にiOS/Android向けにリリース。'
+        en: 'Educational AR experience about space. Features: Explore Jupiter with 3D models, Assemble the ISS with interactive parts, and Space Debris defense mode. Built with Unity, ARKit/ARCore and native mobile components.',
+        ja: '宇宙をテーマにした教育的なAR体験。木星の3Dモデル観察、ISS組み立て、宇宙ゴミ防衛モード。Unity、ARKit/ARCore、ネイティブモバイルで開発。'
       },
       'project.are-na.description': {
         en: 'Collaborative visual research and organization platform for collecting and organizing ideas, images, and knowledge networks.',
