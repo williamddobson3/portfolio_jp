@@ -127,12 +127,12 @@ export const ProjectsPage: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
             <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
               {t('projects.title')}
             </span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             {t('projects.subtitle')}
           </p>
         </div>
@@ -145,8 +145,8 @@ export const ProjectsPage: React.FC = () => {
               onClick={() => setSelectedCategory(category.id)}
               className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
                 selectedCategory === category.id
-                  ? `bg-${category.color}-500/30 text-${category.color}-300 border border-${category.color}-500/50 shadow-lg shadow-${category.color}-500/20`
-                  : 'bg-white/5 text-gray-300 hover:bg-white/10 border border-white/10'
+                  ? `bg-${category.color}-500/30 text-${category.color}-700 border border-${category.color}-500/50 shadow-lg shadow-${category.color}-500/20`
+                  : 'bg-white/5 text-gray-600 hover:bg-white/10 border border-gray-300'
               }`}
             >
               {category.name}
@@ -156,8 +156,8 @@ export const ProjectsPage: React.FC = () => {
 
         {/* Debug: show how many projects are being displayed for the selected category */}
         <div className="text-center mb-8">
-          <span className="text-sm text-gray-400">
-            {t('projects.showing')}: <strong className="text-white">{filteredProjects.length}</strong>
+          <span className="text-sm text-gray-600">
+            {t('projects.showing')}: <strong className="text-gray-800">{filteredProjects.length}</strong>
             &nbsp;•&nbsp;{t(`projects.category.${selectedCategory}`)}
           </span>
         </div>
@@ -167,7 +167,7 @@ export const ProjectsPage: React.FC = () => {
           {filteredProjects.map((project, index) => (
             <div
               key={project.id}
-              className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:bg-white/10 transition-all duration-500 transform hover:scale-105 cursor-pointer"
+              className="group bg-white/5 backdrop-blur-sm border border-gray-300 rounded-2xl overflow-hidden hover:bg-white/10 transition-all duration-500 transform hover:scale-105 cursor-pointer"
               style={{ animationDelay: `${index * 100}ms` }}
               onClick={() => setSelectedProject(project)}
             >
@@ -218,24 +218,24 @@ export const ProjectsPage: React.FC = () => {
               
               <div className="p-6">
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-sm text-blue-400 font-medium">{project.category.toUpperCase()}</span>
-                  <span className="text-sm text-gray-400 flex items-center">
+                  <span className="text-sm text-blue-600 font-medium">{project.category.toUpperCase()}</span>
+                  <span className="text-sm text-gray-600 flex items-center">
                     <Calendar size={14} className="mr-1" />
                     {project.year}
                   </span>
                 </div>
                 
-                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors">
+                <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">
                   {project.title}
                 </h3>
                 
-                <p className="text-gray-300 text-sm mb-4 line-clamp-3">
+                <p className="text-gray-600 text-sm mb-4 line-clamp-3">
                   {language === 'ja' && projectDescriptions[project.id]
                     ? projectDescriptions[project.id]
                     : t(project.descriptionKey)}
                 </p>
                 
-                <div className="flex items-center text-sm text-gray-400 mb-4">
+                <div className="flex items-center text-sm text-gray-600 mb-4">
                   <Users size={14} className="mr-1" />
                   {project.role}
                 </div>
@@ -244,20 +244,20 @@ export const ProjectsPage: React.FC = () => {
                   {project.technologies.slice(0, 3).map(tech => (
                     <span
                       key={tech}
-                      className="px-2 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-md"
+                      className="px-2 py-1 bg-purple-500/20 text-purple-700 text-xs rounded-md"
                     >
                       {tech}
                     </span>
                   ))}
                   {project.technologies.length > 3 && (
-                    <span className="px-2 py-1 bg-gray-500/20 text-gray-300 text-xs rounded-md">
+                    <span className="px-2 py-1 bg-gray-500/20 text-gray-600 text-xs rounded-md">
                       +{project.technologies.length - 3} more
                     </span>
                   )}
                 </div>
                 
                 {project.metrics && (
-                  <div className="flex justify-between text-sm text-blue-300">
+                  <div className="flex justify-between text-sm text-blue-600">
                     {project.metrics.users && <span>{project.metrics.users} users</span>}
                     {project.metrics.downloads && <span>{project.metrics.downloads} downloads</span>}
                     {project.metrics.awards && <span>{project.metrics.awards}</span>}
@@ -272,7 +272,7 @@ export const ProjectsPage: React.FC = () => {
       {/* Project Detail Modal */}
       {selectedProject && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-6">
-          <div className="bg-gray-900/90 backdrop-blur-md border border-white/20 rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+          <div className="bg-white/95 backdrop-blur-md border border-gray-300 rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
             <div className="relative">
               <button
                 onClick={() => setSelectedProject(null)}
@@ -342,17 +342,17 @@ export const ProjectsPage: React.FC = () => {
               
               <div className="p-8">
                 <div className="flex items-center justify-between mb-4">
-                  <h2 className="text-3xl font-bold text-white">{selectedProject.title}</h2>
+                  <h2 className="text-3xl font-bold text-gray-800">{selectedProject.title}</h2>
                   <span className={`px-4 py-2 rounded-full text-sm font-medium ${
-                    selectedProject.status === 'Launched' ? 'bg-green-500/20 text-green-300' :
-                    selectedProject.status === 'Beta' ? 'bg-yellow-500/20 text-yellow-300' :
-                    'bg-blue-500/20 text-blue-300'
+                    selectedProject.status === 'Launched' ? 'bg-green-500/20 text-green-700' :
+                    selectedProject.status === 'Beta' ? 'bg-yellow-500/20 text-yellow-700' :
+                    'bg-blue-500/20 text-blue-700'
                   }`}>
                     {selectedProject.status}
                   </span>
                 </div>
                 
-                <p className="text-gray-300 text-lg mb-6">
+                <p className="text-gray-600 text-lg mb-6">
                   {language === 'ja' && projectDescriptions[selectedProject.id]
                     ? projectDescriptions[selectedProject.id]
                     : t(selectedProject.descriptionKey)}
@@ -360,22 +360,22 @@ export const ProjectsPage: React.FC = () => {
                 
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
                   <div>
-                    <h4 className="text-white font-semibold mb-2">{t('projects.modal.role')}</h4>
-                    <p className="text-gray-300">{selectedProject.role}</p>
+                    <h4 className="text-gray-800 font-semibold mb-2">{t('projects.modal.role')}</h4>
+                    <p className="text-gray-600">{selectedProject.role}</p>
                   </div>
                   <div>
-                    <h4 className="text-white font-semibold mb-2">{t('projects.modal.year')}</h4>
-                    <p className="text-gray-300">{selectedProject.year}</p>
+                    <h4 className="text-gray-800 font-semibold mb-2">{t('projects.modal.year')}</h4>
+                    <p className="text-gray-600">{selectedProject.year}</p>
                   </div>
                 </div>
                 
                 <div className="mb-6">
-                  <h4 className="text-white font-semibold mb-3">{t('projects.modal.technologies')}</h4>
+                  <h4 className="text-gray-800 font-semibold mb-3">{t('projects.modal.technologies')}</h4>
                   <div className="flex flex-wrap gap-2">
                     {selectedProject.technologies.map(tech => (
                       <span
                         key={tech}
-                        className="px-3 py-2 bg-purple-500/20 text-purple-300 text-sm rounded-lg border border-purple-500/30"
+                        className="px-3 py-2 bg-purple-500/20 text-purple-700 text-sm rounded-lg border border-purple-500/30"
                       >
                         {tech}
                       </span>
@@ -385,12 +385,12 @@ export const ProjectsPage: React.FC = () => {
                 
                 {selectedProject.metrics && (
                   <div className="mb-6">
-                    <h4 className="text-white font-semibold mb-3">{t('projects.modal.impact')}</h4>
+                    <h4 className="text-gray-800 font-semibold mb-3">{t('projects.modal.impact')}</h4>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                       {Object.entries(selectedProject.metrics).map(([key, value]) => (
-                        <div key={key} className="bg-white/5 rounded-lg p-4 text-center">
-                          <div className="text-2xl font-bold text-blue-300">{value}</div>
-                          <div className="text-sm text-gray-400 capitalize">{key}</div>
+                        <div key={key} className="bg-gray-100 rounded-lg p-4 text-center">
+                          <div className="text-2xl font-bold text-blue-600">{value}</div>
+                          <div className="text-sm text-gray-600 capitalize">{key}</div>
                         </div>
                       ))}
                     </div>
@@ -504,11 +504,11 @@ export const ProjectsPage: React.FC = () => {
                 </div>
                 {/* Detailed explanation content */}
                 {showDetails && (
-                  <div className="mt-6 bg-white/5 rounded-lg p-4 max-h-60 overflow-y-auto">
-                    {detailsLoading && <div className="text-gray-300">Loading...</div>}
-                    {detailsError && <div className="text-red-400">{detailsError}</div>}
+                  <div className="mt-6 bg-gray-100 rounded-lg p-4 max-h-60 overflow-y-auto">
+                    {detailsLoading && <div className="text-gray-600">Loading...</div>}
+                    {detailsError && <div className="text-red-600">{detailsError}</div>}
                     {detailsError && detailsTriedPaths.length > 0 && (
-                      <div className="mt-2 text-xs text-gray-400">
+                      <div className="mt-2 text-xs text-gray-600">
                         <div>Attempted paths:</div>
                         <ul className="list-disc list-inside">
                           {detailsTriedPaths.map(p => (
@@ -518,10 +518,10 @@ export const ProjectsPage: React.FC = () => {
                       </div>
                     )}
                     {detailedText && (
-                      <pre className="text-gray-300 whitespace-pre-wrap text-sm">{detailedText}</pre>
+                      <pre className="text-gray-600 whitespace-pre-wrap text-sm">{detailedText}</pre>
                     )}
                     {!detailsLoading && !detailsError && !detailedText && (
-                      <div className="text-gray-400">No detailed explanation available for this project.</div>
+                      <div className="text-gray-600">No detailed explanation available for this project.</div>
                     )}
                   </div>
                 )}

@@ -162,7 +162,7 @@ export const ContactPage: React.FC = () => {
                   {/* Contact Info */}
                   <div className="mb-6">
                     <div className="flex items-center justify-between bg-white/5 rounded-xl p-4 mb-4">
-                      <span className="text-gray-300 font-mono text-sm">{channel.copyText}</span>
+                      <span className="text-black font-mono text-sm">{channel.copyText}</span>
                       <button
                         onClick={() => handleCopy(channel.copyText, channel.name)}
                         className="flex items-center space-x-2 px-3 py-1 bg-white/10 hover:bg-white/20 rounded-lg transition-colors duration-200"
@@ -243,7 +243,7 @@ export const ContactPage: React.FC = () => {
                   {/* Contact Info */}
                   <div className="mb-6">
                     <div className="flex items-center justify-between bg-white/5 rounded-xl p-4 mb-4">
-                      <span className="text-gray-300 font-mono text-sm">{method.copyText}</span>
+                      <span className="text-black font-mono text-sm">{method.copyText}</span>
                       <button
                         onClick={() => handleCopy(method.copyText, method.name)}
                         className="flex items-center space-x-2 px-3 py-1 bg-white/10 hover:bg-white/20 rounded-lg transition-colors duration-200"
@@ -321,15 +321,15 @@ export const ContactPage: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 w-full">
                   <div className="flex items-center justify-center text-gray-300">
                     <div className="w-2 h-2 bg-green-400 rounded-full mr-2"></div>
-                    <span className="text-sm">{t('contact.status.response')}</span>
+                    <span className="text-sm text-black">{t('contact.status.response')}</span>
                   </div>
                   <div className="flex items-center justify-center text-gray-300">
                     <div className="w-2 h-2 bg-blue-400 rounded-full mr-2"></div>
-                    <span className="text-sm">{t('contact.status.professional')}</span>
+                    <span className="text-sm text-black">{t('contact.status.professional')}</span>
                   </div>
                   <div className="flex items-center justify-center text-gray-300">
                     <div className="w-2 h-2 bg-purple-400 rounded-full mr-2"></div>
-                    <span className="text-sm">{t('contact.status.detailed')}</span>
+                    <span className="text-sm text-black">{t('contact.status.detailed')}</span>
                   </div>
                 </div>
                 

@@ -535,6 +535,38 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         en: 'Eyewear e‑commerce with customizable filters, real‑time inventory, and 3D product views. React front‑end with Node/Express backend and Stripe payments.',
         ja: 'カスタマイズ可能なフィルタ、在庫のリアルタイム反映、3D商品ビューを備えたメガネEC。ReactフロントとNode/Expressバックエンド、Stripe決済。'
       },
+      'project.18trip.description': {
+        en: 'Japanese anime/game mobile platform: Next.js frontend, full-stack development, PostgreSQL, Redis, AWS, Docker, and mobile game development.',
+        ja: '日本のアニメ/ゲームモバイルプラットフォーム。Next.jsフロントエンド、フルスタック開発、PostgreSQL、Redis、AWS、Docker、モバイルゲーム開発を担当。'
+      },
+      'project.futuretrain.description': {
+        en: 'Themed restaurant experience: HTML5/CSS3/JavaScript, responsive design, TableCheck API integration, PDF management, bilingual support, SEO, and accessibility.',
+        ja: 'テーマレストラン体験サイト。HTML5/CSS3/JavaScript、レスポンシブデザイン、TableCheck API統合、PDF管理、バイリンガル対応、SEO、アクセシビリティを担当。'
+      },
+      'project.expo2025-hyogo.description': {
+        en: 'Expo 2025 multilingual travelogue: HTML5/CSS3/JavaScript, responsive design, image optimization, i18n, CMS integration, SEO, and accessibility.',
+        ja: 'Expo 2025多言語トラベルガイド。HTML5/CSS3/JavaScript、レスポンシブデザイン、画像最適化、i18n、CMS統合、SEO、アクセシビリティを担当。'
+      },
+      'project.hince.description': {
+        en: 'Production web application: React, Next.js, TypeScript, Tailwind CSS, Node.js, PostgreSQL, Redis, Stripe, AWS, and CI/CD.',
+        ja: '本番Webアプリケーション。React、Next.js、TypeScript、Tailwind CSS、Node.js、PostgreSQL、Redis、Stripe、AWS、CI/CDを担当。'
+      },
+      'project.misshelly.description': {
+        en: 'Hair-care brand e-commerce: React, Next.js, TypeScript, Tailwind CSS, Headless CMS, Stripe, CDN, SEO, and i18n.',
+        ja: 'ヘアケアブランドECサイト。React、Next.js、TypeScript、Tailwind CSS、Headless CMS、Stripe、CDN、SEO、i18nを担当。'
+      },
+      'project.nintendo.description': {
+        en: 'Nintendo marketing page: HTML5, CSS3, JavaScript, responsive design, image optimization, SEO, accessibility, and performance.',
+        ja: '任天堂マーケティングページ。HTML5、CSS3、JavaScript、レスポンシブデザイン、画像最適化、SEO、アクセシビリティ、パフォーマンスを担当。'
+      },
+      'project.opera-net.description': {
+        en: 'Professional website: Next.js, React, TypeScript, Tailwind CSS, Headless CMS, SEO, accessibility, and performance.',
+        ja: 'プロフェッショナルWebサイト。Next.js、React、TypeScript、Tailwind CSS、Headless CMS、SEO、アクセシビリティ、パフォーマンスを担当。'
+      },
+      'project.pickyou-pro.description': {
+        en: 'Curated marketplace: Shopify, Liquid, HTML5, CSS3, JavaScript, e-commerce, SEO, and performance.',
+        ja: 'キュレーションマーケットプレイス。Shopify、Liquid、HTML5、CSS3、JavaScript、EC、SEO、パフォーマンスを担当。'
+      },
       'project.teamlab.description': {
         en: 'Immersive digital art experiences with interactive 3D/real‑time visuals. Contributed to performant WebGL scenes, SSR UI, and real‑time interactions for exhibitions and virtual tours.',
         ja: '没入型デジタルアート体験。パフォーマンスに優れたWebGLシーン、SSR UI、リアルタイムインタラクションを実装し、展示やバーチャルツアーを支援。'
@@ -1730,6 +1762,30 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
       'blog.categories.all': {
         en: 'All Categories',
         ja: 'すべてのカテゴリ'
+      },
+      'blog.categories.web': {
+        en: 'Web Development',
+        ja: 'ウェブ開発'
+      },
+      'blog.categories.mobile': {
+        en: 'Mobile Development',
+        ja: 'モバイル開発'
+      },
+      'blog.categories.ai': {
+        en: 'AI/ML',
+        ja: 'AI/ML'
+      },
+      'blog.categories.frontend': {
+        en: 'Frontend',
+        ja: 'フロントエンド'
+      },
+      'blog.categories.backend': {
+        en: 'Backend',
+        ja: 'バックエンド'
+      },
+      'blog.categories.technology': {
+        en: 'Technology',
+        ja: 'テクノロジー'
       },
       'blog.featured': {
         en: 'Featured Articles',

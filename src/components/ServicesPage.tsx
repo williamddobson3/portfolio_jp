@@ -173,10 +173,10 @@ export const ServicesPage: React.FC = () => {
       {/* Hero Section with 3D Scene */}
       <section className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24">
         <div className="space-y-6">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
             {t('services.title')}
           </h1>
-          <p className="text-lg md:text-xl text-white/80 leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
             {t('services.subtitle')}
           </p>
           <div className="flex flex-wrap gap-4 mt-8">
@@ -189,7 +189,7 @@ export const ServicesPage: React.FC = () => {
             </a>
             <a 
               href="#projects" 
-              className="inline-flex items-center gap-2 border-2 border-white/20 text-white px-6 py-4 rounded-xl hover:bg-white/10 hover:border-white/40 transition-all duration-300"
+              className="inline-flex items-center gap-2 border-2 border-gray-300 text-gray-800 px-6 py-4 rounded-xl hover:bg-gray-100 hover:border-gray-400 transition-all duration-300"
             >
               {t('services.cta.case')}
               <ChevronRight size={18} />
@@ -257,8 +257,8 @@ export const ServicesPage: React.FC = () => {
       {/* Services Grid with 3D Cards */}
       <section className="max-w-7xl mx-auto mb-32">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t('services.list_title')}</h2>
-          <p className="text-white/70 text-lg">Service delivery focused on core technology stacks and outcomes</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">{t('services.list_title')}</h2>
+          <p className="text-gray-600 text-lg">Service delivery focused on core technology stacks and outcomes</p>
         </div>
         <div 
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
@@ -282,12 +282,12 @@ export const ServicesPage: React.FC = () => {
               
               <div className="relative z-10 flex items-start space-x-4">
                 <div className="p-3 bg-white/8 rounded-lg group-hover:rotate-12 transition-transform duration-300">
-                  <s.icon size={28} className="text-white" />
+                  <s.icon size={28} className="text-gray-800" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-lg font-medium text-white">{s.title}</h3>
-                  <p className="text-sm text-white/70 mt-1">{s.subtitle}</p>
-                  <div className="mt-4 flex items-center justify-between text-sm text-white/70">
+                  <h3 className="text-lg font-medium text-gray-800">{s.title}</h3>
+                  <p className="text-sm text-gray-600 mt-1">{s.subtitle}</p>
+                  <div className="mt-4 flex items-center justify-between text-sm text-gray-600">
                     <span>{s.kpi}</span>
                     <span>{s.duration}</span>
                   </div>
@@ -315,8 +315,8 @@ export const ServicesPage: React.FC = () => {
       {/* Case Studies with 3D Rotation */}
       <section className="max-w-7xl mx-auto mb-32">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t('services.representative_cases.title')}</h2>
-          <p className="text-white/70 text-lg">{t('services.representative_cases.subtitle')}</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">{t('services.representative_cases.title')}</h2>
+          <p className="text-gray-600 text-lg">{t('services.representative_cases.subtitle')}</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {caseStudies.map((study, index) => (
@@ -389,8 +389,8 @@ export const ServicesPage: React.FC = () => {
       {/* Process Workflow with 3D Tokens */}
       <section className="max-w-7xl mx-auto mb-32">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t('services.workflow_title')}</h2>
-          <p className="text-white/70 text-lg">{t('services.workflow.subtitle')}</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">{t('services.workflow_title')}</h2>
+          <p className="text-gray-600 text-lg">{t('services.workflow.subtitle')}</p>
         </div>
         
         <div className="relative">
@@ -421,10 +421,10 @@ export const ServicesPage: React.FC = () => {
                   </div>
                 )}
                 
-                <div className="mt-4 text-white/90 font-semibold text-lg group-hover:text-white transition-colors">
+                <div className="mt-4 text-gray-800 font-semibold text-lg group-hover:text-blue-600 transition-colors">
                   {step.title}
                 </div>
-                <div className="mt-2 text-sm text-white/70 max-w-xs mx-auto group-hover:text-white/90 transition-colors">
+                <div className="mt-2 text-sm text-gray-600 max-w-xs mx-auto group-hover:text-gray-800 transition-colors">
                   {step.description}
                 </div>
               </div>
@@ -452,8 +452,8 @@ export const ServicesPage: React.FC = () => {
       {/* FAQ Section */}
       <section className="max-w-7xl mx-auto mb-32">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t('services.faq_title')}</h2>
-          <p className="text-white/70 text-lg">{t('services.faq.subtitle')}</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">{t('services.faq_title')}</h2>
+          <p className="text-gray-600 text-lg">{t('services.faq.subtitle')}</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -461,24 +461,24 @@ export const ServicesPage: React.FC = () => {
             <div className="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center mb-4">
               <span className="text-2xl">⏱️</span>
             </div>
-            <h3 className="text-lg font-semibold text-white mb-3">{t('services.faq.q1.title')}</h3>
-            <p className="text-white/70 leading-relaxed">{t('services.faq.q1.answer')}</p>
+            <h3 className="text-lg font-semibold text-gray-800 mb-3">{t('services.faq.q1.title')}</h3>
+            <p className="text-gray-600 leading-relaxed">{t('services.faq.q1.answer')}</p>
           </div>
           
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-white/20 transition-all duration-300 hover:shadow-xl">
             <div className="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center mb-4">
               <span className="text-2xl">🔧</span>
             </div>
-            <h3 className="text-lg font-semibold text-white mb-3">{t('services.faq.q2.title')}</h3>
-            <p className="text-white/70 leading-relaxed">{t('services.faq.q2.answer')}</p>
+            <h3 className="text-lg font-semibold text-gray-800 mb-3">{t('services.faq.q2.title')}</h3>
+            <p className="text-gray-600 leading-relaxed">{t('services.faq.q2.answer')}</p>
           </div>
           
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-white/20 transition-all duration-300 hover:shadow-xl">
             <div className="w-12 h-12 rounded-full bg-coral-500/20 flex items-center justify-center mb-4">
               <span className="text-2xl">♿</span>
             </div>
-            <h3 className="text-lg font-semibold text-white mb-3">{t('services.faq.q3.title')}</h3>
-            <p className="text-white/70 leading-relaxed">{t('services.faq.q3.answer')}</p>
+            <h3 className="text-lg font-semibold text-gray-800 mb-3">{t('services.faq.q3.title')}</h3>
+            <p className="text-gray-600 leading-relaxed">{t('services.faq.q3.answer')}</p>
           </div>
         </div>
       </section>
@@ -491,10 +491,10 @@ export const ServicesPage: React.FC = () => {
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl"></div>
           
           <div className="relative z-10 text-center">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
               {t('services.cta.big_title')}
             </h2>
-            <p className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
               {t('services.cta.big_desc')}
             </p>
             
@@ -519,20 +519,20 @@ export const ServicesPage: React.FC = () => {
             {/* Trust indicators */}
             <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-white mb-1">8+</div>
-                <div className="text-white/70 text-sm">{t('services.stats.experience')}</div>
+                <div className="text-3xl font-bold text-blue-600 mb-1">8+</div>
+                <div className="text-gray-600 text-sm">{t('services.stats.experience')}</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-white mb-1">30+</div>
-                <div className="text-white/70 text-sm">{t('services.stats.projects')}</div>
+                <div className="text-3xl font-bold text-green-600 mb-1">30+</div>
+                <div className="text-gray-600 text-sm">{t('services.stats.projects')}</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-white mb-1">24 hours</div>
-                <div className="text-white/70 text-sm">{t('services.stats.timeframe')}</div>
+                <div className="text-3xl font-bold text-purple-600 mb-1">24 hours</div>
+                <div className="text-gray-600 text-sm">{t('services.stats.timeframe')}</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-white mb-1">100%</div>
-                <div className="text-white/70 text-sm">{t('services.stats.satisfaction')}</div>
+                <div className="text-3xl font-bold text-red-600 mb-1">100%</div>
+                <div className="text-gray-600 text-sm">{t('services.stats.satisfaction')}</div>
               </div>
             </div>
           </div>
@@ -570,10 +570,10 @@ export const ServicesPage: React.FC = () => {
                 </div>
                 
                 <div className="flex-1">
-                  <h2 className="text-3xl font-bold text-white mb-2">
+                  <h2 className="text-3xl font-bold text-gray-800 mb-2">
                     {serviceDetails[selectedService as keyof typeof serviceDetails]?.title}
                   </h2>
-                  <p className="text-white/80 text-lg leading-relaxed">
+                  <p className="text-gray-600 text-lg leading-relaxed">
                     {serviceDetails[selectedService as keyof typeof serviceDetails]?.subtitle}
                   </p>
                 </div>
@@ -585,15 +585,15 @@ export const ServicesPage: React.FC = () => {
               <div className="space-y-8">
                 {/* Description */}
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-4">Overview</h3>
-                  <p className="text-white/80 leading-relaxed">
+                  <h3 className="text-xl font-semibold text-gray-800 mb-4">Overview</h3>
+                  <p className="text-gray-600 leading-relaxed">
                     {serviceDetails[selectedService as keyof typeof serviceDetails]?.description}
                   </p>
                 </div>
 
                 {/* Features */}
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-4">What's Included</h3>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-4">What's Included</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                     {serviceDetails[selectedService as keyof typeof serviceDetails]?.features.map((feature, index) => (
                       <div key={index} className="flex items-start space-x-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
@@ -601,7 +601,7 @@ export const ServicesPage: React.FC = () => {
                           className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
                           style={{ backgroundColor: serviceDetails[selectedService as keyof typeof serviceDetails]?.color }}
                         />
-                        <span className="text-white/80 text-sm">{feature}</span>
+                        <span className="text-gray-600 text-sm">{feature}</span>
                       </div>
                     ))}
                   </div>
@@ -609,12 +609,12 @@ export const ServicesPage: React.FC = () => {
 
                 {/* Technologies */}
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-4">Technologies & Tools</h3>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-4">Technologies & Tools</h3>
                   <div className="flex flex-wrap gap-2">
                     {serviceDetails[selectedService as keyof typeof serviceDetails]?.technologies.map((tech, index) => (
                       <span 
                         key={index}
-                        className="px-3 py-1 bg-white/10 hover:bg-white/20 rounded-full text-white/80 text-sm transition-colors"
+                        className="px-3 py-1 bg-blue-100 hover:bg-blue-200 rounded-full text-blue-800 text-sm transition-colors"
                         style={{ 
                           border: `1px solid ${serviceDetails[selectedService as keyof typeof serviceDetails]?.color}30` 
                         }}
@@ -628,18 +628,18 @@ export const ServicesPage: React.FC = () => {
                 {/* Project Info */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="p-4 bg-white/5 rounded-xl">
-                    <h4 className="text-white font-semibold mb-2">Duration</h4>
-                    <p className="text-white/80">{serviceDetails[selectedService as keyof typeof serviceDetails]?.duration}</p>
+                    <h4 className="text-gray-800 font-semibold mb-2">Duration</h4>
+                    <p className="text-gray-600">{serviceDetails[selectedService as keyof typeof serviceDetails]?.duration}</p>
                   </div>
                   
                   <div className="p-4 bg-white/5 rounded-xl">
-                    <h4 className="text-white font-semibold mb-2">Goal</h4>
-                    <p className="text-white/80 text-sm">{serviceDetails[selectedService as keyof typeof serviceDetails]?.goal}</p>
+                    <h4 className="text-gray-800 font-semibold mb-2">Goal</h4>
+                    <p className="text-gray-600 text-sm">{serviceDetails[selectedService as keyof typeof serviceDetails]?.goal}</p>
                   </div>
                   
                   <div className="p-4 bg-white/5 rounded-xl">
-                    <h4 className="text-white font-semibold mb-2">Support</h4>
-                    <p className="text-white/80">Continuous support after delivery</p>
+                    <h4 className="text-gray-800 font-semibold mb-2">Support</h4>
+                    <p className="text-gray-600">Continuous support after delivery</p>
                   </div>
                 </div>
               </div>
